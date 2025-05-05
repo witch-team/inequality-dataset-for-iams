@@ -42,7 +42,7 @@ fwrite(data_output_allcountries, file = "settlement/deciles_data_settlement.csv"
 
 #Show list of countries and variables
 ggplot(data_input_format %>% filter(str_detect(VARIABLE, "D10")) %>% group_by(REGION, VARIABLE) %>% summarize(avail=length(UNIT)) %>% mutate(VARIABLE=gsub("\\|D10", "", VARIABLE)), aes(REGION,VARIABLE, fill = avail)) + geom_tile() + theme_minimal() + theme(axis.text.x = element_text(angle=90, vjust = 0.5)) + guides(fill="none") 
-ggsave("Countries and Variables.png", width = 10, height=8)
+ggsave("settlement/Countries and Variables.png", width = 10, height=8)
 #show expenditure shares
 ggplot(data_output_allcountries %>% filter(element!="food" & var=="expcat_input" & ((iso3=="ZAF" & year=="2017") | iso3!="ZAF")) %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value, color=element)) + facet_grid(iso3 ~ settlement, scales = "free_x") + theme_minimal() + theme(legend.position = "bottom") + labs(x="", y="") 
 ggplot(data_output_allcountries %>% filter(element!="food" & var=="expcat_input" & ((iso3=="ZAF" & year=="2017") | iso3!="ZAF")) %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value, color=settlement)) + facet_wrap(iso3 ~ element, scales = "free_x") + theme_minimal() + theme(legend.position = "bottom") + labs(x="Decile", y="Expenditure share [%]") + scale_x_continuous(breaks=seq(1,10)) 
@@ -50,7 +50,7 @@ ggplot(data_output_allcountries %>% filter(element!="food" & var=="expcat_input"
 ggplot(data_output_allcountries %>% filter(element!="withfood" & var=="expcat_input" & ((iso3=="ZAF" & year=="2017") | iso3!="ZAF")) %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value, color=settlement)) + facet_wrap(iso3 ~ element, scales = "free_x", ncol = 4) + theme_minimal() + theme(legend.position = "bottom") + labs(x="Decile", y="Expenditure share [%]") + scale_x_continuous(breaks=seq(1,10)) 
 ggsave("settlement/Energy Expenditure Shares.png", width = 10, height=8)
 #Show deciles
-ggplot(data_output_allcountries %>% filter(var=="income_decile" & ((iso3=="ZAF" & year=="2017") | iso3!="ZAF")) %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value)) + facet_wrap(. ~ iso3, scales = "free_x") + theme_minimal() + theme(legend.position = "bottom") + labs(x="", y="") 
-ggplot(data_output_allcountries %>% filter(var=="expenditure_decile" & ((iso3=="ZAF" & year=="2017") | iso3!="ZAF")) %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value)) + facet_wrap(. ~ iso3, scales = "free_x") + theme_minimal() + theme(legend.position = "bottom") + labs(x="", y="") 
-ggsave("Expenditure deciles.png", width = 10, height=8)
+ggplot(data_output_allcountries %>% filter(var=="income_decile") %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value)) + facet_wrap(. ~ iso3, scales = "free_x") + theme_minimal() + theme(legend.position = "bottom") + labs(x="", y="") 
+ggplot(data_output_allcountries %>% filter(var=="expenditure_decile") %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value)) + facet_wrap(. ~ iso3, scales = "free_x") + theme_minimal() + theme(legend.position = "bottom") + labs(x="", y="") 
+ggsave("settlement/Expenditure deciles.png", width = 10, height=8)
 
