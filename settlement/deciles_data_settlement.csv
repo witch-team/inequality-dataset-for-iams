@@ -1,0 +1,3259 @@
+year,iso3,var,element,settlement,dist,value
+latest,USA,expcat_input,food,urban,D1,24.39
+latest,USA,expcat_input,food,rural,D1,24.15
+latest,USA,expcat_input,food,urban,D2,21.06
+latest,USA,expcat_input,food,rural,D2,17.88
+latest,USA,expcat_input,food,urban,D3,20.04
+latest,USA,expcat_input,food,rural,D3,19.33
+latest,USA,expcat_input,food,urban,D4,17.92
+latest,USA,expcat_input,food,rural,D4,18.96
+latest,USA,expcat_input,food,urban,D5,18.35
+latest,USA,expcat_input,food,rural,D5,17.35
+latest,USA,expcat_input,food,urban,D6,16.72
+latest,USA,expcat_input,food,rural,D6,15.48
+latest,USA,expcat_input,food,urban,D7,17.07
+latest,USA,expcat_input,food,rural,D7,17.5
+latest,USA,expcat_input,food,urban,D8,16.55
+latest,USA,expcat_input,food,rural,D8,16.67
+latest,USA,expcat_input,food,urban,D9,15.18
+latest,USA,expcat_input,food,rural,D9,15.34
+latest,USA,expcat_input,food,urban,D10,10.83
+latest,USA,expcat_input,food,rural,D10,11.6
+latest,USA,expcat_input,energy_housing,urban,D1,13.85
+latest,USA,expcat_input,energy_housing,rural,D1,18.86
+latest,USA,expcat_input,energy_housing,urban,D2,11.89
+latest,USA,expcat_input,energy_housing,rural,D2,14.31
+latest,USA,expcat_input,energy_housing,urban,D3,11.62
+latest,USA,expcat_input,energy_housing,rural,D3,17.52
+latest,USA,expcat_input,energy_housing,urban,D4,10.95
+latest,USA,expcat_input,energy_housing,rural,D4,12.43
+latest,USA,expcat_input,energy_housing,urban,D5,9.71
+latest,USA,expcat_input,energy_housing,rural,D5,11.77
+latest,USA,expcat_input,energy_housing,urban,D6,9.03
+latest,USA,expcat_input,energy_housing,rural,D6,12.97
+latest,USA,expcat_input,energy_housing,urban,D7,8.49
+latest,USA,expcat_input,energy_housing,rural,D7,12.4
+latest,USA,expcat_input,energy_housing,urban,D8,7.94
+latest,USA,expcat_input,energy_housing,rural,D8,9.66
+latest,USA,expcat_input,energy_housing,urban,D9,7.02
+latest,USA,expcat_input,energy_housing,rural,D9,9.44
+latest,USA,expcat_input,energy_housing,urban,D10,4.7
+latest,USA,expcat_input,energy_housing,rural,D10,7.33
+latest,USA,expcat_input,energy_transportation,urban,D1,9.35
+latest,USA,expcat_input,energy_transportation,rural,D1,10.39
+latest,USA,expcat_input,energy_transportation,urban,D2,12.04
+latest,USA,expcat_input,energy_transportation,rural,D2,11.13
+latest,USA,expcat_input,energy_transportation,urban,D3,11.69
+latest,USA,expcat_input,energy_transportation,rural,D3,11.66
+latest,USA,expcat_input,energy_transportation,urban,D4,12.87
+latest,USA,expcat_input,energy_transportation,rural,D4,13.04
+latest,USA,expcat_input,energy_transportation,urban,D5,13.64
+latest,USA,expcat_input,energy_transportation,rural,D5,17.44
+latest,USA,expcat_input,energy_transportation,urban,D6,14.81
+latest,USA,expcat_input,energy_transportation,rural,D6,19.14
+latest,USA,expcat_input,energy_transportation,urban,D7,14.03
+latest,USA,expcat_input,energy_transportation,rural,D7,16.23
+latest,USA,expcat_input,energy_transportation,urban,D8,13.89
+latest,USA,expcat_input,energy_transportation,rural,D8,20.14
+latest,USA,expcat_input,energy_transportation,urban,D9,13.69
+latest,USA,expcat_input,energy_transportation,rural,D9,12.51
+latest,USA,expcat_input,energy_transportation,urban,D10,13.63
+latest,USA,expcat_input,energy_transportation,rural,D10,16.1
+latest,USA,incomecat,other,urban,D1,1.42
+latest,USA,incomecat,other,rural,D1,3.23
+latest,USA,incomecat,other,urban,D2,1.64
+latest,USA,incomecat,other,rural,D2,3.33
+latest,USA,incomecat,other,urban,D3,2.6
+latest,USA,incomecat,other,rural,D3,4.58
+latest,USA,incomecat,other,urban,D4,2.88
+latest,USA,incomecat,other,rural,D4,1.04
+latest,USA,incomecat,other,urban,D5,2.45
+latest,USA,incomecat,other,rural,D5,1.37
+latest,USA,incomecat,other,urban,D6,2.13
+latest,USA,incomecat,other,rural,D6,0.85
+latest,USA,incomecat,other,urban,D7,2.67
+latest,USA,incomecat,other,rural,D7,2.24
+latest,USA,incomecat,other,urban,D8,2.26
+latest,USA,incomecat,other,rural,D8,11.12
+latest,USA,incomecat,other,urban,D9,2.39
+latest,USA,incomecat,other,rural,D9,2.56
+latest,USA,incomecat,other,urban,D10,8.7
+latest,USA,incomecat,other,rural,D10,5.8
+latest,USA,incomecat,labour,urban,D1,23.07
+latest,USA,incomecat,labour,rural,D1,15.21
+latest,USA,incomecat,labour,urban,D2,27.22
+latest,USA,incomecat,labour,rural,D2,19.25
+latest,USA,incomecat,labour,urban,D3,47.07
+latest,USA,incomecat,labour,rural,D3,23.64
+latest,USA,incomecat,labour,urban,D4,56.67
+latest,USA,incomecat,labour,rural,D4,38.46
+latest,USA,incomecat,labour,urban,D5,69.97
+latest,USA,incomecat,labour,rural,D5,49.2
+latest,USA,incomecat,labour,urban,D6,74.95
+latest,USA,incomecat,labour,rural,D6,46.51
+latest,USA,incomecat,labour,urban,D7,82.18
+latest,USA,incomecat,labour,rural,D7,63.24
+latest,USA,incomecat,labour,urban,D8,80.73
+latest,USA,incomecat,labour,rural,D8,69.68
+latest,USA,incomecat,labour,urban,D9,84.54
+latest,USA,incomecat,labour,rural,D9,85.31
+latest,USA,incomecat,labour,urban,D10,82.07
+latest,USA,incomecat,labour,rural,D10,68.51
+latest,USA,incomecat,capital,urban,D1,17.69
+latest,USA,incomecat,capital,rural,D1,9.13
+latest,USA,incomecat,capital,urban,D2,12.4
+latest,USA,incomecat,capital,rural,D2,7.43
+latest,USA,incomecat,capital,urban,D3,1.64
+latest,USA,incomecat,capital,rural,D3,21.74
+latest,USA,incomecat,capital,urban,D4,8.04
+latest,USA,incomecat,capital,rural,D4,9.86
+latest,USA,incomecat,capital,urban,D5,3.94
+latest,USA,incomecat,capital,rural,D5,1.34
+latest,USA,incomecat,capital,urban,D6,10.54
+latest,USA,incomecat,capital,rural,D6,9.26
+latest,USA,incomecat,capital,urban,D7,12.41
+latest,USA,incomecat,capital,rural,D7,0.33
+latest,USA,incomecat,capital,urban,D8,4.71
+latest,USA,incomecat,capital,rural,D8,12.5
+latest,USA,incomecat,capital,urban,D9,4.57
+latest,USA,incomecat,capital,rural,D9,4.19
+latest,USA,incomecat,capital,urban,D10,1.33
+latest,USA,incomecat,capital,rural,D10,7.55
+latest,USA,incomecat,transfers,urban,D1,30.61
+latest,USA,incomecat,transfers,rural,D1,35.63
+latest,USA,incomecat,transfers,urban,D2,18.42
+latest,USA,incomecat,transfers,rural,D2,22.63
+latest,USA,incomecat,transfers,urban,D3,16.91
+latest,USA,incomecat,transfers,rural,D3,16.77
+latest,USA,incomecat,transfers,urban,D4,29.28
+latest,USA,incomecat,transfers,rural,D4,33.23
+latest,USA,incomecat,transfers,urban,D5,12.13
+latest,USA,incomecat,transfers,rural,D5,10.23
+latest,USA,incomecat,transfers,urban,D6,4.79
+latest,USA,incomecat,transfers,rural,D6,7.26
+latest,USA,incomecat,transfers,urban,D7,1.34
+latest,USA,incomecat,transfers,rural,D7,2.34
+latest,USA,incomecat,transfers,urban,D8,5.57
+latest,USA,incomecat,transfers,rural,D8,4.22
+latest,USA,incomecat,transfers,urban,D9,1.23
+latest,USA,incomecat,transfers,rural,D9,1.03
+latest,USA,incomecat,transfers,urban,D10,1.67
+latest,USA,incomecat,transfers,rural,D10,1.01
+latest,USA,incomecat,other,urban,D1,27.21
+latest,USA,incomecat,other,rural,D1,36.8
+latest,USA,incomecat,other,urban,D2,40.33
+latest,USA,incomecat,other,rural,D2,47.36
+latest,USA,incomecat,other,urban,D3,31.78
+latest,USA,incomecat,other,rural,D3,33.27
+latest,USA,incomecat,other,urban,D4,3.12
+latest,USA,incomecat,other,rural,D4,17.41
+latest,USA,incomecat,other,urban,D5,11.52
+latest,USA,incomecat,other,rural,D5,37.88
+latest,USA,incomecat,other,urban,D6,7.59
+latest,USA,incomecat,other,rural,D6,36.13
+latest,USA,incomecat,other,urban,D7,1.39
+latest,USA,incomecat,other,rural,D7,31.86
+latest,USA,incomecat,other,urban,D8,6.73
+latest,USA,incomecat,other,rural,D8,2.49
+latest,USA,incomecat,other,urban,D9,7.29
+latest,USA,incomecat,other,rural,D9,6.92
+latest,USA,incomecat,other,urban,D10,6.24
+latest,USA,incomecat,other,rural,D10,17.12
+latest,USA,savings_rate,,urban,D1,-37.39
+latest,USA,savings_rate,,rural,D1,-25.1
+latest,USA,savings_rate,,urban,D2,11.3
+latest,USA,savings_rate,,rural,D2,20.21
+latest,USA,savings_rate,,urban,D3,25.64
+latest,USA,savings_rate,,rural,D3,21.84
+latest,USA,savings_rate,,urban,D4,40.27
+latest,USA,savings_rate,,rural,D4,42.87
+latest,USA,savings_rate,,urban,D5,46.15
+latest,USA,savings_rate,,rural,D5,28.49
+latest,USA,savings_rate,,urban,D6,51.26
+latest,USA,savings_rate,,rural,D6,49.74
+latest,USA,savings_rate,,urban,D7,54.06
+latest,USA,savings_rate,,rural,D7,50.73
+latest,USA,savings_rate,,urban,D8,57.38
+latest,USA,savings_rate,,rural,D8,53.15
+latest,USA,savings_rate,,urban,D9,64.77
+latest,USA,savings_rate,,rural,D9,61.56
+latest,USA,savings_rate,,urban,D10,69.23
+latest,USA,savings_rate,,rural,D10,74.59
+latest,USA,educat,No education,urban,D1,0.44
+latest,USA,educat,No education,rural,D1,0
+latest,USA,educat,No education,urban,D2,0.66
+latest,USA,educat,No education,rural,D2,0
+latest,USA,educat,No education,urban,D3,0
+latest,USA,educat,No education,rural,D3,3.23
+latest,USA,educat,No education,urban,D4,0.64
+latest,USA,educat,No education,rural,D4,0
+latest,USA,educat,No education,urban,D5,0.67
+latest,USA,educat,No education,rural,D5,0
+latest,USA,educat,No education,urban,D6,0.23
+latest,USA,educat,No education,rural,D6,0
+latest,USA,educat,No education,urban,D7,0
+latest,USA,educat,No education,rural,D7,0
+latest,USA,educat,No education,urban,D8,0.22
+latest,USA,educat,No education,rural,D8,0
+latest,USA,educat,No education,urban,D9,0
+latest,USA,educat,No education,rural,D9,0
+latest,USA,educat,No education,urban,D10,0
+latest,USA,educat,No education,rural,D10,0
+latest,USA,educat,Primary Education,urban,D1,3.96
+latest,USA,educat,Primary Education,rural,D1,3.12
+latest,USA,educat,Primary Education,urban,D2,3.53
+latest,USA,educat,Primary Education,rural,D2,0
+latest,USA,educat,Primary Education,urban,D3,3.08
+latest,USA,educat,Primary Education,rural,D3,0
+latest,USA,educat,Primary Education,urban,D4,4.26
+latest,USA,educat,Primary Education,rural,D4,0
+latest,USA,educat,Primary Education,urban,D5,2.68
+latest,USA,educat,Primary Education,rural,D5,0
+latest,USA,educat,Primary Education,urban,D6,1.81
+latest,USA,educat,Primary Education,rural,D6,3.23
+latest,USA,educat,Primary Education,urban,D7,1.1
+latest,USA,educat,Primary Education,rural,D7,0
+latest,USA,educat,Primary Education,urban,D8,1.11
+latest,USA,educat,Primary Education,rural,D8,3.23
+latest,USA,educat,Primary Education,urban,D9,0.22
+latest,USA,educat,Primary Education,rural,D9,9.68
+latest,USA,educat,Primary Education,urban,D10,0.22
+latest,USA,educat,Primary Education,rural,D10,3.23
+latest,USA,educat,Secondary Education,urban,D1,76.65
+latest,USA,educat,Secondary Education,rural,D1,84.38
+latest,USA,educat,Secondary Education,urban,D2,75.28
+latest,USA,educat,Secondary Education,rural,D2,87.1
+latest,USA,educat,Secondary Education,urban,D3,72.03
+latest,USA,educat,Secondary Education,rural,D3,90.32
+latest,USA,educat,Secondary Education,urban,D4,67.87
+latest,USA,educat,Secondary Education,rural,D4,93.75
+latest,USA,educat,Secondary Education,urban,D5,59.28
+latest,USA,educat,Secondary Education,rural,D5,74.19
+latest,USA,educat,Secondary Education,urban,D6,57.34
+latest,USA,educat,Secondary Education,rural,D6,64.52
+latest,USA,educat,Secondary Education,urban,D7,49.89
+latest,USA,educat,Secondary Education,rural,D7,53.12
+latest,USA,educat,Secondary Education,urban,D8,43.14
+latest,USA,educat,Secondary Education,rural,D8,67.74
+latest,USA,educat,Secondary Education,urban,D9,37.36
+latest,USA,educat,Secondary Education,rural,D9,41.94
+latest,USA,educat,Secondary Education,urban,D10,23.06
+latest,USA,educat,Secondary Education,rural,D10,45.16
+latest,USA,educat,Tertiary Education,urban,D1,18.94
+latest,USA,educat,Tertiary Education,rural,D1,12.5
+latest,USA,educat,Tertiary Education,urban,D2,20.53
+latest,USA,educat,Tertiary Education,rural,D2,12.9
+latest,USA,educat,Tertiary Education,urban,D3,24.89
+latest,USA,educat,Tertiary Education,rural,D3,6.45
+latest,USA,educat,Tertiary Education,urban,D4,27.23
+latest,USA,educat,Tertiary Education,rural,D4,6.25
+latest,USA,educat,Tertiary Education,urban,D5,37.36
+latest,USA,educat,Tertiary Education,rural,D5,25.81
+latest,USA,educat,Tertiary Education,urban,D6,40.63
+latest,USA,educat,Tertiary Education,rural,D6,32.26
+latest,USA,educat,Tertiary Education,urban,D7,49.01
+latest,USA,educat,Tertiary Education,rural,D7,46.88
+latest,USA,educat,Tertiary Education,urban,D8,55.53
+latest,USA,educat,Tertiary Education,rural,D8,29.03
+latest,USA,educat,Tertiary Education,urban,D9,62.42
+latest,USA,educat,Tertiary Education,rural,D9,48.39
+latest,USA,educat,Tertiary Education,urban,D10,76.72
+latest,USA,educat,Tertiary Education,rural,D10,51.61
+latest,USA,inequality_index,gini,urban,0,0.47
+latest,USA,inequality_index,gini,rural,0,0.45
+latest,USA,inequality_index,absolute_poverty,urban,0,19.5
+latest,USA,inequality_index,absolute_poverty,rural,0,24.39
+latest,USA,household_size,,urban,D1,1.52
+latest,USA,household_size,,rural,D1,1.47
+latest,USA,household_size,,urban,D2,1.67
+latest,USA,household_size,,rural,D2,1.42
+latest,USA,household_size,,urban,D3,1.98
+latest,USA,household_size,,rural,D3,1.81
+latest,USA,household_size,,urban,D4,2.19
+latest,USA,household_size,,rural,D4,2.13
+latest,USA,household_size,,urban,D5,2.34
+latest,USA,household_size,,rural,D5,2.06
+latest,USA,household_size,,urban,D6,2.59
+latest,USA,household_size,,rural,D6,2.55
+latest,USA,household_size,,urban,D7,2.84
+latest,USA,household_size,,rural,D7,2.81
+latest,USA,household_size,,urban,D8,2.96
+latest,USA,household_size,,rural,D8,2.77
+latest,USA,household_size,,urban,D9,3.05
+latest,USA,household_size,,rural,D9,3.42
+latest,USA,household_size,,urban,D10,3.18
+latest,USA,household_size,,rural,D10,3.29
+latest,USA,expenditure_decile,,urban,D1,1.6
+latest,USA,expenditure_decile,,rural,D1,1.76
+latest,USA,expenditure_decile,,urban,D2,2.82
+latest,USA,expenditure_decile,,rural,D2,3.12
+latest,USA,expenditure_decile,,urban,D3,3.9
+latest,USA,expenditure_decile,,rural,D3,4.22
+latest,USA,expenditure_decile,,urban,D4,5.03
+latest,USA,expenditure_decile,,rural,D4,5.16
+latest,USA,expenditure_decile,,urban,D5,6.29
+latest,USA,expenditure_decile,,rural,D5,6.33
+latest,USA,expenditure_decile,,urban,D6,7.81
+latest,USA,expenditure_decile,,rural,D6,8.15
+latest,USA,expenditure_decile,,urban,D7,9.75
+latest,USA,expenditure_decile,,rural,D7,9.63
+latest,USA,expenditure_decile,,urban,D8,12.43
+latest,USA,expenditure_decile,,rural,D8,12.79
+latest,USA,expenditure_decile,,urban,D9,16.69
+latest,USA,expenditure_decile,,rural,D9,17.11
+latest,USA,expenditure_decile,,urban,D10,33.68
+latest,USA,expenditure_decile,,rural,D10,31.72
+latest,USA,income_decile,,urban,D1,0.93
+latest,USA,income_decile,,rural,D1,1.37
+latest,USA,income_decile,,urban,D2,2.28
+latest,USA,income_decile,,rural,D2,2.41
+latest,USA,income_decile,,urban,D3,3.51
+latest,USA,income_decile,,rural,D3,3.63
+latest,USA,income_decile,,urban,D4,4.98
+latest,USA,income_decile,,rural,D4,5.23
+latest,USA,income_decile,,urban,D5,6.2
+latest,USA,income_decile,,rural,D5,6.43
+latest,USA,income_decile,,urban,D6,7.95
+latest,USA,income_decile,,rural,D6,7.98
+latest,USA,income_decile,,urban,D7,10.36
+latest,USA,income_decile,,rural,D7,10.43
+latest,USA,income_decile,,urban,D8,13
+latest,USA,income_decile,,rural,D8,13.69
+latest,USA,income_decile,,urban,D9,17.86
+latest,USA,income_decile,,rural,D9,17.71
+latest,USA,income_decile,,urban,D10,32.93
+latest,USA,income_decile,,rural,D10,31.13
+latest,CHN,expcat_input,food,urban,D1,35.25476
+latest,CHN,expcat_input,food,rural,D1,35.32998
+latest,CHN,expcat_input,food,urban,D2,34.37185
+latest,CHN,expcat_input,food,rural,D2,34.61991
+latest,CHN,expcat_input,food,urban,D3,34.03131
+latest,CHN,expcat_input,food,rural,D3,33.86406
+latest,CHN,expcat_input,food,urban,D4,34.15888
+latest,CHN,expcat_input,food,rural,D4,32.58904
+latest,CHN,expcat_input,food,urban,D5,33.16619
+latest,CHN,expcat_input,food,rural,D5,33.85204
+latest,CHN,expcat_input,food,urban,D6,33.48639
+latest,CHN,expcat_input,food,rural,D6,33.11628
+latest,CHN,expcat_input,food,urban,D7,33.61286
+latest,CHN,expcat_input,food,rural,D7,31.00484
+latest,CHN,expcat_input,food,urban,D8,32.32259
+latest,CHN,expcat_input,food,rural,D8,31.76866
+latest,CHN,expcat_input,food,urban,D9,29.7827
+latest,CHN,expcat_input,food,rural,D9,29.4994
+latest,CHN,expcat_input,food,urban,D10,25.8217
+latest,CHN,expcat_input,food,rural,D10,29.28394
+latest,CHN,expcat_input,energy_housing,urban,D1,24.85454
+latest,CHN,expcat_input,energy_housing,rural,D1,23.367
+latest,CHN,expcat_input,energy_housing,urban,D2,24.72686
+latest,CHN,expcat_input,energy_housing,rural,D2,21.84712
+latest,CHN,expcat_input,energy_housing,urban,D3,25.19093
+latest,CHN,expcat_input,energy_housing,rural,D3,22.66928
+latest,CHN,expcat_input,energy_housing,urban,D4,22.71824
+latest,CHN,expcat_input,energy_housing,rural,D4,21.40561
+latest,CHN,expcat_input,energy_housing,urban,D5,23.75243
+latest,CHN,expcat_input,energy_housing,rural,D5,20.14958
+latest,CHN,expcat_input,energy_housing,urban,D6,23.28499
+latest,CHN,expcat_input,energy_housing,rural,D6,21.09469
+latest,CHN,expcat_input,energy_housing,urban,D7,23.7362
+latest,CHN,expcat_input,energy_housing,rural,D7,21.30065
+latest,CHN,expcat_input,energy_housing,urban,D8,23.56487
+latest,CHN,expcat_input,energy_housing,rural,D8,20.70122
+latest,CHN,expcat_input,energy_housing,urban,D9,23.99651
+latest,CHN,expcat_input,energy_housing,rural,D9,22.32609
+latest,CHN,expcat_input,energy_housing,urban,D10,24.34183
+latest,CHN,expcat_input,energy_housing,rural,D10,20.30708
+latest,CHN,expcat_input,energy_transportation,urban,D1,7.9942
+latest,CHN,expcat_input,energy_transportation,rural,D1,9.56045
+latest,CHN,expcat_input,energy_transportation,urban,D2,8.33328
+latest,CHN,expcat_input,energy_transportation,rural,D2,10.49248
+latest,CHN,expcat_input,energy_transportation,urban,D3,8.06059
+latest,CHN,expcat_input,energy_transportation,rural,D3,10.6267
+latest,CHN,expcat_input,energy_transportation,urban,D4,9.68467
+latest,CHN,expcat_input,energy_transportation,rural,D4,12.23842
+latest,CHN,expcat_input,energy_transportation,urban,D5,10.30118
+latest,CHN,expcat_input,energy_transportation,rural,D5,12.74235
+latest,CHN,expcat_input,energy_transportation,urban,D6,11.64716
+latest,CHN,expcat_input,energy_transportation,rural,D6,13.30348
+latest,CHN,expcat_input,energy_transportation,urban,D7,11.41762
+latest,CHN,expcat_input,energy_transportation,rural,D7,15.71104
+latest,CHN,expcat_input,energy_transportation,urban,D8,12.00031
+latest,CHN,expcat_input,energy_transportation,rural,D8,14.79584
+latest,CHN,expcat_input,energy_transportation,urban,D9,12.99344
+latest,CHN,expcat_input,energy_transportation,rural,D9,15.36234
+latest,CHN,expcat_input,energy_transportation,urban,D10,14.49896
+latest,CHN,expcat_input,energy_transportation,rural,D10,18.23955
+latest,CHN,incomecat,other,urban,D1,
+latest,CHN,incomecat,other,rural,D1,
+latest,CHN,incomecat,other,urban,D2,
+latest,CHN,incomecat,other,rural,D2,
+latest,CHN,incomecat,other,urban,D3,
+latest,CHN,incomecat,other,rural,D3,
+latest,CHN,incomecat,other,urban,D4,
+latest,CHN,incomecat,other,rural,D4,
+latest,CHN,incomecat,other,urban,D5,
+latest,CHN,incomecat,other,rural,D5,
+latest,CHN,incomecat,other,urban,D6,
+latest,CHN,incomecat,other,rural,D6,
+latest,CHN,incomecat,other,urban,D7,
+latest,CHN,incomecat,other,rural,D7,
+latest,CHN,incomecat,other,urban,D8,
+latest,CHN,incomecat,other,rural,D8,
+latest,CHN,incomecat,other,urban,D9,
+latest,CHN,incomecat,other,rural,D9,
+latest,CHN,incomecat,other,urban,D10,
+latest,CHN,incomecat,other,rural,D10,
+latest,CHN,incomecat,labour,urban,D1,48.89413
+latest,CHN,incomecat,labour,rural,D1,64.42484
+latest,CHN,incomecat,labour,urban,D2,72.68985
+latest,CHN,incomecat,labour,rural,D2,64.83063
+latest,CHN,incomecat,labour,urban,D3,68.81272
+latest,CHN,incomecat,labour,rural,D3,72.84417
+latest,CHN,incomecat,labour,urban,D4,75.31982
+latest,CHN,incomecat,labour,rural,D4,77.48792
+latest,CHN,incomecat,labour,urban,D5,77.08037
+latest,CHN,incomecat,labour,rural,D5,79.03179
+latest,CHN,incomecat,labour,urban,D6,78.37976
+latest,CHN,incomecat,labour,rural,D6,82.07502
+latest,CHN,incomecat,labour,urban,D7,77.26237
+latest,CHN,incomecat,labour,rural,D7,80.16914
+latest,CHN,incomecat,labour,urban,D8,77.20503
+latest,CHN,incomecat,labour,rural,D8,77.62969
+latest,CHN,incomecat,labour,urban,D9,79.51004
+latest,CHN,incomecat,labour,rural,D9,77.86016
+latest,CHN,incomecat,labour,urban,D10,83.13786
+latest,CHN,incomecat,labour,rural,D10,79.35181
+latest,CHN,incomecat,capital,urban,D1,11.70902
+latest,CHN,incomecat,capital,rural,D1,5.02512
+latest,CHN,incomecat,capital,urban,D2,9.5223
+latest,CHN,incomecat,capital,rural,D2,2.00445
+latest,CHN,incomecat,capital,urban,D3,10.07305
+latest,CHN,incomecat,capital,rural,D3,1.80308
+latest,CHN,incomecat,capital,urban,D4,7.95053
+latest,CHN,incomecat,capital,rural,D4,2.08899
+latest,CHN,incomecat,capital,urban,D5,8.33877
+latest,CHN,incomecat,capital,rural,D5,2.66781
+latest,CHN,incomecat,capital,urban,D6,8.22403
+latest,CHN,incomecat,capital,rural,D6,2.85069
+latest,CHN,incomecat,capital,urban,D7,8.66379
+latest,CHN,incomecat,capital,rural,D7,3.28773
+latest,CHN,incomecat,capital,urban,D8,8.81822
+latest,CHN,incomecat,capital,rural,D8,3.49452
+latest,CHN,incomecat,capital,urban,D9,9.92369
+latest,CHN,incomecat,capital,rural,D9,4.74457
+latest,CHN,incomecat,capital,urban,D10,10.40364
+latest,CHN,incomecat,capital,rural,D10,7.21611
+latest,CHN,incomecat,transfers,urban,D1,39.39685
+latest,CHN,incomecat,transfers,rural,D1,30.55004
+latest,CHN,incomecat,transfers,urban,D2,17.78785
+latest,CHN,incomecat,transfers,rural,D2,33.16492
+latest,CHN,incomecat,transfers,urban,D3,21.11424
+latest,CHN,incomecat,transfers,rural,D3,25.35275
+latest,CHN,incomecat,transfers,urban,D4,16.72965
+latest,CHN,incomecat,transfers,rural,D4,20.42308
+latest,CHN,incomecat,transfers,urban,D5,14.58085
+latest,CHN,incomecat,transfers,rural,D5,18.3004
+latest,CHN,incomecat,transfers,urban,D6,13.39621
+latest,CHN,incomecat,transfers,rural,D6,15.07428
+latest,CHN,incomecat,transfers,urban,D7,14.07384
+latest,CHN,incomecat,transfers,rural,D7,16.54313
+latest,CHN,incomecat,transfers,urban,D8,13.97675
+latest,CHN,incomecat,transfers,rural,D8,18.87578
+latest,CHN,incomecat,transfers,urban,D9,10.56627
+latest,CHN,incomecat,transfers,rural,D9,17.39528
+latest,CHN,incomecat,transfers,urban,D10,6.45849
+latest,CHN,incomecat,transfers,rural,D10,13.43209
+latest,CHN,incomecat,other,urban,D1,0
+latest,CHN,incomecat,other,rural,D1,0
+latest,CHN,incomecat,other,urban,D2,0
+latest,CHN,incomecat,other,rural,D2,0
+latest,CHN,incomecat,other,urban,D3,-1.00000000058387e-05
+latest,CHN,incomecat,other,rural,D3,0
+latest,CHN,incomecat,other,urban,D4,0
+latest,CHN,incomecat,other,rural,D4,1.00000000058387e-05
+latest,CHN,incomecat,other,urban,D5,1.00000000058387e-05
+latest,CHN,incomecat,other,rural,D5,0
+latest,CHN,incomecat,other,urban,D6,0
+latest,CHN,incomecat,other,rural,D6,1.00000000058387e-05
+latest,CHN,incomecat,other,urban,D7,0
+latest,CHN,incomecat,other,rural,D7,0
+latest,CHN,incomecat,other,urban,D8,0
+latest,CHN,incomecat,other,rural,D8,1.00000000058387e-05
+latest,CHN,incomecat,other,urban,D9,0
+latest,CHN,incomecat,other,rural,D9,-1.00000000058387e-05
+latest,CHN,incomecat,other,urban,D10,1.00000000058387e-05
+latest,CHN,incomecat,other,rural,D10,-1.00000000058387e-05
+latest,CHN,savings_rate,,urban,D1,77.99689
+latest,CHN,savings_rate,,rural,D1,-229.7354
+latest,CHN,savings_rate,,urban,D2,-26.04804
+latest,CHN,savings_rate,,rural,D2,-8.06677
+latest,CHN,savings_rate,,urban,D3,-1.87451
+latest,CHN,savings_rate,,rural,D3,11.5735
+latest,CHN,savings_rate,,urban,D4,8.46972
+latest,CHN,savings_rate,,rural,D4,24.9174
+latest,CHN,savings_rate,,urban,D5,17.20053
+latest,CHN,savings_rate,,rural,D5,30.97606
+latest,CHN,savings_rate,,urban,D6,22.58593
+latest,CHN,savings_rate,,rural,D6,40.93049
+latest,CHN,savings_rate,,urban,D7,28.68841
+latest,CHN,savings_rate,,rural,D7,38.43893
+latest,CHN,savings_rate,,urban,D8,31.30329
+latest,CHN,savings_rate,,rural,D8,48.93103
+latest,CHN,savings_rate,,urban,D9,34.73855
+latest,CHN,savings_rate,,rural,D9,52.5305
+latest,CHN,savings_rate,,urban,D10,42.53404
+latest,CHN,savings_rate,,rural,D10,68.36712
+latest,CHN,educat,No education,urban,D1,4.28216
+latest,CHN,educat,No education,rural,D1,8.28765
+latest,CHN,educat,No education,urban,D2,3.97276
+latest,CHN,educat,No education,rural,D2,7.14101
+latest,CHN,educat,No education,urban,D3,3.30006
+latest,CHN,educat,No education,rural,D3,5.83415
+latest,CHN,educat,No education,urban,D4,3.12379
+latest,CHN,educat,No education,rural,D4,5.31539
+latest,CHN,educat,No education,urban,D5,2.98459
+latest,CHN,educat,No education,rural,D5,4.12485
+latest,CHN,educat,No education,urban,D6,2.45394
+latest,CHN,educat,No education,rural,D6,4.07675
+latest,CHN,educat,No education,urban,D7,1.98783
+latest,CHN,educat,No education,rural,D7,2.8576
+latest,CHN,educat,No education,urban,D8,1.37523
+latest,CHN,educat,No education,rural,D8,3.87842
+latest,CHN,educat,No education,urban,D9,1.13188
+latest,CHN,educat,No education,rural,D9,4.93004
+latest,CHN,educat,No education,urban,D10,0.7963
+latest,CHN,educat,No education,rural,D10,3.47127
+latest,CHN,educat,Primary Education,urban,D1,17.77854
+latest,CHN,educat,Primary Education,rural,D1,25.71148
+latest,CHN,educat,Primary Education,urban,D2,17.81938
+latest,CHN,educat,Primary Education,rural,D2,25.69811
+latest,CHN,educat,Primary Education,urban,D3,16.66064
+latest,CHN,educat,Primary Education,rural,D3,23.61528
+latest,CHN,educat,Primary Education,urban,D4,14.48448
+latest,CHN,educat,Primary Education,rural,D4,21.15226
+latest,CHN,educat,Primary Education,urban,D5,12.42799
+latest,CHN,educat,Primary Education,rural,D5,20.16105
+latest,CHN,educat,Primary Education,urban,D6,10.63941
+latest,CHN,educat,Primary Education,rural,D6,18.64548
+latest,CHN,educat,Primary Education,urban,D7,11.01132
+latest,CHN,educat,Primary Education,rural,D7,17.60972
+latest,CHN,educat,Primary Education,urban,D8,7.96306
+latest,CHN,educat,Primary Education,rural,D8,14.82915
+latest,CHN,educat,Primary Education,urban,D9,7.09873
+latest,CHN,educat,Primary Education,rural,D9,17.10875
+latest,CHN,educat,Primary Education,urban,D10,4.3367
+latest,CHN,educat,Primary Education,rural,D10,16.42574
+latest,CHN,educat,Secondary Education,urban,D1,54.87031
+latest,CHN,educat,Secondary Education,rural,D1,44.50708
+latest,CHN,educat,Secondary Education,urban,D2,51.98938
+latest,CHN,educat,Secondary Education,rural,D2,45.5379
+latest,CHN,educat,Secondary Education,urban,D3,55.28061
+latest,CHN,educat,Secondary Education,rural,D3,49.38942
+latest,CHN,educat,Secondary Education,urban,D4,55.8067
+latest,CHN,educat,Secondary Education,rural,D4,51.94815
+latest,CHN,educat,Secondary Education,urban,D5,56.24444
+latest,CHN,educat,Secondary Education,rural,D5,53.33471
+latest,CHN,educat,Secondary Education,urban,D6,56.05599
+latest,CHN,educat,Secondary Education,rural,D6,56.46892
+latest,CHN,educat,Secondary Education,urban,D7,54.16515
+latest,CHN,educat,Secondary Education,rural,D7,57.83433
+latest,CHN,educat,Secondary Education,urban,D8,52.10554
+latest,CHN,educat,Secondary Education,rural,D8,57.65114
+latest,CHN,educat,Secondary Education,urban,D9,46.82606
+latest,CHN,educat,Secondary Education,rural,D9,51.30473
+latest,CHN,educat,Secondary Education,urban,D10,37.13307
+latest,CHN,educat,Secondary Education,rural,D10,53.85166
+latest,CHN,educat,Tertiary Education,urban,D1,4.90622
+latest,CHN,educat,Tertiary Education,rural,D1,3.7277
+latest,CHN,educat,Tertiary Education,urban,D2,7.14271
+latest,CHN,educat,Tertiary Education,rural,D2,2.90145
+latest,CHN,educat,Tertiary Education,urban,D3,7.40955
+latest,CHN,educat,Tertiary Education,rural,D3,3.8679
+latest,CHN,educat,Tertiary Education,urban,D4,8.94611
+latest,CHN,educat,Tertiary Education,rural,D4,3.93829
+latest,CHN,educat,Tertiary Education,urban,D5,9.76701
+latest,CHN,educat,Tertiary Education,rural,D5,5.41607
+latest,CHN,educat,Tertiary Education,urban,D6,12.82828
+latest,CHN,educat,Tertiary Education,rural,D6,5.80864
+latest,CHN,educat,Tertiary Education,urban,D7,16.97426
+latest,CHN,educat,Tertiary Education,rural,D7,7.32096
+latest,CHN,educat,Tertiary Education,urban,D8,23.01125
+latest,CHN,educat,Tertiary Education,rural,D8,8.72358
+latest,CHN,educat,Tertiary Education,urban,D9,29.77787
+latest,CHN,educat,Tertiary Education,rural,D9,13.11747
+latest,CHN,educat,Tertiary Education,urban,D10,42.27934
+latest,CHN,educat,Tertiary Education,rural,D10,11.34171
+latest,CHN,inequality_index,gini,urban,0,0.36686
+latest,CHN,inequality_index,gini,rural,0,0.41988
+latest,CHN,inequality_index,absolute_poverty,urban,0,0.05962
+latest,CHN,inequality_index,absolute_poverty,rural,0,0.47249
+latest,CHN,household_size,,urban,D1,4.2058572769165
+latest,CHN,household_size,,rural,D1,4.59404945373535
+latest,CHN,household_size,,urban,D2,4.38037776947021
+latest,CHN,household_size,,rural,D2,4.70022773742676
+latest,CHN,household_size,,urban,D3,4.19603681564331
+latest,CHN,household_size,,rural,D3,4.40757274627686
+latest,CHN,household_size,,urban,D4,4.02711629867554
+latest,CHN,household_size,,rural,D4,4.35287380218506
+latest,CHN,household_size,,urban,D5,4.0725417137146
+latest,CHN,household_size,,rural,D5,4.27000951766968
+latest,CHN,household_size,,urban,D6,3.90227389335632
+latest,CHN,household_size,,rural,D6,4.01633548736572
+latest,CHN,household_size,,urban,D7,3.66487002372742
+latest,CHN,household_size,,rural,D7,3.95520806312561
+latest,CHN,household_size,,urban,D8,3.47220587730408
+latest,CHN,household_size,,rural,D8,4.11570119857788
+latest,CHN,household_size,,urban,D9,3.41261625289917
+latest,CHN,household_size,,rural,D9,3.73571753501892
+latest,CHN,household_size,,urban,D10,3.27724647521973
+latest,CHN,household_size,,rural,D10,3.60745906829834
+latest,CHN,expenditure_decile,,urban,D1,6.73879846490061
+latest,CHN,expenditure_decile,,rural,D1,5.85929925302754
+latest,CHN,expenditure_decile,,urban,D2,5.2102416507303
+latest,CHN,expenditure_decile,,rural,D2,6.11703990400641
+latest,CHN,expenditure_decile,,urban,D3,6.03542685607186
+latest,CHN,expenditure_decile,,rural,D3,7.32111594984068
+latest,CHN,expenditure_decile,,urban,D4,7.22020204477473
+latest,CHN,expenditure_decile,,rural,D4,8.08334633844068
+latest,CHN,expenditure_decile,,urban,D5,8.05402291045704
+latest,CHN,expenditure_decile,,rural,D5,9.38986985553131
+latest,CHN,expenditure_decile,,urban,D6,9.28506952218611
+latest,CHN,expenditure_decile,,rural,D6,9.93513069707794
+latest,CHN,expenditure_decile,,urban,D7,10.6977952126716
+latest,CHN,expenditure_decile,,rural,D7,12.7549681789481
+latest,CHN,expenditure_decile,,urban,D8,13.1115845398022
+latest,CHN,expenditure_decile,,rural,D8,13.13156306654
+latest,CHN,expenditure_decile,,urban,D9,16.1719041465946
+latest,CHN,expenditure_decile,,rural,D9,15.8941213982352
+latest,CHN,expenditure_decile,,urban,D10,24.2137531167116
+latest,CHN,expenditure_decile,,rural,D10,17.3728446113797
+latest,CHN,income_decile,,urban,D1,0.197830743632733
+latest,CHN,income_decile,,rural,D1,1.17370031623131
+latest,CHN,income_decile,,urban,D2,2.92657901576713
+latest,CHN,income_decile,,rural,D2,2.80133015218191
+latest,CHN,income_decile,,urban,D3,4.14194689419415
+latest,CHN,income_decile,,rural,D3,4.07462419306313
+latest,CHN,income_decile,,urban,D4,5.49985456167195
+latest,CHN,income_decile,,rural,D4,5.32137439092559
+latest,CHN,income_decile,,urban,D5,6.791586039667
+latest,CHN,income_decile,,rural,D5,6.67983355207989
+latest,CHN,income_decile,,urban,D6,8.37821584643704
+latest,CHN,income_decile,,rural,D6,8.32636624625517
+latest,CHN,income_decile,,urban,D7,10.49522974395
+latest,CHN,income_decile,,rural,D7,10.2802013936076
+latest,CHN,income_decile,,urban,D8,13.2957089903812
+latest,CHN,income_decile,,rural,D8,12.6765673576882
+latest,CHN,income_decile,,urban,D9,17.336318347421
+latest,CHN,income_decile,,rural,D9,16.5015358281181
+latest,CHN,income_decile,,urban,D10,30.9367298168778
+latest,CHN,income_decile,,rural,D10,32.1644665698491
+latest,CHN,,,urban,,2.20367
+latest,CHN,,,rural,,2.541305
+latest,GTM,expcat_input,food,urban,D1,57.49677
+latest,GTM,expcat_input,food,rural,D1,61.96682
+latest,GTM,expcat_input,food,urban,D2,55.78105
+latest,GTM,expcat_input,food,rural,D2,65.08923
+latest,GTM,expcat_input,food,urban,D3,56.14853
+latest,GTM,expcat_input,food,rural,D3,64.40658
+latest,GTM,expcat_input,food,urban,D4,54.1315
+latest,GTM,expcat_input,food,rural,D4,63.12408
+latest,GTM,expcat_input,food,urban,D5,51.25391
+latest,GTM,expcat_input,food,rural,D5,62.67132
+latest,GTM,expcat_input,food,urban,D6,52.59734
+latest,GTM,expcat_input,food,rural,D6,60.89633
+latest,GTM,expcat_input,food,urban,D7,48.0854
+latest,GTM,expcat_input,food,rural,D7,58.07986
+latest,GTM,expcat_input,food,urban,D8,44.82485
+latest,GTM,expcat_input,food,rural,D8,54.49196
+latest,GTM,expcat_input,food,urban,D9,42.68449
+latest,GTM,expcat_input,food,rural,D9,51.09122
+latest,GTM,expcat_input,food,urban,D10,33.57839
+latest,GTM,expcat_input,food,rural,D10,42.95276
+latest,GTM,expcat_input,energy_housing,urban,D1,13.35671
+latest,GTM,expcat_input,energy_housing,rural,D1,12.90969
+latest,GTM,expcat_input,energy_housing,urban,D2,11.69324
+latest,GTM,expcat_input,energy_housing,rural,D2,11.05358
+latest,GTM,expcat_input,energy_housing,urban,D3,11.43981
+latest,GTM,expcat_input,energy_housing,rural,D3,10.53373
+latest,GTM,expcat_input,energy_housing,urban,D4,11.22125
+latest,GTM,expcat_input,energy_housing,rural,D4,9.85666
+latest,GTM,expcat_input,energy_housing,urban,D5,10.77001
+latest,GTM,expcat_input,energy_housing,rural,D5,10.28093
+latest,GTM,expcat_input,energy_housing,urban,D6,10.20728
+latest,GTM,expcat_input,energy_housing,rural,D6,9.42571
+latest,GTM,expcat_input,energy_housing,urban,D7,9.95091
+latest,GTM,expcat_input,energy_housing,rural,D7,9.27891
+latest,GTM,expcat_input,energy_housing,urban,D8,9.52808
+latest,GTM,expcat_input,energy_housing,rural,D8,9.64046
+latest,GTM,expcat_input,energy_housing,urban,D9,9.04783
+latest,GTM,expcat_input,energy_housing,rural,D9,8.40855
+latest,GTM,expcat_input,energy_housing,urban,D10,7.91003
+latest,GTM,expcat_input,energy_housing,rural,D10,8.20881
+latest,GTM,expcat_input,energy_transportation,urban,D1,2.16954
+latest,GTM,expcat_input,energy_transportation,rural,D1,3.17719
+latest,GTM,expcat_input,energy_transportation,urban,D2,3.74895
+latest,GTM,expcat_input,energy_transportation,rural,D2,2.66321
+latest,GTM,expcat_input,energy_transportation,urban,D3,3.5664
+latest,GTM,expcat_input,energy_transportation,rural,D3,3.14504
+latest,GTM,expcat_input,energy_transportation,urban,D4,4.23428
+latest,GTM,expcat_input,energy_transportation,rural,D4,3.53428
+latest,GTM,expcat_input,energy_transportation,urban,D5,4.96927
+latest,GTM,expcat_input,energy_transportation,rural,D5,3.64929
+latest,GTM,expcat_input,energy_transportation,urban,D6,4.9942
+latest,GTM,expcat_input,energy_transportation,rural,D6,4.56095
+latest,GTM,expcat_input,energy_transportation,urban,D7,6.83325
+latest,GTM,expcat_input,energy_transportation,rural,D7,5.53632
+latest,GTM,expcat_input,energy_transportation,urban,D8,8.10436
+latest,GTM,expcat_input,energy_transportation,rural,D8,7.25627
+latest,GTM,expcat_input,energy_transportation,urban,D9,8.54686
+latest,GTM,expcat_input,energy_transportation,rural,D9,8.94855
+latest,GTM,expcat_input,energy_transportation,urban,D10,12.16092
+latest,GTM,expcat_input,energy_transportation,rural,D10,12.36794
+latest,GTM,incomecat,other,urban,D1,
+latest,GTM,incomecat,other,rural,D1,
+latest,GTM,incomecat,other,urban,D2,
+latest,GTM,incomecat,other,rural,D2,
+latest,GTM,incomecat,other,urban,D3,
+latest,GTM,incomecat,other,rural,D3,
+latest,GTM,incomecat,other,urban,D4,
+latest,GTM,incomecat,other,rural,D4,
+latest,GTM,incomecat,other,urban,D5,
+latest,GTM,incomecat,other,rural,D5,
+latest,GTM,incomecat,other,urban,D6,
+latest,GTM,incomecat,other,rural,D6,
+latest,GTM,incomecat,other,urban,D7,
+latest,GTM,incomecat,other,rural,D7,
+latest,GTM,incomecat,other,urban,D8,
+latest,GTM,incomecat,other,rural,D8,
+latest,GTM,incomecat,other,urban,D9,
+latest,GTM,incomecat,other,rural,D9,
+latest,GTM,incomecat,other,urban,D10,
+latest,GTM,incomecat,other,rural,D10,
+latest,GTM,incomecat,labour,urban,D1,74.58943
+latest,GTM,incomecat,labour,rural,D1,86.49352
+latest,GTM,incomecat,labour,urban,D2,85.8408
+latest,GTM,incomecat,labour,rural,D2,89.18254
+latest,GTM,incomecat,labour,urban,D3,87.83622
+latest,GTM,incomecat,labour,rural,D3,90.25987
+latest,GTM,incomecat,labour,urban,D4,90.90161
+latest,GTM,incomecat,labour,rural,D4,90.32447
+latest,GTM,incomecat,labour,urban,D5,92.7677
+latest,GTM,incomecat,labour,rural,D5,90.57434
+latest,GTM,incomecat,labour,urban,D6,91.61826
+latest,GTM,incomecat,labour,rural,D6,92.41236
+latest,GTM,incomecat,labour,urban,D7,91.98586
+latest,GTM,incomecat,labour,rural,D7,92.0945
+latest,GTM,incomecat,labour,urban,D8,91.79669
+latest,GTM,incomecat,labour,rural,D8,92.21593
+latest,GTM,incomecat,labour,urban,D9,93.47945
+latest,GTM,incomecat,labour,rural,D9,93.91333
+latest,GTM,incomecat,labour,urban,D10,91.36102
+latest,GTM,incomecat,labour,rural,D10,92.56113
+latest,GTM,incomecat,capital,urban,D1,0.76223
+latest,GTM,incomecat,capital,rural,D1,0.22351
+latest,GTM,incomecat,capital,urban,D2,0.42982
+latest,GTM,incomecat,capital,rural,D2,0.18956
+latest,GTM,incomecat,capital,urban,D3,0.45249
+latest,GTM,incomecat,capital,rural,D3,0.03187
+latest,GTM,incomecat,capital,urban,D4,0.59238
+latest,GTM,incomecat,capital,rural,D4,0.17911
+latest,GTM,incomecat,capital,urban,D5,0.44631
+latest,GTM,incomecat,capital,rural,D5,0.27112
+latest,GTM,incomecat,capital,urban,D6,0.68005
+latest,GTM,incomecat,capital,rural,D6,0.19746
+latest,GTM,incomecat,capital,urban,D7,1.02061
+latest,GTM,incomecat,capital,rural,D7,0.20246
+latest,GTM,incomecat,capital,urban,D8,0.92607
+latest,GTM,incomecat,capital,rural,D8,0.59938
+latest,GTM,incomecat,capital,urban,D9,0.88906
+latest,GTM,incomecat,capital,rural,D9,0.63013
+latest,GTM,incomecat,capital,urban,D10,1.24545
+latest,GTM,incomecat,capital,rural,D10,1.2387
+latest,GTM,incomecat,transfers,urban,D1,24.64834
+latest,GTM,incomecat,transfers,rural,D1,13.28296
+latest,GTM,incomecat,transfers,urban,D2,13.72938
+latest,GTM,incomecat,transfers,rural,D2,10.6279
+latest,GTM,incomecat,transfers,urban,D3,11.71129
+latest,GTM,incomecat,transfers,rural,D3,9.70826
+latest,GTM,incomecat,transfers,urban,D4,8.50601
+latest,GTM,incomecat,transfers,rural,D4,9.49642
+latest,GTM,incomecat,transfers,urban,D5,6.78599
+latest,GTM,incomecat,transfers,rural,D5,9.15454
+latest,GTM,incomecat,transfers,urban,D6,7.70169
+latest,GTM,incomecat,transfers,rural,D6,7.39018
+latest,GTM,incomecat,transfers,urban,D7,6.99353
+latest,GTM,incomecat,transfers,rural,D7,7.70304
+latest,GTM,incomecat,transfers,urban,D8,7.27724
+latest,GTM,incomecat,transfers,rural,D8,7.18469
+latest,GTM,incomecat,transfers,urban,D9,5.63149
+latest,GTM,incomecat,transfers,rural,D9,5.45653
+latest,GTM,incomecat,transfers,urban,D10,7.39353
+latest,GTM,incomecat,transfers,rural,D10,6.20017
+latest,GTM,incomecat,other,urban,D1,0
+latest,GTM,incomecat,other,rural,D1,1.00000000058387e-05
+latest,GTM,incomecat,other,urban,D2,0
+latest,GTM,incomecat,other,rural,D2,0
+latest,GTM,incomecat,other,urban,D3,0
+latest,GTM,incomecat,other,rural,D3,0
+latest,GTM,incomecat,other,urban,D4,0
+latest,GTM,incomecat,other,rural,D4,0
+latest,GTM,incomecat,other,urban,D5,0
+latest,GTM,incomecat,other,rural,D5,0
+latest,GTM,incomecat,other,urban,D6,0
+latest,GTM,incomecat,other,rural,D6,0
+latest,GTM,incomecat,other,urban,D7,0
+latest,GTM,incomecat,other,rural,D7,0
+latest,GTM,incomecat,other,urban,D8,0
+latest,GTM,incomecat,other,rural,D8,0
+latest,GTM,incomecat,other,urban,D9,0
+latest,GTM,incomecat,other,rural,D9,1.00000000058387e-05
+latest,GTM,incomecat,other,urban,D10,0
+latest,GTM,incomecat,other,rural,D10,0
+latest,GTM,savings_rate,,urban,D1,-403.232
+latest,GTM,savings_rate,,rural,D1,-130.4359
+latest,GTM,savings_rate,,urban,D2,-72.95721
+latest,GTM,savings_rate,,rural,D2,-37.87799
+latest,GTM,savings_rate,,urban,D3,-39.36727
+latest,GTM,savings_rate,,rural,D3,-15.64062
+latest,GTM,savings_rate,,urban,D4,-23.04592
+latest,GTM,savings_rate,,rural,D4,-4.85779
+latest,GTM,savings_rate,,urban,D5,-13.05719
+latest,GTM,savings_rate,,rural,D5,4.76924
+latest,GTM,savings_rate,,urban,D6,-2.92688
+latest,GTM,savings_rate,,rural,D6,16.43453
+latest,GTM,savings_rate,,urban,D7,2.81945
+latest,GTM,savings_rate,,rural,D7,19.97135
+latest,GTM,savings_rate,,urban,D8,14.86958
+latest,GTM,savings_rate,,rural,D8,29.14018
+latest,GTM,savings_rate,,urban,D9,22.85123
+latest,GTM,savings_rate,,rural,D9,32.68578
+latest,GTM,savings_rate,,urban,D10,36.35452
+latest,GTM,savings_rate,,rural,D10,54.70163
+latest,GTM,educat,No education,urban,D1,37.13552
+latest,GTM,educat,No education,rural,D1,40.80987
+latest,GTM,educat,No education,urban,D2,34.42584
+latest,GTM,educat,No education,rural,D2,38.89671
+latest,GTM,educat,No education,urban,D3,34.87452
+latest,GTM,educat,No education,rural,D3,37.48719
+latest,GTM,educat,No education,urban,D4,32.81826
+latest,GTM,educat,No education,rural,D4,38.35634
+latest,GTM,educat,No education,urban,D5,30.93282
+latest,GTM,educat,No education,rural,D5,37.89939
+latest,GTM,educat,No education,urban,D6,26.51416
+latest,GTM,educat,No education,rural,D6,34.08372
+latest,GTM,educat,No education,urban,D7,22.94915
+latest,GTM,educat,No education,rural,D7,34.84572
+latest,GTM,educat,No education,urban,D8,20.45419
+latest,GTM,educat,No education,rural,D8,33.65718
+latest,GTM,educat,No education,urban,D9,17.89214
+latest,GTM,educat,No education,rural,D9,27.85316
+latest,GTM,educat,No education,urban,D10,7.65749
+latest,GTM,educat,No education,rural,D10,17.5606
+latest,GTM,educat,Primary Education,urban,D1,10.9662
+latest,GTM,educat,Primary Education,rural,D1,10.0282
+latest,GTM,educat,Primary Education,urban,D2,11.05269
+latest,GTM,educat,Primary Education,rural,D2,11.64882
+latest,GTM,educat,Primary Education,urban,D3,13.95656
+latest,GTM,educat,Primary Education,rural,D3,12.68919
+latest,GTM,educat,Primary Education,urban,D4,13.75691
+latest,GTM,educat,Primary Education,rural,D4,11.28988
+latest,GTM,educat,Primary Education,urban,D5,14.07631
+latest,GTM,educat,Primary Education,rural,D5,13.92949
+latest,GTM,educat,Primary Education,urban,D6,14.80612
+latest,GTM,educat,Primary Education,rural,D6,14.39582
+latest,GTM,educat,Primary Education,urban,D7,16.45813
+latest,GTM,educat,Primary Education,rural,D7,15.51409
+latest,GTM,educat,Primary Education,urban,D8,14.13961
+latest,GTM,educat,Primary Education,rural,D8,17.12148
+latest,GTM,educat,Primary Education,urban,D9,12.70225
+latest,GTM,educat,Primary Education,rural,D9,15.15224
+latest,GTM,educat,Primary Education,urban,D10,9.42118
+latest,GTM,educat,Primary Education,rural,D10,13.56564
+latest,GTM,educat,Secondary Education,urban,D1,12.19553
+latest,GTM,educat,Secondary Education,rural,D1,5.23034
+latest,GTM,educat,Secondary Education,urban,D2,11.13195
+latest,GTM,educat,Secondary Education,rural,D2,4.82147
+latest,GTM,educat,Secondary Education,urban,D3,12.44557
+latest,GTM,educat,Secondary Education,rural,D3,6.86778
+latest,GTM,educat,Secondary Education,urban,D4,16.66349
+latest,GTM,educat,Secondary Education,rural,D4,7.57004
+latest,GTM,educat,Secondary Education,urban,D5,19.07442
+latest,GTM,educat,Secondary Education,rural,D5,8.36798
+latest,GTM,educat,Secondary Education,urban,D6,20.69465
+latest,GTM,educat,Secondary Education,rural,D6,12.33706
+latest,GTM,educat,Secondary Education,urban,D7,26.6441
+latest,GTM,educat,Secondary Education,rural,D7,14.05373
+latest,GTM,educat,Secondary Education,urban,D8,32.22791
+latest,GTM,educat,Secondary Education,rural,D8,17.52479
+latest,GTM,educat,Secondary Education,urban,D9,36.66582
+latest,GTM,educat,Secondary Education,rural,D9,25.47815
+latest,GTM,educat,Secondary Education,urban,D10,45.39361
+latest,GTM,educat,Secondary Education,rural,D10,30.07137
+latest,GTM,educat,Tertiary Education,urban,D1,0.4117
+latest,GTM,educat,Tertiary Education,rural,D1,0.062
+latest,GTM,educat,Tertiary Education,urban,D2,0.21037
+latest,GTM,educat,Tertiary Education,rural,D2,0.06827
+latest,GTM,educat,Tertiary Education,urban,D3,0.15778
+latest,GTM,educat,Tertiary Education,rural,D3,0.09933
+latest,GTM,educat,Tertiary Education,urban,D4,0.83163
+latest,GTM,educat,Tertiary Education,rural,D4,0.04842
+latest,GTM,educat,Tertiary Education,urban,D5,0.5749
+latest,GTM,educat,Tertiary Education,rural,D5,0.07184
+latest,GTM,educat,Tertiary Education,urban,D6,1.41993
+latest,GTM,educat,Tertiary Education,rural,D6,0.11599
+latest,GTM,educat,Tertiary Education,urban,D7,1.01057
+latest,GTM,educat,Tertiary Education,rural,D7,0.28785
+latest,GTM,educat,Tertiary Education,urban,D8,2.68605
+latest,GTM,educat,Tertiary Education,rural,D8,0.68651
+latest,GTM,educat,Tertiary Education,urban,D9,4.62795
+latest,GTM,educat,Tertiary Education,rural,D9,1.40045
+latest,GTM,educat,Tertiary Education,urban,D10,16.89097
+latest,GTM,educat,Tertiary Education,rural,D10,8.14873
+latest,GTM,inequality_index,gini,urban,0,0.46866
+latest,GTM,inequality_index,gini,rural,0,0.40756
+latest,GTM,inequality_index,absolute_poverty,urban,0,0.08888
+latest,GTM,inequality_index,absolute_poverty,rural,0,0.250371
+latest,GTM,household_size,,urban,D1,5.54002571105957
+latest,GTM,household_size,,rural,D1,6.67023277282715
+latest,GTM,household_size,,urban,D2,5.65804767608643
+latest,GTM,household_size,,rural,D2,6.61004543304443
+latest,GTM,household_size,,urban,D3,5.74588871002197
+latest,GTM,household_size,,rural,D3,6.64439725875854
+latest,GTM,household_size,,urban,D4,6.04489374160767
+latest,GTM,household_size,,rural,D4,6.78458118438721
+latest,GTM,household_size,,urban,D5,6.03062009811401
+latest,GTM,household_size,,rural,D5,6.42767095565796
+latest,GTM,household_size,,urban,D6,5.6441011428833
+latest,GTM,household_size,,rural,D6,6.6211085319519
+latest,GTM,household_size,,urban,D7,5.75661325454712
+latest,GTM,household_size,,rural,D7,6.19087553024292
+latest,GTM,household_size,,urban,D8,5.31748580932617
+latest,GTM,household_size,,rural,D8,5.91594743728638
+latest,GTM,household_size,,urban,D9,5.01926183700562
+latest,GTM,household_size,,rural,D9,5.56032276153564
+latest,GTM,household_size,,urban,D10,4.68059158325195
+latest,GTM,household_size,,rural,D10,6.11644840240479
+latest,GTM,expenditure_decile,,urban,D1,6.51954471894451
+latest,GTM,expenditure_decile,,rural,D1,6.14130287744035
+latest,GTM,expenditure_decile,,urban,D2,6.70888011062854
+latest,GTM,expenditure_decile,,rural,D2,6.64434894704296
+latest,GTM,expenditure_decile,,urban,D3,6.93585016462306
+latest,GTM,expenditure_decile,,rural,D3,7.232326135887
+latest,GTM,expenditure_decile,,urban,D4,7.58641980886627
+latest,GTM,expenditure_decile,,rural,D4,7.88409134117104
+latest,GTM,expenditure_decile,,urban,D5,8.29071567141848
+latest,GTM,expenditure_decile,,rural,D5,8.84956313921088
+latest,GTM,expenditure_decile,,urban,D6,8.98499068457973
+latest,GTM,expenditure_decile,,rural,D6,9.15319915585664
+latest,GTM,expenditure_decile,,urban,D7,10.3727830346564
+latest,GTM,expenditure_decile,,rural,D7,10.8118298505519
+latest,GTM,expenditure_decile,,urban,D8,11.5738904654133
+latest,GTM,expenditure_decile,,rural,D8,12.2543906319566
+latest,GTM,expenditure_decile,,urban,D9,14.4074973617062
+latest,GTM,expenditure_decile,,rural,D9,15.7340652922799
+latest,GTM,expenditure_decile,,urban,D10,25.138972698108
+latest,GTM,expenditure_decile,,rural,D10,21.4361855060431
+latest,GTM,income_decile,,urban,D1,2.01457325417846
+latest,GTM,income_decile,,rural,D1,1.96283368896068
+latest,GTM,income_decile,,urban,D2,3.17334711558466
+latest,GTM,income_decile,,rural,D2,3.14476067854691
+latest,GTM,income_decile,,urban,D3,4.0633882360947
+latest,GTM,income_decile,,rural,D3,4.08246545717561
+latest,GTM,income_decile,,urban,D4,5.03583475046307
+latest,GTM,income_decile,,rural,D4,4.93928681709702
+latest,GTM,income_decile,,urban,D5,6.0423014252917
+latest,GTM,income_decile,,rural,D5,6.10953172557304
+latest,GTM,income_decile,,urban,D6,7.14536759977847
+latest,GTM,income_decile,,rural,D6,7.17511157788411
+latest,GTM,income_decile,,urban,D7,8.78143187707435
+latest,GTM,income_decile,,rural,D7,8.85842311606632
+latest,GTM,income_decile,,urban,D8,11.1493880721962
+latest,GTM,income_decile,,rural,D8,11.2967273811073
+latest,GTM,income_decile,,urban,D9,15.357119339578
+latest,GTM,income_decile,,rural,D9,15.3047465665994
+latest,GTM,income_decile,,urban,D10,37.2372483297603
+latest,GTM,income_decile,,rural,D10,37.1261129909896
+latest,GTM,,,urban,,2.870347
+latest,GTM,,,rural,,3.233362
+latest,IND,expcat_input,food,urban,D1,45.60668
+latest,IND,expcat_input,food,rural,D1,51.46751
+latest,IND,expcat_input,food,urban,D2,49.04625
+latest,IND,expcat_input,food,rural,D2,52.48438
+latest,IND,expcat_input,food,urban,D3,48.84786
+latest,IND,expcat_input,food,rural,D3,53.00469
+latest,IND,expcat_input,food,urban,D4,48.07933
+latest,IND,expcat_input,food,rural,D4,52.11056
+latest,IND,expcat_input,food,urban,D5,46.65826
+latest,IND,expcat_input,food,rural,D5,52.45726
+latest,IND,expcat_input,food,urban,D6,45.76153
+latest,IND,expcat_input,food,rural,D6,50.32476
+latest,IND,expcat_input,food,urban,D7,45.14632
+latest,IND,expcat_input,food,rural,D7,50.29489
+latest,IND,expcat_input,food,urban,D8,42.73394
+latest,IND,expcat_input,food,rural,D8,47.23632
+latest,IND,expcat_input,food,urban,D9,39.97616
+latest,IND,expcat_input,food,rural,D9,46.06536
+latest,IND,expcat_input,food,urban,D10,34.34534
+latest,IND,expcat_input,food,rural,D10,40.27837
+latest,IND,expcat_input,energy_housing,urban,D1,10.02053
+latest,IND,expcat_input,energy_housing,rural,D1,8.09843
+latest,IND,expcat_input,energy_housing,urban,D2,9.74399
+latest,IND,expcat_input,energy_housing,rural,D2,7.93612
+latest,IND,expcat_input,energy_housing,urban,D3,9.99038
+latest,IND,expcat_input,energy_housing,rural,D3,7.59908
+latest,IND,expcat_input,energy_housing,urban,D4,9.98762
+latest,IND,expcat_input,energy_housing,rural,D4,7.59326
+latest,IND,expcat_input,energy_housing,urban,D5,10.02838
+latest,IND,expcat_input,energy_housing,rural,D5,7.45539
+latest,IND,expcat_input,energy_housing,urban,D6,9.50114
+latest,IND,expcat_input,energy_housing,rural,D6,7.29483
+latest,IND,expcat_input,energy_housing,urban,D7,9.21262
+latest,IND,expcat_input,energy_housing,rural,D7,7.2228
+latest,IND,expcat_input,energy_housing,urban,D8,8.94695
+latest,IND,expcat_input,energy_housing,rural,D8,6.67029
+latest,IND,expcat_input,energy_housing,urban,D9,8.8097
+latest,IND,expcat_input,energy_housing,rural,D9,6.59214
+latest,IND,expcat_input,energy_housing,urban,D10,7.82596
+latest,IND,expcat_input,energy_housing,rural,D10,6.17688
+latest,IND,expcat_input,energy_transportation,urban,D1,6.41391
+latest,IND,expcat_input,energy_transportation,rural,D1,4.3975
+latest,IND,expcat_input,energy_transportation,urban,D2,4.50583
+latest,IND,expcat_input,energy_transportation,rural,D2,3.97432
+latest,IND,expcat_input,energy_transportation,urban,D3,4.14943
+latest,IND,expcat_input,energy_transportation,rural,D3,4.18664
+latest,IND,expcat_input,energy_transportation,urban,D4,4.97116
+latest,IND,expcat_input,energy_transportation,rural,D4,4.47614
+latest,IND,expcat_input,energy_transportation,urban,D5,5.35394
+latest,IND,expcat_input,energy_transportation,rural,D5,4.77936
+latest,IND,expcat_input,energy_transportation,urban,D6,6.12024
+latest,IND,expcat_input,energy_transportation,rural,D6,5.30592
+latest,IND,expcat_input,energy_transportation,urban,D7,6.52282
+latest,IND,expcat_input,energy_transportation,rural,D7,6.09664
+latest,IND,expcat_input,energy_transportation,urban,D8,7.5539
+latest,IND,expcat_input,energy_transportation,rural,D8,7.7361
+latest,IND,expcat_input,energy_transportation,urban,D9,9.53588
+latest,IND,expcat_input,energy_transportation,rural,D9,8.79627
+latest,IND,expcat_input,energy_transportation,urban,D10,11.75917
+latest,IND,expcat_input,energy_transportation,rural,D10,10.72783
+latest,IND,incomecat,other,urban,D1,
+latest,IND,incomecat,other,rural,D1,
+latest,IND,incomecat,other,urban,D2,
+latest,IND,incomecat,other,rural,D2,
+latest,IND,incomecat,other,urban,D3,
+latest,IND,incomecat,other,rural,D3,
+latest,IND,incomecat,other,urban,D4,
+latest,IND,incomecat,other,rural,D4,
+latest,IND,incomecat,other,urban,D5,
+latest,IND,incomecat,other,rural,D5,
+latest,IND,incomecat,other,urban,D6,
+latest,IND,incomecat,other,rural,D6,
+latest,IND,incomecat,other,urban,D7,
+latest,IND,incomecat,other,rural,D7,
+latest,IND,incomecat,other,urban,D8,
+latest,IND,incomecat,other,rural,D8,
+latest,IND,incomecat,other,urban,D9,
+latest,IND,incomecat,other,rural,D9,
+latest,IND,incomecat,other,urban,D10,
+latest,IND,incomecat,other,rural,D10,
+latest,IND,incomecat,labour,urban,D1,68.01342
+latest,IND,incomecat,labour,rural,D1,80.54304
+latest,IND,incomecat,labour,urban,D2,84.45811
+latest,IND,incomecat,labour,rural,D2,82.67372
+latest,IND,incomecat,labour,urban,D3,88.70883
+latest,IND,incomecat,labour,rural,D3,85.13237
+latest,IND,incomecat,labour,urban,D4,88.96174
+latest,IND,incomecat,labour,rural,D4,85.24327
+latest,IND,incomecat,labour,urban,D5,88.92042
+latest,IND,incomecat,labour,rural,D5,86.51519
+latest,IND,incomecat,labour,urban,D6,88.75594
+latest,IND,incomecat,labour,rural,D6,85.864
+latest,IND,incomecat,labour,urban,D7,88.93607
+latest,IND,incomecat,labour,rural,D7,86.43464
+latest,IND,incomecat,labour,urban,D8,87.13951
+latest,IND,incomecat,labour,rural,D8,83.75477
+latest,IND,incomecat,labour,urban,D9,86.61251
+latest,IND,incomecat,labour,rural,D9,85.35967
+latest,IND,incomecat,labour,urban,D10,87.39726
+latest,IND,incomecat,labour,rural,D10,87.24222
+latest,IND,incomecat,capital,urban,D1,1.99267
+latest,IND,incomecat,capital,rural,D1,0.06111
+latest,IND,incomecat,capital,urban,D2,1.61652
+latest,IND,incomecat,capital,rural,D2,0.13996
+latest,IND,incomecat,capital,urban,D3,0.56882
+latest,IND,incomecat,capital,rural,D3,0.15711
+latest,IND,incomecat,capital,urban,D4,1.23859
+latest,IND,incomecat,capital,rural,D4,0.11589
+latest,IND,incomecat,capital,urban,D5,1.34274
+latest,IND,incomecat,capital,rural,D5,0.16125
+latest,IND,incomecat,capital,urban,D6,1.03557
+latest,IND,incomecat,capital,rural,D6,0.24426
+latest,IND,incomecat,capital,urban,D7,1.53695
+latest,IND,incomecat,capital,rural,D7,0.20901
+latest,IND,incomecat,capital,urban,D8,1.31991
+latest,IND,incomecat,capital,rural,D8,0.20394
+latest,IND,incomecat,capital,urban,D9,1.6432
+latest,IND,incomecat,capital,rural,D9,0.49448
+latest,IND,incomecat,capital,urban,D10,2.10791
+latest,IND,incomecat,capital,rural,D10,0.72629
+latest,IND,incomecat,transfers,urban,D1,29.9939
+latest,IND,incomecat,transfers,rural,D1,19.39585
+latest,IND,incomecat,transfers,urban,D2,13.92536
+latest,IND,incomecat,transfers,rural,D2,17.18632
+latest,IND,incomecat,transfers,urban,D3,10.72235
+latest,IND,incomecat,transfers,rural,D3,14.71052
+latest,IND,incomecat,transfers,urban,D4,9.79967
+latest,IND,incomecat,transfers,rural,D4,14.64085
+latest,IND,incomecat,transfers,urban,D5,9.73684
+latest,IND,incomecat,transfers,rural,D5,13.32355
+latest,IND,incomecat,transfers,urban,D6,10.20849
+latest,IND,incomecat,transfers,rural,D6,13.89173
+latest,IND,incomecat,transfers,urban,D7,9.52698
+latest,IND,incomecat,transfers,rural,D7,13.35635
+latest,IND,incomecat,transfers,urban,D8,11.54058
+latest,IND,incomecat,transfers,rural,D8,16.04129
+latest,IND,incomecat,transfers,urban,D9,11.74428
+latest,IND,incomecat,transfers,rural,D9,14.14585
+latest,IND,incomecat,transfers,urban,D10,10.49484
+latest,IND,incomecat,transfers,rural,D10,12.03149
+latest,IND,incomecat,other,urban,D1,9.99999999473644e-06
+latest,IND,incomecat,other,rural,D1,0
+latest,IND,incomecat,other,urban,D2,1.00000000058387e-05
+latest,IND,incomecat,other,rural,D2,0
+latest,IND,incomecat,other,urban,D3,0
+latest,IND,incomecat,other,rural,D3,0
+latest,IND,incomecat,other,urban,D4,0
+latest,IND,incomecat,other,rural,D4,-1.00000000058387e-05
+latest,IND,incomecat,other,urban,D5,0
+latest,IND,incomecat,other,rural,D5,1.00000000058387e-05
+latest,IND,incomecat,other,urban,D6,0
+latest,IND,incomecat,other,rural,D6,1.00000000058387e-05
+latest,IND,incomecat,other,urban,D7,0
+latest,IND,incomecat,other,rural,D7,0
+latest,IND,incomecat,other,urban,D8,0
+latest,IND,incomecat,other,rural,D8,0
+latest,IND,incomecat,other,urban,D9,1.00000000058387e-05
+latest,IND,incomecat,other,rural,D9,0
+latest,IND,incomecat,other,urban,D10,-1.00000000058387e-05
+latest,IND,incomecat,other,rural,D10,0
+latest,IND,savings_rate,,urban,D1,-1288.817
+latest,IND,savings_rate,,rural,D1,60.24278
+latest,IND,savings_rate,,urban,D2,-176.5468
+latest,IND,savings_rate,,rural,D2,-108.8307
+latest,IND,savings_rate,,urban,D3,-105.3463
+latest,IND,savings_rate,,rural,D3,-62.62509
+latest,IND,savings_rate,,urban,D4,-74.23088
+latest,IND,savings_rate,,rural,D4,-41.80723
+latest,IND,savings_rate,,urban,D5,-52.6207
+latest,IND,savings_rate,,rural,D5,-21.44633
+latest,IND,savings_rate,,urban,D6,-35.87801
+latest,IND,savings_rate,,rural,D6,-14.26118
+latest,IND,savings_rate,,urban,D7,-16.39011
+latest,IND,savings_rate,,rural,D7,5.37696
+latest,IND,savings_rate,,urban,D8,1.69925
+latest,IND,savings_rate,,rural,D8,12.08746
+latest,IND,savings_rate,,urban,D9,17.23189
+latest,IND,savings_rate,,rural,D9,26.92952
+latest,IND,savings_rate,,urban,D10,40.17154
+latest,IND,savings_rate,,rural,D10,50.02287
+latest,IND,educat,No education,urban,D1,20.75368
+latest,IND,educat,No education,rural,D1,32.62804
+latest,IND,educat,No education,urban,D2,23.29246
+latest,IND,educat,No education,rural,D2,32.35667
+latest,IND,educat,No education,urban,D3,22.66456
+latest,IND,educat,No education,rural,D3,32.21171
+latest,IND,educat,No education,urban,D4,22.15631
+latest,IND,educat,No education,rural,D4,31.94472
+latest,IND,educat,No education,urban,D5,19.87807
+latest,IND,educat,No education,rural,D5,31.22583
+latest,IND,educat,No education,urban,D6,19.9901
+latest,IND,educat,No education,rural,D6,29.30805
+latest,IND,educat,No education,urban,D7,17.56676
+latest,IND,educat,No education,rural,D7,27.17053
+latest,IND,educat,No education,urban,D8,14.71581
+latest,IND,educat,No education,rural,D8,26.36815
+latest,IND,educat,No education,urban,D9,11.15468
+latest,IND,educat,No education,rural,D9,21.91044
+latest,IND,educat,No education,urban,D10,5.90359
+latest,IND,educat,No education,rural,D10,16.41436
+latest,IND,educat,Primary Education,urban,D1,23.32741
+latest,IND,educat,Primary Education,rural,D1,21.94162
+latest,IND,educat,Primary Education,urban,D2,27.30551
+latest,IND,educat,Primary Education,rural,D2,23.32422
+latest,IND,educat,Primary Education,urban,D3,27.19474
+latest,IND,educat,Primary Education,rural,D3,23.14419
+latest,IND,educat,Primary Education,urban,D4,27.45011
+latest,IND,educat,Primary Education,rural,D4,23.93037
+latest,IND,educat,Primary Education,urban,D5,27.57973
+latest,IND,educat,Primary Education,rural,D5,25.64282
+latest,IND,educat,Primary Education,urban,D6,28.8058
+latest,IND,educat,Primary Education,rural,D6,26.10115
+latest,IND,educat,Primary Education,urban,D7,30.12761
+latest,IND,educat,Primary Education,rural,D7,27.29178
+latest,IND,educat,Primary Education,urban,D8,28.54408
+latest,IND,educat,Primary Education,rural,D8,26.99566
+latest,IND,educat,Primary Education,urban,D9,25.54173
+latest,IND,educat,Primary Education,rural,D9,26.57551
+latest,IND,educat,Primary Education,urban,D10,16.48866
+latest,IND,educat,Primary Education,rural,D10,23.55546
+latest,IND,educat,Secondary Education,urban,D1,20.8008
+latest,IND,educat,Secondary Education,rural,D1,9.67285
+latest,IND,educat,Secondary Education,urban,D2,14.60164
+latest,IND,educat,Secondary Education,rural,D2,8.6106
+latest,IND,educat,Secondary Education,urban,D3,15.49311
+latest,IND,educat,Secondary Education,rural,D3,9.33011
+latest,IND,educat,Secondary Education,urban,D4,16.37767
+latest,IND,educat,Secondary Education,rural,D4,9.97601
+latest,IND,educat,Secondary Education,urban,D5,19.02478
+latest,IND,educat,Secondary Education,rural,D5,10.65801
+latest,IND,educat,Secondary Education,urban,D6,18.24514
+latest,IND,educat,Secondary Education,rural,D6,12.43801
+latest,IND,educat,Secondary Education,urban,D7,20.8373
+latest,IND,educat,Secondary Education,rural,D7,15.53627
+latest,IND,educat,Secondary Education,urban,D8,25.09539
+latest,IND,educat,Secondary Education,rural,D8,17.06043
+latest,IND,educat,Secondary Education,urban,D9,29.19219
+latest,IND,educat,Secondary Education,rural,D9,21.50215
+latest,IND,educat,Secondary Education,urban,D10,31.50323
+latest,IND,educat,Secondary Education,rural,D10,27.15536
+latest,IND,educat,Tertiary Education,urban,D1,7.52681
+latest,IND,educat,Tertiary Education,rural,D1,1.38713
+latest,IND,educat,Tertiary Education,urban,D2,3.90014
+latest,IND,educat,Tertiary Education,rural,D2,1.11284
+latest,IND,educat,Tertiary Education,urban,D3,3.7304
+latest,IND,educat,Tertiary Education,rural,D3,1.06738
+latest,IND,educat,Tertiary Education,urban,D4,3.52425
+latest,IND,educat,Tertiary Education,rural,D4,1.34691
+latest,IND,educat,Tertiary Education,urban,D5,4.49999
+latest,IND,educat,Tertiary Education,rural,D5,1.76824
+latest,IND,educat,Tertiary Education,urban,D6,6.09078
+latest,IND,educat,Tertiary Education,rural,D6,2.30286
+latest,IND,educat,Tertiary Education,urban,D7,5.67694
+latest,IND,educat,Tertiary Education,rural,D7,2.77684
+latest,IND,educat,Tertiary Education,urban,D8,8.19759
+latest,IND,educat,Tertiary Education,rural,D8,4.37823
+latest,IND,educat,Tertiary Education,urban,D9,13.14383
+latest,IND,educat,Tertiary Education,rural,D9,6.41563
+latest,IND,educat,Tertiary Education,urban,D10,28.1381
+latest,IND,educat,Tertiary Education,rural,D10,12.18777
+latest,IND,inequality_index,gini,urban,0,0.48598
+latest,IND,inequality_index,gini,rural,0,0.50417
+latest,IND,inequality_index,absolute_poverty,urban,0,0.07891
+latest,IND,inequality_index,absolute_poverty,rural,0,0.258252
+latest,IND,household_size,,urban,D1,5.44602870941162
+latest,IND,household_size,,rural,D1,6.08141136169434
+latest,IND,household_size,,urban,D2,6.56632089614868
+latest,IND,household_size,,rural,D2,6.01858520507813
+latest,IND,household_size,,urban,D3,6.05926847457886
+latest,IND,household_size,,rural,D3,5.99124622344971
+latest,IND,household_size,,urban,D4,6.15005207061768
+latest,IND,household_size,,rural,D4,5.899977684021
+latest,IND,household_size,,urban,D5,5.97490119934082
+latest,IND,household_size,,rural,D5,5.84264707565308
+latest,IND,household_size,,urban,D6,5.86240768432617
+latest,IND,household_size,,rural,D6,5.89719009399414
+latest,IND,household_size,,urban,D7,5.89229393005371
+latest,IND,household_size,,rural,D7,5.72958755493164
+latest,IND,household_size,,urban,D8,5.66036796569824
+latest,IND,household_size,,rural,D8,5.77143907546997
+latest,IND,household_size,,urban,D9,5.4926438331604
+latest,IND,household_size,,rural,D9,6.01957130432129
+latest,IND,household_size,,urban,D10,5.10469198226929
+latest,IND,household_size,,rural,D10,5.75306463241577
+latest,IND,expenditure_decile,,urban,D1,10.8614206752869
+latest,IND,expenditure_decile,,rural,D1,7.61735841862777
+latest,IND,expenditure_decile,,urban,D2,7.53932925315027
+latest,IND,expenditure_decile,,rural,D2,6.88374896650903
+latest,IND,expenditure_decile,,urban,D3,7.66515944229846
+latest,IND,expenditure_decile,,rural,D3,7.26656534805129
+latest,IND,expenditure_decile,,urban,D4,8.10025240149522
+latest,IND,expenditure_decile,,rural,D4,8.05240436932269
+latest,IND,expenditure_decile,,urban,D5,8.78806213769977
+latest,IND,expenditure_decile,,rural,D5,8.5553908562873
+latest,IND,expenditure_decile,,urban,D6,9.62675263404625
+latest,IND,expenditure_decile,,rural,D6,9.86762996527952
+latest,IND,expenditure_decile,,urban,D7,10.3888255618352
+latest,IND,expenditure_decile,,rural,D7,10.3778229500796
+latest,IND,expenditure_decile,,urban,D8,11.6176752210258
+latest,IND,expenditure_decile,,rural,D8,12.6686072425604
+latest,IND,expenditure_decile,,urban,D9,14.1411415010451
+latest,IND,expenditure_decile,,rural,D9,15.0668174652231
+latest,IND,expenditure_decile,,urban,D10,22.1328018474039
+latest,IND,expenditure_decile,,rural,D10,21.261012836687
+latest,IND,income_decile,,urban,D1,0.661844904894705
+latest,IND,income_decile,,rural,D1,1.01358881341639
+latest,IND,income_decile,,urban,D2,2.63101032260891
+latest,IND,income_decile,,rural,D2,2.6085824774457
+latest,IND,income_decile,,urban,D3,3.56479329200831
+latest,IND,income_decile,,rural,D3,3.52012379455287
+latest,IND,income_decile,,urban,D4,4.46253818718448
+latest,IND,income_decile,,rural,D4,4.48242616802201
+latest,IND,income_decile,,urban,D5,5.5258288219349
+latest,IND,income_decile,,rural,D5,5.54656891159541
+latest,IND,income_decile,,urban,D6,6.81337736225194
+latest,IND,income_decile,,rural,D6,6.81169975471278
+latest,IND,income_decile,,urban,D7,8.57454464997476
+latest,IND,income_decile,,rural,D7,8.63304013888768
+latest,IND,income_decile,,urban,D8,11.4016951381436
+latest,IND,income_decile,,rural,D8,11.337634375366
+latest,IND,income_decile,,urban,D9,16.4960887419044
+latest,IND,income_decile,,rural,D9,16.2492539224475
+latest,IND,income_decile,,urban,D10,39.8682785790939
+latest,IND,income_decile,,rural,D10,39.7970816435536
+latest,IND,,,urban,,3.06547
+latest,IND,,,rural,,3.091515
+latest,CIV,expcat_input,food,urban,D1,40.81576
+latest,CIV,expcat_input,food,rural,D1,48.77209
+latest,CIV,expcat_input,food,urban,D2,45.34052
+latest,CIV,expcat_input,food,rural,D2,55.9131
+latest,CIV,expcat_input,food,urban,D3,44.37515
+latest,CIV,expcat_input,food,rural,D3,57.72646
+latest,CIV,expcat_input,food,urban,D4,45.73174
+latest,CIV,expcat_input,food,rural,D4,56.09275
+latest,CIV,expcat_input,food,urban,D5,40.50562
+latest,CIV,expcat_input,food,rural,D5,56.19923
+latest,CIV,expcat_input,food,urban,D6,39.47507
+latest,CIV,expcat_input,food,rural,D6,56.99853
+latest,CIV,expcat_input,food,urban,D7,35.59351
+latest,CIV,expcat_input,food,rural,D7,55.18137
+latest,CIV,expcat_input,food,urban,D8,34.15167
+latest,CIV,expcat_input,food,rural,D8,53.35307
+latest,CIV,expcat_input,food,urban,D9,32.20084
+latest,CIV,expcat_input,food,rural,D9,50.19074
+latest,CIV,expcat_input,food,urban,D10,26.27214
+latest,CIV,expcat_input,food,rural,D10,55.97461
+latest,CIV,expcat_input,energy_housing,urban,D1,10.95736
+latest,CIV,expcat_input,energy_housing,rural,D1,4.47989
+latest,CIV,expcat_input,energy_housing,urban,D2,7.51929
+latest,CIV,expcat_input,energy_housing,rural,D2,3.71963
+latest,CIV,expcat_input,energy_housing,urban,D3,8.21502
+latest,CIV,expcat_input,energy_housing,rural,D3,3.05382
+latest,CIV,expcat_input,energy_housing,urban,D4,8.25591
+latest,CIV,expcat_input,energy_housing,rural,D4,3.46145
+latest,CIV,expcat_input,energy_housing,urban,D5,8.1033
+latest,CIV,expcat_input,energy_housing,rural,D5,3.12996
+latest,CIV,expcat_input,energy_housing,urban,D6,7.43472
+latest,CIV,expcat_input,energy_housing,rural,D6,3.43577
+latest,CIV,expcat_input,energy_housing,urban,D7,8.04392
+latest,CIV,expcat_input,energy_housing,rural,D7,2.92274
+latest,CIV,expcat_input,energy_housing,urban,D8,8.16738
+latest,CIV,expcat_input,energy_housing,rural,D8,3.03517
+latest,CIV,expcat_input,energy_housing,urban,D9,7.77356
+latest,CIV,expcat_input,energy_housing,rural,D9,3.14409
+latest,CIV,expcat_input,energy_housing,urban,D10,7.36952
+latest,CIV,expcat_input,energy_housing,rural,D10,2.96976
+latest,CIV,expcat_input,energy_transportation,urban,D1,8.37157
+latest,CIV,expcat_input,energy_transportation,rural,D1,8.32693
+latest,CIV,expcat_input,energy_transportation,urban,D2,8.23749
+latest,CIV,expcat_input,energy_transportation,rural,D2,7.37234
+latest,CIV,expcat_input,energy_transportation,urban,D3,9.64414
+latest,CIV,expcat_input,energy_transportation,rural,D3,8.77907
+latest,CIV,expcat_input,energy_transportation,urban,D4,9.47037
+latest,CIV,expcat_input,energy_transportation,rural,D4,8.8404
+latest,CIV,expcat_input,energy_transportation,urban,D5,11.85736
+latest,CIV,expcat_input,energy_transportation,rural,D5,9.80623
+latest,CIV,expcat_input,energy_transportation,urban,D6,11.29019
+latest,CIV,expcat_input,energy_transportation,rural,D6,9.59054
+latest,CIV,expcat_input,energy_transportation,urban,D7,12.34113
+latest,CIV,expcat_input,energy_transportation,rural,D7,10.48267
+latest,CIV,expcat_input,energy_transportation,urban,D8,13.64704
+latest,CIV,expcat_input,energy_transportation,rural,D8,12.21306
+latest,CIV,expcat_input,energy_transportation,urban,D9,15.16615
+latest,CIV,expcat_input,energy_transportation,rural,D9,13.24598
+latest,CIV,expcat_input,energy_transportation,urban,D10,16.90253
+latest,CIV,expcat_input,energy_transportation,rural,D10,11.20644
+latest,CIV,incomecat,other,urban,D1,
+latest,CIV,incomecat,other,rural,D1,
+latest,CIV,incomecat,other,urban,D2,
+latest,CIV,incomecat,other,rural,D2,
+latest,CIV,incomecat,other,urban,D3,
+latest,CIV,incomecat,other,rural,D3,
+latest,CIV,incomecat,other,urban,D4,
+latest,CIV,incomecat,other,rural,D4,
+latest,CIV,incomecat,other,urban,D5,
+latest,CIV,incomecat,other,rural,D5,
+latest,CIV,incomecat,other,urban,D6,
+latest,CIV,incomecat,other,rural,D6,
+latest,CIV,incomecat,other,urban,D7,
+latest,CIV,incomecat,other,rural,D7,
+latest,CIV,incomecat,other,urban,D8,
+latest,CIV,incomecat,other,rural,D8,
+latest,CIV,incomecat,other,urban,D9,
+latest,CIV,incomecat,other,rural,D9,
+latest,CIV,incomecat,other,urban,D10,
+latest,CIV,incomecat,other,rural,D10,
+latest,CIV,incomecat,labour,urban,D1,72.75944
+latest,CIV,incomecat,labour,rural,D1,84.9966
+latest,CIV,incomecat,labour,urban,D2,75.42021
+latest,CIV,incomecat,labour,rural,D2,88.98144
+latest,CIV,incomecat,labour,urban,D3,76.94652
+latest,CIV,incomecat,labour,rural,D3,89.97903
+latest,CIV,incomecat,labour,urban,D4,80.00818
+latest,CIV,incomecat,labour,rural,D4,90.073
+latest,CIV,incomecat,labour,urban,D5,82.20653
+latest,CIV,incomecat,labour,rural,D5,89.87491
+latest,CIV,incomecat,labour,urban,D6,81.62326
+latest,CIV,incomecat,labour,rural,D6,90.31417
+latest,CIV,incomecat,labour,urban,D7,83.59428
+latest,CIV,incomecat,labour,rural,D7,90.90404
+latest,CIV,incomecat,labour,urban,D8,86.70372
+latest,CIV,incomecat,labour,rural,D8,90.99032
+latest,CIV,incomecat,labour,urban,D9,87.25098
+latest,CIV,incomecat,labour,rural,D9,92.00214
+latest,CIV,incomecat,labour,urban,D10,85.23245
+latest,CIV,incomecat,labour,rural,D10,90.54822
+latest,CIV,incomecat,capital,urban,D1,3.0633
+latest,CIV,incomecat,capital,rural,D1,0.77051
+latest,CIV,incomecat,capital,urban,D2,3.44925
+latest,CIV,incomecat,capital,rural,D2,0.61925
+latest,CIV,incomecat,capital,urban,D3,2.04503
+latest,CIV,incomecat,capital,rural,D3,0.96718
+latest,CIV,incomecat,capital,urban,D4,3.0615
+latest,CIV,incomecat,capital,rural,D4,0.96567
+latest,CIV,incomecat,capital,urban,D5,3.34732
+latest,CIV,incomecat,capital,rural,D5,0.89764
+latest,CIV,incomecat,capital,urban,D6,2.50229
+latest,CIV,incomecat,capital,rural,D6,0.8521
+latest,CIV,incomecat,capital,urban,D7,3.51351
+latest,CIV,incomecat,capital,rural,D7,0.95562
+latest,CIV,incomecat,capital,urban,D8,1.44371
+latest,CIV,incomecat,capital,rural,D8,1.23966
+latest,CIV,incomecat,capital,urban,D9,2.50623
+latest,CIV,incomecat,capital,rural,D9,1.76068
+latest,CIV,incomecat,capital,urban,D10,3.1024
+latest,CIV,incomecat,capital,rural,D10,1.86032
+latest,CIV,incomecat,transfers,urban,D1,24.17727
+latest,CIV,incomecat,transfers,rural,D1,14.23289
+latest,CIV,incomecat,transfers,urban,D2,21.13054
+latest,CIV,incomecat,transfers,rural,D2,10.39931
+latest,CIV,incomecat,transfers,urban,D3,21.00845
+latest,CIV,incomecat,transfers,rural,D3,9.05379
+latest,CIV,incomecat,transfers,urban,D4,16.93032
+latest,CIV,incomecat,transfers,rural,D4,8.96134
+latest,CIV,incomecat,transfers,urban,D5,14.44616
+latest,CIV,incomecat,transfers,rural,D5,9.22746
+latest,CIV,incomecat,transfers,urban,D6,15.87445
+latest,CIV,incomecat,transfers,rural,D6,8.83373
+latest,CIV,incomecat,transfers,urban,D7,12.8922
+latest,CIV,incomecat,transfers,rural,D7,8.14034
+latest,CIV,incomecat,transfers,urban,D8,11.85257
+latest,CIV,incomecat,transfers,rural,D8,7.77001
+latest,CIV,incomecat,transfers,urban,D9,10.24279
+latest,CIV,incomecat,transfers,rural,D9,6.23718
+latest,CIV,incomecat,transfers,urban,D10,11.66516
+latest,CIV,incomecat,transfers,rural,D10,7.59146
+latest,CIV,incomecat,other,urban,D1,-1.00000000058387e-05
+latest,CIV,incomecat,other,rural,D1,0
+latest,CIV,incomecat,other,urban,D2,0
+latest,CIV,incomecat,other,rural,D2,0
+latest,CIV,incomecat,other,urban,D3,0
+latest,CIV,incomecat,other,rural,D3,0
+latest,CIV,incomecat,other,urban,D4,0
+latest,CIV,incomecat,other,rural,D4,-1.00000000058387e-05
+latest,CIV,incomecat,other,urban,D5,-1.00000000058387e-05
+latest,CIV,incomecat,other,rural,D5,-1.00000000058387e-05
+latest,CIV,incomecat,other,urban,D6,0
+latest,CIV,incomecat,other,rural,D6,0
+latest,CIV,incomecat,other,urban,D7,1.00000000058387e-05
+latest,CIV,incomecat,other,rural,D7,0
+latest,CIV,incomecat,other,urban,D8,0
+latest,CIV,incomecat,other,rural,D8,9.99999999473644e-06
+latest,CIV,incomecat,other,urban,D9,0
+latest,CIV,incomecat,other,rural,D9,0
+latest,CIV,incomecat,other,urban,D10,-1.00000000058387e-05
+latest,CIV,incomecat,other,rural,D10,0
+latest,CIV,savings_rate,,urban,D1,-10723.69
+latest,CIV,savings_rate,,rural,D1,-1734.198
+latest,CIV,savings_rate,,urban,D2,-321.5967
+latest,CIV,savings_rate,,rural,D2,-159.9706
+latest,CIV,savings_rate,,urban,D3,-181.89
+latest,CIV,savings_rate,,rural,D3,-84.06919
+latest,CIV,savings_rate,,urban,D4,-115.3841
+latest,CIV,savings_rate,,rural,D4,-59.63302
+latest,CIV,savings_rate,,urban,D5,-91.0585
+latest,CIV,savings_rate,,rural,D5,-33.63025
+latest,CIV,savings_rate,,urban,D6,-57.2395
+latest,CIV,savings_rate,,rural,D6,-14.50826
+latest,CIV,savings_rate,,urban,D7,-43.00645
+latest,CIV,savings_rate,,rural,D7,-1.93687
+latest,CIV,savings_rate,,urban,D8,-5.9902
+latest,CIV,savings_rate,,rural,D8,8.82016
+latest,CIV,savings_rate,,urban,D9,-0.96797
+latest,CIV,savings_rate,,rural,D9,24.61879
+latest,CIV,savings_rate,,urban,D10,31.81662
+latest,CIV,savings_rate,,rural,D10,40.6455
+latest,CIV,educat,No education,urban,D1,37.37859
+latest,CIV,educat,No education,rural,D1,48.85544
+latest,CIV,educat,No education,urban,D2,36.97695
+latest,CIV,educat,No education,rural,D2,43.74975
+latest,CIV,educat,No education,urban,D3,35.52064
+latest,CIV,educat,No education,rural,D3,47.26682
+latest,CIV,educat,No education,urban,D4,36.66661
+latest,CIV,educat,No education,rural,D4,45.14533
+latest,CIV,educat,No education,urban,D5,38.72156
+latest,CIV,educat,No education,rural,D5,45.17216
+latest,CIV,educat,No education,urban,D6,36.36836
+latest,CIV,educat,No education,rural,D6,47.36703
+latest,CIV,educat,No education,urban,D7,34.53426
+latest,CIV,educat,No education,rural,D7,48.94253
+latest,CIV,educat,No education,urban,D8,34.72212
+latest,CIV,educat,No education,rural,D8,48.24355
+latest,CIV,educat,No education,urban,D9,31.56233
+latest,CIV,educat,No education,rural,D9,50.86007
+latest,CIV,educat,No education,urban,D10,25.71446
+latest,CIV,educat,No education,rural,D10,51.48293
+latest,CIV,educat,Primary Education,urban,D1,12.44839
+latest,CIV,educat,Primary Education,rural,D1,5.12112
+latest,CIV,educat,Primary Education,urban,D2,11.47331
+latest,CIV,educat,Primary Education,rural,D2,4.75092
+latest,CIV,educat,Primary Education,urban,D3,10.37673
+latest,CIV,educat,Primary Education,rural,D3,4.58022
+latest,CIV,educat,Primary Education,urban,D4,9.14896
+latest,CIV,educat,Primary Education,rural,D4,6.34362
+latest,CIV,educat,Primary Education,urban,D5,11.92782
+latest,CIV,educat,Primary Education,rural,D5,6.87818
+latest,CIV,educat,Primary Education,urban,D6,12.63774
+latest,CIV,educat,Primary Education,rural,D6,5.68911
+latest,CIV,educat,Primary Education,urban,D7,12.68284
+latest,CIV,educat,Primary Education,rural,D7,6.81472
+latest,CIV,educat,Primary Education,urban,D8,11.57283
+latest,CIV,educat,Primary Education,rural,D8,5.91344
+latest,CIV,educat,Primary Education,urban,D9,11.88314
+latest,CIV,educat,Primary Education,rural,D9,6.80953
+latest,CIV,educat,Primary Education,urban,D10,11.15497
+latest,CIV,educat,Primary Education,rural,D10,7.73294
+latest,CIV,educat,Secondary Education,urban,D1,7.60042
+latest,CIV,educat,Secondary Education,rural,D1,1.49821
+latest,CIV,educat,Secondary Education,urban,D2,6.27389
+latest,CIV,educat,Secondary Education,rural,D2,1.10407
+latest,CIV,educat,Secondary Education,urban,D3,7.13029
+latest,CIV,educat,Secondary Education,rural,D3,1.69404
+latest,CIV,educat,Secondary Education,urban,D4,6.55497
+latest,CIV,educat,Secondary Education,rural,D4,1.28873
+latest,CIV,educat,Secondary Education,urban,D5,8.13508
+latest,CIV,educat,Secondary Education,rural,D5,1.96803
+latest,CIV,educat,Secondary Education,urban,D6,8.90176
+latest,CIV,educat,Secondary Education,rural,D6,2.19213
+latest,CIV,educat,Secondary Education,urban,D7,10.14901
+latest,CIV,educat,Secondary Education,rural,D7,2.981
+latest,CIV,educat,Secondary Education,urban,D8,10.34795
+latest,CIV,educat,Secondary Education,rural,D8,3.39214
+latest,CIV,educat,Secondary Education,urban,D9,14.26591
+latest,CIV,educat,Secondary Education,rural,D9,3.95526
+latest,CIV,educat,Secondary Education,urban,D10,17.13597
+latest,CIV,educat,Secondary Education,rural,D10,5.1258
+latest,CIV,educat,Tertiary Education,urban,D1,1.67279
+latest,CIV,educat,Tertiary Education,rural,D1,0.04625
+latest,CIV,educat,Tertiary Education,urban,D2,1.03664
+latest,CIV,educat,Tertiary Education,rural,D2,0.18513
+latest,CIV,educat,Tertiary Education,urban,D3,1.93206
+latest,CIV,educat,Tertiary Education,rural,D3,0.08666
+latest,CIV,educat,Tertiary Education,urban,D4,0.31225
+latest,CIV,educat,Tertiary Education,rural,D4,0.06064
+latest,CIV,educat,Tertiary Education,urban,D5,0.87885
+latest,CIV,educat,Tertiary Education,rural,D5,0.07675
+latest,CIV,educat,Tertiary Education,urban,D6,0.88395
+latest,CIV,educat,Tertiary Education,rural,D6,0.1236
+latest,CIV,educat,Tertiary Education,urban,D7,2.33958
+latest,CIV,educat,Tertiary Education,rural,D7,0.51325
+latest,CIV,educat,Tertiary Education,urban,D8,2.5097
+latest,CIV,educat,Tertiary Education,rural,D8,0.13659
+latest,CIV,educat,Tertiary Education,urban,D9,4.98544
+latest,CIV,educat,Tertiary Education,rural,D9,0.75531
+latest,CIV,educat,Tertiary Education,urban,D10,15.16468
+latest,CIV,educat,Tertiary Education,rural,D10,2.29635
+latest,CIV,inequality_index,gini,urban,0,0.6091
+latest,CIV,inequality_index,gini,rural,0,0.57185
+latest,CIV,inequality_index,absolute_poverty,urban,0,0.213126
+latest,CIV,inequality_index,absolute_poverty,rural,0,0.296788
+latest,CIV,household_size,,urban,D1,5.05060195922852
+latest,CIV,household_size,,rural,D1,5.19632768630981
+latest,CIV,household_size,,urban,D2,5.23398160934448
+latest,CIV,household_size,,rural,D2,5.50363540649414
+latest,CIV,household_size,,urban,D3,5.87706184387207
+latest,CIV,household_size,,rural,D3,5.43736124038696
+latest,CIV,household_size,,urban,D4,5.32524299621582
+latest,CIV,household_size,,rural,D4,5.28395700454712
+latest,CIV,household_size,,urban,D5,5.07025384902954
+latest,CIV,household_size,,rural,D5,5.06493186950684
+latest,CIV,household_size,,urban,D6,5.40231418609619
+latest,CIV,household_size,,rural,D6,4.75387525558472
+latest,CIV,household_size,,urban,D7,5.3173508644104
+latest,CIV,household_size,,rural,D7,4.65427732467651
+latest,CIV,household_size,,urban,D8,5.04885673522949
+latest,CIV,household_size,,rural,D8,4.68720531463623
+latest,CIV,household_size,,urban,D9,4.80928897857666
+latest,CIV,household_size,,rural,D9,4.43156576156616
+latest,CIV,household_size,,urban,D10,4.77588748931885
+latest,CIV,household_size,,rural,D10,3.92633485794067
+latest,CIV,expenditure_decile,,urban,D1,9.285326942722
+latest,CIV,expenditure_decile,,rural,D1,6.50853643956751
+latest,CIV,expenditure_decile,,urban,D2,6.59721917624436
+latest,CIV,expenditure_decile,,rural,D2,5.03221694504035
+latest,CIV,expenditure_decile,,urban,D3,7.06834621684721
+latest,CIV,expenditure_decile,,rural,D3,5.81407822588582
+latest,CIV,expenditure_decile,,urban,D4,7.27247591629698
+latest,CIV,expenditure_decile,,rural,D4,6.74847977174043
+latest,CIV,expenditure_decile,,urban,D5,8.77248464847278
+latest,CIV,expenditure_decile,,rural,D5,7.53629447989879
+latest,CIV,expenditure_decile,,urban,D6,8.85114867547379
+latest,CIV,expenditure_decile,,rural,D6,8.38399140536932
+latest,CIV,expenditure_decile,,urban,D7,10.6804389041047
+latest,CIV,expenditure_decile,,rural,D7,9.70069150580495
+latest,CIV,expenditure_decile,,urban,D8,10.5584640899532
+latest,CIV,expenditure_decile,,rural,D8,11.4347046026799
+latest,CIV,expenditure_decile,,urban,D9,15.3870253227464
+latest,CIV,expenditure_decile,,rural,D9,14.512324630695
+latest,CIV,expenditure_decile,,urban,D10,24.8123970498606
+latest,CIV,expenditure_decile,,rural,D10,30.8372184328855
+latest,CIV,income_decile,,urban,D1,0.281054368121445
+latest,CIV,income_decile,,rural,D1,0.411775260304148
+latest,CIV,income_decile,,urban,D2,1.62323230210223
+latest,CIV,income_decile,,rural,D2,1.66085147231618
+latest,CIV,income_decile,,urban,D3,2.56027343516922
+latest,CIV,income_decile,,rural,D3,2.69741426751931
+latest,CIV,income_decile,,urban,D4,3.45603898513168
+latest,CIV,income_decile,,rural,D4,3.59464404876128
+latest,CIV,income_decile,,urban,D5,4.70935636224078
+latest,CIV,income_decile,,rural,D5,4.7896627397198
+latest,CIV,income_decile,,urban,D6,5.84775118828053
+latest,CIV,income_decile,,rural,D6,6.19445378316342
+latest,CIV,income_decile,,urban,D7,7.66336547792217
+latest,CIV,income_decile,,rural,D7,8.10577122425277
+latest,CIV,income_decile,,urban,D8,10.3020042116554
+latest,CIV,income_decile,,rural,D8,10.8387379540163
+latest,CIV,income_decile,,urban,D9,15.4948217471406
+latest,CIV,income_decile,,rural,D9,16.5986016936655
+latest,CIV,income_decile,,urban,D10,48.062101922236
+latest,CIV,income_decile,,rural,D10,45.1080875562813
+latest,CIV,,,urban,,2.67354
+latest,CIV,,,rural,,2.521987
+latest,MLI,expcat_input,food,urban,D1,62.06948
+latest,MLI,expcat_input,food,rural,D1,74.27598
+latest,MLI,expcat_input,food,urban,D2,62.74762
+latest,MLI,expcat_input,food,rural,D2,73.14945
+latest,MLI,expcat_input,food,urban,D3,60.04946
+latest,MLI,expcat_input,food,rural,D3,70.90355
+latest,MLI,expcat_input,food,urban,D4,59.17053
+latest,MLI,expcat_input,food,rural,D4,71.30156
+latest,MLI,expcat_input,food,urban,D5,58.95571
+latest,MLI,expcat_input,food,rural,D5,72.09973
+latest,MLI,expcat_input,food,urban,D6,57.21231
+latest,MLI,expcat_input,food,rural,D6,71.39902
+latest,MLI,expcat_input,food,urban,D7,57.13164
+latest,MLI,expcat_input,food,rural,D7,73.05421
+latest,MLI,expcat_input,food,urban,D8,56.39486
+latest,MLI,expcat_input,food,rural,D8,74.47402
+latest,MLI,expcat_input,food,urban,D9,55.6119
+latest,MLI,expcat_input,food,rural,D9,73.09558
+latest,MLI,expcat_input,food,urban,D10,51.81019
+latest,MLI,expcat_input,food,rural,D10,75.3619
+latest,MLI,expcat_input,energy_housing,urban,D1,7.09076
+latest,MLI,expcat_input,energy_housing,rural,D1,1.57995
+latest,MLI,expcat_input,energy_housing,urban,D2,5.80737
+latest,MLI,expcat_input,energy_housing,rural,D2,2.05764
+latest,MLI,expcat_input,energy_housing,urban,D3,7.21929
+latest,MLI,expcat_input,energy_housing,rural,D3,1.81441
+latest,MLI,expcat_input,energy_housing,urban,D4,7.40156
+latest,MLI,expcat_input,energy_housing,rural,D4,1.72714
+latest,MLI,expcat_input,energy_housing,urban,D5,7.89718
+latest,MLI,expcat_input,energy_housing,rural,D5,1.41275
+latest,MLI,expcat_input,energy_housing,urban,D6,8.28558
+latest,MLI,expcat_input,energy_housing,rural,D6,1.53543
+latest,MLI,expcat_input,energy_housing,urban,D7,8.33272
+latest,MLI,expcat_input,energy_housing,rural,D7,1.46092
+latest,MLI,expcat_input,energy_housing,urban,D8,8.40001
+latest,MLI,expcat_input,energy_housing,rural,D8,1.43559
+latest,MLI,expcat_input,energy_housing,urban,D9,8.61051
+latest,MLI,expcat_input,energy_housing,rural,D9,1.75876
+latest,MLI,expcat_input,energy_housing,urban,D10,9.40746
+latest,MLI,expcat_input,energy_housing,rural,D10,2.73191
+latest,MLI,expcat_input,energy_transportation,urban,D1,5.24268
+latest,MLI,expcat_input,energy_transportation,rural,D1,2.9508
+latest,MLI,expcat_input,energy_transportation,urban,D2,5.86942
+latest,MLI,expcat_input,energy_transportation,rural,D2,3.8358
+latest,MLI,expcat_input,energy_transportation,urban,D3,6.95582
+latest,MLI,expcat_input,energy_transportation,rural,D3,5.04329
+latest,MLI,expcat_input,energy_transportation,urban,D4,6.65967
+latest,MLI,expcat_input,energy_transportation,rural,D4,5.91678
+latest,MLI,expcat_input,energy_transportation,urban,D5,6.45059
+latest,MLI,expcat_input,energy_transportation,rural,D5,5.37685
+latest,MLI,expcat_input,energy_transportation,urban,D6,7.51286
+latest,MLI,expcat_input,energy_transportation,rural,D6,6.31731
+latest,MLI,expcat_input,energy_transportation,urban,D7,7.49728
+latest,MLI,expcat_input,energy_transportation,rural,D7,5.41103
+latest,MLI,expcat_input,energy_transportation,urban,D8,7.81079
+latest,MLI,expcat_input,energy_transportation,rural,D8,5.4199
+latest,MLI,expcat_input,energy_transportation,urban,D9,8.66486
+latest,MLI,expcat_input,energy_transportation,rural,D9,6.77449
+latest,MLI,expcat_input,energy_transportation,urban,D10,9.45666
+latest,MLI,expcat_input,energy_transportation,rural,D10,5.09159
+latest,MLI,incomecat,other,urban,D1,
+latest,MLI,incomecat,other,rural,D1,
+latest,MLI,incomecat,other,urban,D2,
+latest,MLI,incomecat,other,rural,D2,
+latest,MLI,incomecat,other,urban,D3,
+latest,MLI,incomecat,other,rural,D3,
+latest,MLI,incomecat,other,urban,D4,
+latest,MLI,incomecat,other,rural,D4,
+latest,MLI,incomecat,other,urban,D5,
+latest,MLI,incomecat,other,rural,D5,
+latest,MLI,incomecat,other,urban,D6,
+latest,MLI,incomecat,other,rural,D6,
+latest,MLI,incomecat,other,urban,D7,
+latest,MLI,incomecat,other,rural,D7,
+latest,MLI,incomecat,other,urban,D8,
+latest,MLI,incomecat,other,rural,D8,
+latest,MLI,incomecat,other,urban,D9,
+latest,MLI,incomecat,other,rural,D9,
+latest,MLI,incomecat,other,urban,D10,
+latest,MLI,incomecat,other,rural,D10,
+latest,MLI,incomecat,labour,urban,D1,65.18404
+latest,MLI,incomecat,labour,rural,D1,88.11187
+latest,MLI,incomecat,labour,urban,D2,86.94695
+latest,MLI,incomecat,labour,rural,D2,91.4049
+latest,MLI,incomecat,labour,urban,D3,90.66339
+latest,MLI,incomecat,labour,rural,D3,92.07836
+latest,MLI,incomecat,labour,urban,D4,88.18071
+latest,MLI,incomecat,labour,rural,D4,91.1931
+latest,MLI,incomecat,labour,urban,D5,90.50875
+latest,MLI,incomecat,labour,rural,D5,92.13377
+latest,MLI,incomecat,labour,urban,D6,88.50571
+latest,MLI,incomecat,labour,rural,D6,90.59541
+latest,MLI,incomecat,labour,urban,D7,90.65604
+latest,MLI,incomecat,labour,rural,D7,89.44063
+latest,MLI,incomecat,labour,urban,D8,91.10383
+latest,MLI,incomecat,labour,rural,D8,90.82821
+latest,MLI,incomecat,labour,urban,D9,87.54272
+latest,MLI,incomecat,labour,rural,D9,91.87643
+latest,MLI,incomecat,labour,urban,D10,81.23396
+latest,MLI,incomecat,labour,rural,D10,91.72086
+latest,MLI,incomecat,capital,urban,D1,0
+latest,MLI,incomecat,capital,rural,D1,0.10117
+latest,MLI,incomecat,capital,urban,D2,0.53428
+latest,MLI,incomecat,capital,rural,D2,0.04342
+latest,MLI,incomecat,capital,urban,D3,0.20362
+latest,MLI,incomecat,capital,rural,D3,0.06434
+latest,MLI,incomecat,capital,urban,D4,0.5087
+latest,MLI,incomecat,capital,rural,D4,0.51152
+latest,MLI,incomecat,capital,urban,D5,0.72347
+latest,MLI,incomecat,capital,rural,D5,0.18514
+latest,MLI,incomecat,capital,urban,D6,1.14146
+latest,MLI,incomecat,capital,rural,D6,0.36879
+latest,MLI,incomecat,capital,urban,D7,1.43239
+latest,MLI,incomecat,capital,rural,D7,1.18104
+latest,MLI,incomecat,capital,urban,D8,1.27574
+latest,MLI,incomecat,capital,rural,D8,1.38002
+latest,MLI,incomecat,capital,urban,D9,1.85191
+latest,MLI,incomecat,capital,rural,D9,1.13373
+latest,MLI,incomecat,capital,urban,D10,4.11785
+latest,MLI,incomecat,capital,rural,D10,0.90032
+latest,MLI,incomecat,transfers,urban,D1,34.81596
+latest,MLI,incomecat,transfers,rural,D1,11.78696
+latest,MLI,incomecat,transfers,urban,D2,12.51876
+latest,MLI,incomecat,transfers,rural,D2,8.55167
+latest,MLI,incomecat,transfers,urban,D3,9.13299
+latest,MLI,incomecat,transfers,rural,D3,7.8573
+latest,MLI,incomecat,transfers,urban,D4,11.31059
+latest,MLI,incomecat,transfers,rural,D4,8.29538
+latest,MLI,incomecat,transfers,urban,D5,8.76778
+latest,MLI,incomecat,transfers,rural,D5,7.68109
+latest,MLI,incomecat,transfers,urban,D6,10.35283
+latest,MLI,incomecat,transfers,rural,D6,9.0358
+latest,MLI,incomecat,transfers,urban,D7,7.91157
+latest,MLI,incomecat,transfers,rural,D7,9.37833
+latest,MLI,incomecat,transfers,urban,D8,7.62043
+latest,MLI,incomecat,transfers,rural,D8,7.79177
+latest,MLI,incomecat,transfers,urban,D9,10.60537
+latest,MLI,incomecat,transfers,rural,D9,6.98984
+latest,MLI,incomecat,transfers,urban,D10,14.64819
+latest,MLI,incomecat,transfers,rural,D10,7.37882
+latest,MLI,incomecat,other,urban,D1,0
+latest,MLI,incomecat,other,rural,D1,0
+latest,MLI,incomecat,other,urban,D2,9.99999999473644e-06
+latest,MLI,incomecat,other,rural,D2,1.00000000058387e-05
+latest,MLI,incomecat,other,urban,D3,0
+latest,MLI,incomecat,other,rural,D3,0
+latest,MLI,incomecat,other,urban,D4,0
+latest,MLI,incomecat,other,rural,D4,0
+latest,MLI,incomecat,other,urban,D5,0
+latest,MLI,incomecat,other,rural,D5,0
+latest,MLI,incomecat,other,urban,D6,0
+latest,MLI,incomecat,other,rural,D6,0
+latest,MLI,incomecat,other,urban,D7,0
+latest,MLI,incomecat,other,rural,D7,0
+latest,MLI,incomecat,other,urban,D8,0
+latest,MLI,incomecat,other,rural,D8,0
+latest,MLI,incomecat,other,urban,D9,0
+latest,MLI,incomecat,other,rural,D9,0
+latest,MLI,incomecat,other,urban,D10,0
+latest,MLI,incomecat,other,rural,D10,0
+latest,MLI,savings_rate,,urban,D1,-5281.769
+latest,MLI,savings_rate,,rural,D1,-541.2878
+latest,MLI,savings_rate,,urban,D2,-125.1458
+latest,MLI,savings_rate,,rural,D2,-72.9498
+latest,MLI,savings_rate,,urban,D3,-93.07369
+latest,MLI,savings_rate,,rural,D3,-22.8673
+latest,MLI,savings_rate,,urban,D4,-78.1194
+latest,MLI,savings_rate,,rural,D4,-8.36992
+latest,MLI,savings_rate,,urban,D5,-50.05663
+latest,MLI,savings_rate,,rural,D5,1.42774
+latest,MLI,savings_rate,,urban,D6,-49.66564
+latest,MLI,savings_rate,,rural,D6,15.80704
+latest,MLI,savings_rate,,urban,D7,-25.2679
+latest,MLI,savings_rate,,rural,D7,21.20522
+latest,MLI,savings_rate,,urban,D8,-21.83117
+latest,MLI,savings_rate,,rural,D8,26.30434
+latest,MLI,savings_rate,,urban,D9,-14.21713
+latest,MLI,savings_rate,,rural,D9,32.13511
+latest,MLI,savings_rate,,urban,D10,-0.54569
+latest,MLI,savings_rate,,rural,D10,32.96293
+latest,MLI,educat,No education,urban,D1,30.13501
+latest,MLI,educat,No education,rural,D1,41.86243
+latest,MLI,educat,No education,urban,D2,33.9849
+latest,MLI,educat,No education,rural,D2,41.61044
+latest,MLI,educat,No education,urban,D3,32.84784
+latest,MLI,educat,No education,rural,D3,42.16585
+latest,MLI,educat,No education,urban,D4,30.03421
+latest,MLI,educat,No education,rural,D4,40.92492
+latest,MLI,educat,No education,urban,D5,32.08503
+latest,MLI,educat,No education,rural,D5,44.11102
+latest,MLI,educat,No education,urban,D6,29.11878
+latest,MLI,educat,No education,rural,D6,42.27314
+latest,MLI,educat,No education,urban,D7,29.57545
+latest,MLI,educat,No education,rural,D7,43.88422
+latest,MLI,educat,No education,urban,D8,27.9263
+latest,MLI,educat,No education,rural,D8,43.96399
+latest,MLI,educat,No education,urban,D9,27.80164
+latest,MLI,educat,No education,rural,D9,42.78121
+latest,MLI,educat,No education,urban,D10,22.20065
+latest,MLI,educat,No education,rural,D10,48.3289
+latest,MLI,educat,Primary Education,urban,D1,8.57341
+latest,MLI,educat,Primary Education,rural,D1,3.97505
+latest,MLI,educat,Primary Education,urban,D2,7.45488
+latest,MLI,educat,Primary Education,rural,D2,3.82754
+latest,MLI,educat,Primary Education,urban,D3,8.10861
+latest,MLI,educat,Primary Education,rural,D3,4.67675
+latest,MLI,educat,Primary Education,urban,D4,9.99877
+latest,MLI,educat,Primary Education,rural,D4,3.28075
+latest,MLI,educat,Primary Education,urban,D5,10.43909
+latest,MLI,educat,Primary Education,rural,D5,4.59551
+latest,MLI,educat,Primary Education,urban,D6,9.61094
+latest,MLI,educat,Primary Education,rural,D6,5.32903
+latest,MLI,educat,Primary Education,urban,D7,11.82316
+latest,MLI,educat,Primary Education,rural,D7,4.02661
+latest,MLI,educat,Primary Education,urban,D8,11.8553
+latest,MLI,educat,Primary Education,rural,D8,4.28907
+latest,MLI,educat,Primary Education,urban,D9,11.24047
+latest,MLI,educat,Primary Education,rural,D9,4.24108
+latest,MLI,educat,Primary Education,urban,D10,10.25693
+latest,MLI,educat,Primary Education,rural,D10,4.60641
+latest,MLI,educat,Secondary Education,urban,D1,11.77353
+latest,MLI,educat,Secondary Education,rural,D1,2.37528
+latest,MLI,educat,Secondary Education,urban,D2,7.57242
+latest,MLI,educat,Secondary Education,rural,D2,1.36454
+latest,MLI,educat,Secondary Education,urban,D3,8.65464
+latest,MLI,educat,Secondary Education,rural,D3,1.46717
+latest,MLI,educat,Secondary Education,urban,D4,10.15545
+latest,MLI,educat,Secondary Education,rural,D4,1.2086
+latest,MLI,educat,Secondary Education,urban,D5,10.54495
+latest,MLI,educat,Secondary Education,rural,D5,1.06614
+latest,MLI,educat,Secondary Education,urban,D6,10.39524
+latest,MLI,educat,Secondary Education,rural,D6,1.56373
+latest,MLI,educat,Secondary Education,urban,D7,11.07659
+latest,MLI,educat,Secondary Education,rural,D7,0.80366
+latest,MLI,educat,Secondary Education,urban,D8,12.06641
+latest,MLI,educat,Secondary Education,rural,D8,1.37773
+latest,MLI,educat,Secondary Education,urban,D9,14.30915
+latest,MLI,educat,Secondary Education,rural,D9,2.3614
+latest,MLI,educat,Secondary Education,urban,D10,19.89411
+latest,MLI,educat,Secondary Education,rural,D10,4.64887
+latest,MLI,educat,Tertiary Education,urban,D1,0.73414
+latest,MLI,educat,Tertiary Education,rural,D1,0
+latest,MLI,educat,Tertiary Education,urban,D2,0.16365
+latest,MLI,educat,Tertiary Education,rural,D2,0.02457
+latest,MLI,educat,Tertiary Education,urban,D3,0.84528
+latest,MLI,educat,Tertiary Education,rural,D3,0.02441
+latest,MLI,educat,Tertiary Education,urban,D4,0.47366
+latest,MLI,educat,Tertiary Education,rural,D4,0.02537
+latest,MLI,educat,Tertiary Education,urban,D5,0.66236
+latest,MLI,educat,Tertiary Education,rural,D5,0
+latest,MLI,educat,Tertiary Education,urban,D6,1.01652
+latest,MLI,educat,Tertiary Education,rural,D6,0.07521
+latest,MLI,educat,Tertiary Education,urban,D7,1.14651
+latest,MLI,educat,Tertiary Education,rural,D7,0.02555
+latest,MLI,educat,Tertiary Education,urban,D8,2.12443
+latest,MLI,educat,Tertiary Education,rural,D8,0.08535
+latest,MLI,educat,Tertiary Education,urban,D9,3.17996
+latest,MLI,educat,Tertiary Education,rural,D9,0.33723
+latest,MLI,educat,Tertiary Education,urban,D10,10.93775
+latest,MLI,educat,Tertiary Education,rural,D10,0.48015
+latest,MLI,inequality_index,gini,urban,0,0.43478
+latest,MLI,inequality_index,gini,rural,0,0.36776
+latest,MLI,inequality_index,absolute_poverty,urban,0,0.102159
+latest,MLI,inequality_index,absolute_poverty,rural,0,0.170035
+latest,MLI,household_size,,urban,D1,9.33901405334473
+latest,MLI,household_size,,rural,D1,14.0464544296265
+latest,MLI,household_size,,urban,D2,10.0628032684326
+latest,MLI,household_size,,rural,D2,12.1588106155396
+latest,MLI,household_size,,urban,D3,9.54779434204102
+latest,MLI,household_size,,rural,D3,11.1308612823486
+latest,MLI,household_size,,urban,D4,9.71931266784668
+latest,MLI,household_size,,rural,D4,12.0474271774292
+latest,MLI,household_size,,urban,D5,9.88737678527832
+latest,MLI,household_size,,rural,D5,11.6339359283447
+latest,MLI,household_size,,urban,D6,9.95310115814209
+latest,MLI,household_size,,rural,D6,12.0401210784912
+latest,MLI,household_size,,urban,D7,9.73995590209961
+latest,MLI,household_size,,rural,D7,11.9469995498657
+latest,MLI,household_size,,urban,D8,9.33350372314453
+latest,MLI,household_size,,rural,D8,9.91724681854248
+latest,MLI,household_size,,urban,D9,8.47825813293457
+latest,MLI,household_size,,rural,D9,10.5500192642212
+latest,MLI,household_size,,urban,D10,7.32376432418823
+latest,MLI,household_size,,rural,D10,7.98699235916138
+latest,MLI,expenditure_decile,,urban,D1,9.17717605721053
+latest,MLI,expenditure_decile,,rural,D1,7.8969968614513
+latest,MLI,expenditure_decile,,urban,D2,6.72692005792182
+latest,MLI,expenditure_decile,,rural,D2,8.24422335297587
+latest,MLI,expenditure_decile,,urban,D3,7.35308642425714
+latest,MLI,expenditure_decile,,rural,D3,7.70531455095908
+latest,MLI,expenditure_decile,,urban,D4,8.34295445960349
+latest,MLI,expenditure_decile,,rural,D4,7.98349733403828
+latest,MLI,expenditure_decile,,urban,D5,8.44009005262387
+latest,MLI,expenditure_decile,,rural,D5,9.00823566601844
+latest,MLI,expenditure_decile,,urban,D6,9.73485469571521
+latest,MLI,expenditure_decile,,rural,D6,8.92755576744516
+latest,MLI,expenditure_decile,,urban,D7,9.53874465625518
+latest,MLI,expenditure_decile,,rural,D7,9.80139051232554
+latest,MLI,expenditure_decile,,urban,D8,11.1521281668476
+latest,MLI,expenditure_decile,,rural,D8,11.0729578709431
+latest,MLI,expenditure_decile,,urban,D9,13.4539960506136
+latest,MLI,expenditure_decile,,rural,D9,12.821708182795
+latest,MLI,expenditure_decile,,urban,D10,25.2572254361621
+latest,MLI,expenditure_decile,,rural,D10,24.4351167624996
+latest,MLI,income_decile,,urban,D1,1.62016616749903
+latest,MLI,income_decile,,rural,D1,2.10729653988111
+latest,MLI,income_decile,,urban,D2,3.81485305790959
+latest,MLI,income_decile,,rural,D2,3.94318653041314
+latest,MLI,income_decile,,urban,D3,4.88009287083976
+latest,MLI,income_decile,,rural,D3,5.12462176360563
+latest,MLI,income_decile,,urban,D4,5.93508317007919
+latest,MLI,income_decile,,rural,D4,6.00677162710007
+latest,MLI,income_decile,,urban,D5,7.11550383789834
+latest,MLI,income_decile,,rural,D5,7.44401519620335
+latest,MLI,income_decile,,urban,D6,8.28775069879788
+latest,MLI,income_decile,,rural,D6,8.61206300241605
+latest,MLI,income_decile,,urban,D7,9.7463426369243
+latest,MLI,income_decile,,rural,D7,9.98573474036649
+latest,MLI,income_decile,,urban,D8,11.5840034090467
+latest,MLI,income_decile,,rural,D8,12.1264511313073
+latest,MLI,income_decile,,urban,D9,15.0364008765509
+latest,MLI,income_decile,,rural,D9,15.1686734877249
+latest,MLI,income_decile,,urban,D10,31.9798032744544
+latest,MLI,income_decile,,rural,D10,29.4811859809819
+latest,MLI,,,urban,,4.221399
+latest,MLI,,,rural,,5.092642
+latest,MEX,expcat_input,food,urban,D1,46.20183
+latest,MEX,expcat_input,food,rural,D1,51.00874
+latest,MEX,expcat_input,food,urban,D2,42.86687
+latest,MEX,expcat_input,food,rural,D2,43.86305
+latest,MEX,expcat_input,food,urban,D3,39.45268
+latest,MEX,expcat_input,food,rural,D3,40.39473
+latest,MEX,expcat_input,food,urban,D4,37.27922
+latest,MEX,expcat_input,food,rural,D4,37.62451
+latest,MEX,expcat_input,food,urban,D5,34.77643
+latest,MEX,expcat_input,food,rural,D5,35.70273
+latest,MEX,expcat_input,food,urban,D6,32.69431
+latest,MEX,expcat_input,food,rural,D6,33.19764
+latest,MEX,expcat_input,food,urban,D7,30.0863
+latest,MEX,expcat_input,food,rural,D7,31.67888
+latest,MEX,expcat_input,food,urban,D8,27.61128
+latest,MEX,expcat_input,food,rural,D8,29.01358
+latest,MEX,expcat_input,food,urban,D9,23.57825
+latest,MEX,expcat_input,food,rural,D9,26.42548
+latest,MEX,expcat_input,food,urban,D10,16.87288
+latest,MEX,expcat_input,food,rural,D10,21.93975
+latest,MEX,expcat_input,energy_housing,urban,D1,7.69677
+latest,MEX,expcat_input,energy_housing,rural,D1,4.85841
+latest,MEX,expcat_input,energy_housing,urban,D2,7.59278
+latest,MEX,expcat_input,energy_housing,rural,D2,5.48039
+latest,MEX,expcat_input,energy_housing,urban,D3,7.19004
+latest,MEX,expcat_input,energy_housing,rural,D3,5.81488
+latest,MEX,expcat_input,energy_housing,urban,D4,7.15851
+latest,MEX,expcat_input,energy_housing,rural,D4,5.76018
+latest,MEX,expcat_input,energy_housing,urban,D5,6.77825
+latest,MEX,expcat_input,energy_housing,rural,D5,5.76853
+latest,MEX,expcat_input,energy_housing,urban,D6,6.6699
+latest,MEX,expcat_input,energy_housing,rural,D6,5.90032
+latest,MEX,expcat_input,energy_housing,urban,D7,6.6109
+latest,MEX,expcat_input,energy_housing,rural,D7,5.58968
+latest,MEX,expcat_input,energy_housing,urban,D8,6.23116
+latest,MEX,expcat_input,energy_housing,rural,D8,5.57724
+latest,MEX,expcat_input,energy_housing,urban,D9,6.10707
+latest,MEX,expcat_input,energy_housing,rural,D9,5.19392
+latest,MEX,expcat_input,energy_housing,urban,D10,5.40867
+latest,MEX,expcat_input,energy_housing,rural,D10,5.42872
+latest,MEX,expcat_input,energy_transportation,urban,D1,8.96126
+latest,MEX,expcat_input,energy_transportation,rural,D1,8.14456
+latest,MEX,expcat_input,energy_transportation,urban,D2,9.68104
+latest,MEX,expcat_input,energy_transportation,rural,D2,10.31918
+latest,MEX,expcat_input,energy_transportation,urban,D3,11.48488
+latest,MEX,expcat_input,energy_transportation,rural,D3,11.81713
+latest,MEX,expcat_input,energy_transportation,urban,D4,11.81771
+latest,MEX,expcat_input,energy_transportation,rural,D4,13.19142
+latest,MEX,expcat_input,energy_transportation,urban,D5,12.72678
+latest,MEX,expcat_input,energy_transportation,rural,D5,13.89912
+latest,MEX,expcat_input,energy_transportation,urban,D6,13.34443
+latest,MEX,expcat_input,energy_transportation,rural,D6,15.17876
+latest,MEX,expcat_input,energy_transportation,urban,D7,14.34261
+latest,MEX,expcat_input,energy_transportation,rural,D7,16.36202
+latest,MEX,expcat_input,energy_transportation,urban,D8,15.24218
+latest,MEX,expcat_input,energy_transportation,rural,D8,16.74705
+latest,MEX,expcat_input,energy_transportation,urban,D9,16.2767
+latest,MEX,expcat_input,energy_transportation,rural,D9,18.25773
+latest,MEX,expcat_input,energy_transportation,urban,D10,16.69667
+latest,MEX,expcat_input,energy_transportation,rural,D10,19.48474
+latest,MEX,incomecat,other,urban,D1,
+latest,MEX,incomecat,other,rural,D1,
+latest,MEX,incomecat,other,urban,D2,
+latest,MEX,incomecat,other,rural,D2,
+latest,MEX,incomecat,other,urban,D3,
+latest,MEX,incomecat,other,rural,D3,
+latest,MEX,incomecat,other,urban,D4,
+latest,MEX,incomecat,other,rural,D4,
+latest,MEX,incomecat,other,urban,D5,
+latest,MEX,incomecat,other,rural,D5,
+latest,MEX,incomecat,other,urban,D6,
+latest,MEX,incomecat,other,rural,D6,
+latest,MEX,incomecat,other,urban,D7,
+latest,MEX,incomecat,other,rural,D7,
+latest,MEX,incomecat,other,urban,D8,
+latest,MEX,incomecat,other,rural,D8,
+latest,MEX,incomecat,other,urban,D9,
+latest,MEX,incomecat,other,rural,D9,
+latest,MEX,incomecat,other,urban,D10,
+latest,MEX,incomecat,other,rural,D10,
+latest,MEX,incomecat,labour,urban,D1,63.65336
+latest,MEX,incomecat,labour,rural,D1,57.13733
+latest,MEX,incomecat,labour,urban,D2,73.55061
+latest,MEX,incomecat,labour,rural,D2,67.71564
+latest,MEX,incomecat,labour,urban,D3,78.32384
+latest,MEX,incomecat,labour,rural,D3,72.22068
+latest,MEX,incomecat,labour,urban,D4,79.72654
+latest,MEX,incomecat,labour,rural,D4,74.90055
+latest,MEX,incomecat,labour,urban,D5,80.92617
+latest,MEX,incomecat,labour,rural,D5,76.12076
+latest,MEX,incomecat,labour,urban,D6,82.18068
+latest,MEX,incomecat,labour,rural,D6,76.97283
+latest,MEX,incomecat,labour,urban,D7,82.23577
+latest,MEX,incomecat,labour,rural,D7,79.77
+latest,MEX,incomecat,labour,urban,D8,82.34656
+latest,MEX,incomecat,labour,rural,D8,79.00441
+latest,MEX,incomecat,labour,urban,D9,82.24308
+latest,MEX,incomecat,labour,rural,D9,79.22875
+latest,MEX,incomecat,labour,urban,D10,79.37576
+latest,MEX,incomecat,labour,rural,D10,77.49521
+latest,MEX,incomecat,capital,urban,D1,0.18886
+latest,MEX,incomecat,capital,rural,D1,0.21818
+latest,MEX,incomecat,capital,urban,D2,0.48344
+latest,MEX,incomecat,capital,rural,D2,0.35057
+latest,MEX,incomecat,capital,urban,D3,0.40179
+latest,MEX,incomecat,capital,rural,D3,0.29892
+latest,MEX,incomecat,capital,urban,D4,0.44981
+latest,MEX,incomecat,capital,rural,D4,0.34901
+latest,MEX,incomecat,capital,urban,D5,0.52665
+latest,MEX,incomecat,capital,rural,D5,0.56012
+latest,MEX,incomecat,capital,urban,D6,0.60543
+latest,MEX,incomecat,capital,rural,D6,0.53533
+latest,MEX,incomecat,capital,urban,D7,0.5641
+latest,MEX,incomecat,capital,rural,D7,0.53584
+latest,MEX,incomecat,capital,urban,D8,0.79432
+latest,MEX,incomecat,capital,rural,D8,1.1012
+latest,MEX,incomecat,capital,urban,D9,0.90969
+latest,MEX,incomecat,capital,rural,D9,0.84931
+latest,MEX,incomecat,capital,urban,D10,1.76236
+latest,MEX,incomecat,capital,rural,D10,2.03883
+latest,MEX,incomecat,transfers,urban,D1,36.15778
+latest,MEX,incomecat,transfers,rural,D1,42.64449
+latest,MEX,incomecat,transfers,urban,D2,25.96595
+latest,MEX,incomecat,transfers,rural,D2,31.9338
+latest,MEX,incomecat,transfers,urban,D3,21.27438
+latest,MEX,incomecat,transfers,rural,D3,27.48041
+latest,MEX,incomecat,transfers,urban,D4,19.82365
+latest,MEX,incomecat,transfers,rural,D4,24.75044
+latest,MEX,incomecat,transfers,urban,D5,18.54718
+latest,MEX,incomecat,transfers,rural,D5,23.31911
+latest,MEX,incomecat,transfers,urban,D6,17.21389
+latest,MEX,incomecat,transfers,rural,D6,22.49184
+latest,MEX,incomecat,transfers,urban,D7,17.20012
+latest,MEX,incomecat,transfers,rural,D7,19.69416
+latest,MEX,incomecat,transfers,urban,D8,16.85912
+latest,MEX,incomecat,transfers,rural,D8,19.89439
+latest,MEX,incomecat,transfers,urban,D9,16.84722
+latest,MEX,incomecat,transfers,rural,D9,19.92194
+latest,MEX,incomecat,transfers,urban,D10,18.86188
+latest,MEX,incomecat,transfers,rural,D10,20.46596
+latest,MEX,incomecat,other,urban,D1,0
+latest,MEX,incomecat,other,rural,D1,0
+latest,MEX,incomecat,other,urban,D2,0
+latest,MEX,incomecat,other,rural,D2,-1.00000000058387e-05
+latest,MEX,incomecat,other,urban,D3,-1.00000000058387e-05
+latest,MEX,incomecat,other,rural,D3,-1.00000000058387e-05
+latest,MEX,incomecat,other,urban,D4,0
+latest,MEX,incomecat,other,rural,D4,0
+latest,MEX,incomecat,other,urban,D5,0
+latest,MEX,incomecat,other,rural,D5,1.00000000058387e-05
+latest,MEX,incomecat,other,urban,D6,0
+latest,MEX,incomecat,other,rural,D6,0
+latest,MEX,incomecat,other,urban,D7,1.00000000058387e-05
+latest,MEX,incomecat,other,rural,D7,0
+latest,MEX,incomecat,other,urban,D8,0
+latest,MEX,incomecat,other,rural,D8,0
+latest,MEX,incomecat,other,urban,D9,1.00000000058387e-05
+latest,MEX,incomecat,other,rural,D9,0
+latest,MEX,incomecat,other,urban,D10,0
+latest,MEX,incomecat,other,rural,D10,0
+latest,MEX,savings_rate,,urban,D1,-88.8458
+latest,MEX,savings_rate,,rural,D1,-56.80135
+latest,MEX,savings_rate,,urban,D2,-19.41071
+latest,MEX,savings_rate,,rural,D2,-6.96372
+latest,MEX,savings_rate,,urban,D3,-4.48241
+latest,MEX,savings_rate,,rural,D3,2.40026
+latest,MEX,savings_rate,,urban,D4,2.78887
+latest,MEX,savings_rate,,rural,D4,11.51608
+latest,MEX,savings_rate,,urban,D5,7.91009
+latest,MEX,savings_rate,,rural,D5,14.87343
+latest,MEX,savings_rate,,urban,D6,13.75285
+latest,MEX,savings_rate,,rural,D6,19.3559
+latest,MEX,savings_rate,,urban,D7,19.19983
+latest,MEX,savings_rate,,rural,D7,24.40469
+latest,MEX,savings_rate,,urban,D8,21.51822
+latest,MEX,savings_rate,,rural,D8,27.11056
+latest,MEX,savings_rate,,urban,D9,25.66467
+latest,MEX,savings_rate,,rural,D9,32.4211
+latest,MEX,savings_rate,,urban,D10,32.53656
+latest,MEX,savings_rate,,rural,D10,43.8899
+latest,MEX,educat,No education,urban,D1,20.98918
+latest,MEX,educat,No education,rural,D1,26.3771
+latest,MEX,educat,No education,urban,D2,15.40148
+latest,MEX,educat,No education,rural,D2,22.77248
+latest,MEX,educat,No education,urban,D3,12.83991
+latest,MEX,educat,No education,rural,D3,19.58571
+latest,MEX,educat,No education,urban,D4,10.80447
+latest,MEX,educat,No education,rural,D4,18.38584
+latest,MEX,educat,No education,urban,D5,10.13636
+latest,MEX,educat,No education,rural,D5,16.57019
+latest,MEX,educat,No education,urban,D6,8.27266
+latest,MEX,educat,No education,rural,D6,16.04655
+latest,MEX,educat,No education,urban,D7,7.48593
+latest,MEX,educat,No education,rural,D7,14.81312
+latest,MEX,educat,No education,urban,D8,5.93607
+latest,MEX,educat,No education,rural,D8,14.5067
+latest,MEX,educat,No education,urban,D9,4.11613
+latest,MEX,educat,No education,rural,D9,12.8153
+latest,MEX,educat,No education,urban,D10,2.19499
+latest,MEX,educat,No education,rural,D10,10.7102
+latest,MEX,educat,Primary Education,urban,D1,14.22956
+latest,MEX,educat,Primary Education,rural,D1,15.41281
+latest,MEX,educat,Primary Education,urban,D2,14.95028
+latest,MEX,educat,Primary Education,rural,D2,14.73942
+latest,MEX,educat,Primary Education,urban,D3,13.97116
+latest,MEX,educat,Primary Education,rural,D3,15.1348
+latest,MEX,educat,Primary Education,urban,D4,13.60713
+latest,MEX,educat,Primary Education,rural,D4,15.39017
+latest,MEX,educat,Primary Education,urban,D5,12.72016
+latest,MEX,educat,Primary Education,rural,D5,14.64366
+latest,MEX,educat,Primary Education,urban,D6,12.72686
+latest,MEX,educat,Primary Education,rural,D6,15.44519
+latest,MEX,educat,Primary Education,urban,D7,11.60837
+latest,MEX,educat,Primary Education,rural,D7,15.07766
+latest,MEX,educat,Primary Education,urban,D8,10.80768
+latest,MEX,educat,Primary Education,rural,D8,14.25066
+latest,MEX,educat,Primary Education,urban,D9,8.21519
+latest,MEX,educat,Primary Education,rural,D9,13.37915
+latest,MEX,educat,Primary Education,urban,D10,4.03247
+latest,MEX,educat,Primary Education,rural,D10,11.34978
+latest,MEX,educat,Secondary Education,urban,D1,32.08255
+latest,MEX,educat,Secondary Education,rural,D1,22.97357
+latest,MEX,educat,Secondary Education,urban,D2,35.77415
+latest,MEX,educat,Secondary Education,rural,D2,30.05296
+latest,MEX,educat,Secondary Education,urban,D3,40.49789
+latest,MEX,educat,Secondary Education,rural,D3,32.17459
+latest,MEX,educat,Secondary Education,urban,D4,42.90626
+latest,MEX,educat,Secondary Education,rural,D4,34.18121
+latest,MEX,educat,Secondary Education,urban,D5,44.98515
+latest,MEX,educat,Secondary Education,rural,D5,37.25352
+latest,MEX,educat,Secondary Education,urban,D6,46.97345
+latest,MEX,educat,Secondary Education,rural,D6,38.66127
+latest,MEX,educat,Secondary Education,urban,D7,49.39037
+latest,MEX,educat,Secondary Education,rural,D7,40.86318
+latest,MEX,educat,Secondary Education,urban,D8,48.30165
+latest,MEX,educat,Secondary Education,rural,D8,42.14476
+latest,MEX,educat,Secondary Education,urban,D9,46.8085
+latest,MEX,educat,Secondary Education,rural,D9,40.40163
+latest,MEX,educat,Secondary Education,urban,D10,36.25583
+latest,MEX,educat,Secondary Education,rural,D10,39.21376
+latest,MEX,educat,Tertiary Education,urban,D1,2.5485
+latest,MEX,educat,Tertiary Education,rural,D1,0.41884
+latest,MEX,educat,Tertiary Education,urban,D2,2.41587
+latest,MEX,educat,Tertiary Education,rural,D2,0.7499
+latest,MEX,educat,Tertiary Education,urban,D3,3.16851
+latest,MEX,educat,Tertiary Education,rural,D3,1.28809
+latest,MEX,educat,Tertiary Education,urban,D4,3.95433
+latest,MEX,educat,Tertiary Education,rural,D4,1.71894
+latest,MEX,educat,Tertiary Education,urban,D5,5.30257
+latest,MEX,educat,Tertiary Education,rural,D5,2.19137
+latest,MEX,educat,Tertiary Education,urban,D6,6.12979
+latest,MEX,educat,Tertiary Education,rural,D6,3.261
+latest,MEX,educat,Tertiary Education,urban,D7,8.02034
+latest,MEX,educat,Tertiary Education,rural,D7,3.98684
+latest,MEX,educat,Tertiary Education,urban,D8,13.25359
+latest,MEX,educat,Tertiary Education,rural,D8,6.34905
+latest,MEX,educat,Tertiary Education,urban,D9,21.45364
+latest,MEX,educat,Tertiary Education,rural,D9,11.29955
+latest,MEX,educat,Tertiary Education,urban,D10,41.54584
+latest,MEX,educat,Tertiary Education,rural,D10,20.19502
+latest,MEX,inequality_index,gini,urban,0,0.45135
+latest,MEX,inequality_index,gini,rural,0,0.43816
+latest,MEX,inequality_index,absolute_poverty,urban,0,0.105314
+latest,MEX,inequality_index,absolute_poverty,rural,0,0.368818
+latest,MEX,household_size,,urban,D1,4.66902685165405
+latest,MEX,household_size,,rural,D1,5.09863519668579
+latest,MEX,household_size,,urban,D2,4.81038379669189
+latest,MEX,household_size,,rural,D2,4.8747501373291
+latest,MEX,household_size,,urban,D3,4.73380327224731
+latest,MEX,household_size,,rural,D3,4.83846044540405
+latest,MEX,household_size,,urban,D4,4.78424739837646
+latest,MEX,household_size,,rural,D4,4.82662773132324
+latest,MEX,household_size,,urban,D5,4.70770692825317
+latest,MEX,household_size,,rural,D5,4.7440824508667
+latest,MEX,household_size,,urban,D6,4.69619560241699
+latest,MEX,household_size,,rural,D6,4.72344160079956
+latest,MEX,household_size,,urban,D7,4.46858978271484
+latest,MEX,household_size,,rural,D7,4.49331665039063
+latest,MEX,household_size,,urban,D8,4.41590356826782
+latest,MEX,household_size,,rural,D8,4.48431921005249
+latest,MEX,household_size,,urban,D9,4.00464868545532
+latest,MEX,household_size,,rural,D9,4.24182796478271
+latest,MEX,household_size,,urban,D10,3.60937261581421
+latest,MEX,household_size,,rural,D10,3.82497525215149
+latest,MEX,expenditure_decile,,urban,D1,4.75494262910345
+latest,MEX,expenditure_decile,,rural,D1,3.94997049144937
+latest,MEX,expenditure_decile,,urban,D2,5.08196582225581
+latest,MEX,expenditure_decile,,rural,D2,5.24697727176658
+latest,MEX,expenditure_decile,,urban,D3,5.88169649189185
+latest,MEX,expenditure_decile,,rural,D3,6.27012498217055
+latest,MEX,expenditure_decile,,urban,D4,6.6655933843335
+latest,MEX,expenditure_decile,,rural,D4,7.00975445288792
+latest,MEX,expenditure_decile,,urban,D5,7.55775802251218
+latest,MEX,expenditure_decile,,rural,D5,8.06601236087669
+latest,MEX,expenditure_decile,,urban,D6,8.42003783762654
+latest,MEX,expenditure_decile,,rural,D6,9.11489655482612
+latest,MEX,expenditure_decile,,urban,D7,9.56449669486818
+latest,MEX,expenditure_decile,,rural,D7,10.3158137681636
+latest,MEX,expenditure_decile,,urban,D8,11.5543449638725
+latest,MEX,expenditure_decile,,rural,D8,12.4053624277833
+latest,MEX,expenditure_decile,,urban,D9,14.9987484445344
+latest,MEX,expenditure_decile,,rural,D9,15.5230192410114
+latest,MEX,expenditure_decile,,urban,D10,30.2753583381051
+latest,MEX,expenditure_decile,,rural,D10,26.0480389405138
+latest,MEX,income_decile,,urban,D1,1.76227627155117
+latest,MEX,income_decile,,rural,D1,1.66618011819953
+latest,MEX,income_decile,,urban,D2,3.24021744854749
+latest,MEX,income_decile,,rural,D2,3.27148126725122
+latest,MEX,income_decile,,urban,D3,4.26777916689848
+latest,MEX,income_decile,,rural,D3,4.28043221440507
+latest,MEX,income_decile,,urban,D4,5.19994603182792
+latest,MEX,income_decile,,rural,D4,5.2733283963063
+latest,MEX,income_decile,,urban,D5,6.23260212254314
+latest,MEX,income_decile,,rural,D5,6.322023136864
+latest,MEX,income_decile,,urban,D6,7.40526109915574
+latest,MEX,income_decile,,rural,D6,7.53949863844205
+latest,MEX,income_decile,,urban,D7,8.99260198621654
+latest,MEX,income_decile,,rural,D7,9.08403956902011
+latest,MEX,income_decile,,urban,D8,11.1838494358228
+latest,MEX,income_decile,,rural,D8,11.3454373783993
+latest,MEX,income_decile,,urban,D9,15.3715387136033
+latest,MEX,income_decile,,rural,D9,15.3092289657028
+latest,MEX,income_decile,,urban,D10,36.3439277238334
+latest,MEX,income_decile,,rural,D10,35.9083503154096
+latest,MEX,,,urban,,2.488167
+latest,MEX,,,rural,,2.59592
+latest,PER,expcat_input,food,urban,D1,43.18904
+latest,PER,expcat_input,food,rural,D1,52.35784
+latest,PER,expcat_input,food,urban,D2,43.51199
+latest,PER,expcat_input,food,rural,D2,48.27061
+latest,PER,expcat_input,food,urban,D3,41.11187
+latest,PER,expcat_input,food,rural,D3,43.90928
+latest,PER,expcat_input,food,urban,D4,38.09972
+latest,PER,expcat_input,food,rural,D4,43.34172
+latest,PER,expcat_input,food,urban,D5,37.18815
+latest,PER,expcat_input,food,rural,D5,39.63003
+latest,PER,expcat_input,food,urban,D6,34.2823
+latest,PER,expcat_input,food,rural,D6,37.39475
+latest,PER,expcat_input,food,urban,D7,32.99192
+latest,PER,expcat_input,food,rural,D7,36.71162
+latest,PER,expcat_input,food,urban,D8,30.30902
+latest,PER,expcat_input,food,rural,D8,32.59498
+latest,PER,expcat_input,food,urban,D9,28.1508
+latest,PER,expcat_input,food,rural,D9,33.26039
+latest,PER,expcat_input,food,urban,D10,23.07285
+latest,PER,expcat_input,food,rural,D10,32.61545
+latest,PER,expcat_input,energy_housing,urban,D1,9.04921
+latest,PER,expcat_input,energy_housing,rural,D1,5.06696
+latest,PER,expcat_input,energy_housing,urban,D2,8.10446
+latest,PER,expcat_input,energy_housing,rural,D2,4.67707
+latest,PER,expcat_input,energy_housing,urban,D3,8.05309
+latest,PER,expcat_input,energy_housing,rural,D3,4.94009
+latest,PER,expcat_input,energy_housing,urban,D4,7.82336
+latest,PER,expcat_input,energy_housing,rural,D4,4.95353
+latest,PER,expcat_input,energy_housing,urban,D5,7.73549
+latest,PER,expcat_input,energy_housing,rural,D5,5.26851
+latest,PER,expcat_input,energy_housing,urban,D6,7.80296
+latest,PER,expcat_input,energy_housing,rural,D6,5.15233
+latest,PER,expcat_input,energy_housing,urban,D7,7.75956
+latest,PER,expcat_input,energy_housing,rural,D7,5.27238
+latest,PER,expcat_input,energy_housing,urban,D8,7.46109
+latest,PER,expcat_input,energy_housing,rural,D8,5.78195
+latest,PER,expcat_input,energy_housing,urban,D9,7.6942
+latest,PER,expcat_input,energy_housing,rural,D9,5.78487
+latest,PER,expcat_input,energy_housing,urban,D10,7.99322
+latest,PER,expcat_input,energy_housing,rural,D10,5.43328
+latest,PER,expcat_input,energy_transportation,urban,D1,4.5471
+latest,PER,expcat_input,energy_transportation,rural,D1,3.72186
+latest,PER,expcat_input,energy_transportation,urban,D2,4.72442
+latest,PER,expcat_input,energy_transportation,rural,D2,4.00719
+latest,PER,expcat_input,energy_transportation,urban,D3,5.63124
+latest,PER,expcat_input,energy_transportation,rural,D3,5.11241
+latest,PER,expcat_input,energy_transportation,urban,D4,6.1778
+latest,PER,expcat_input,energy_transportation,rural,D4,5.83637
+latest,PER,expcat_input,energy_transportation,urban,D5,6.90894
+latest,PER,expcat_input,energy_transportation,rural,D5,6.47953
+latest,PER,expcat_input,energy_transportation,urban,D6,7.57714
+latest,PER,expcat_input,energy_transportation,rural,D6,7.5387
+latest,PER,expcat_input,energy_transportation,urban,D7,7.70879
+latest,PER,expcat_input,energy_transportation,rural,D7,6.821
+latest,PER,expcat_input,energy_transportation,urban,D8,8.46307
+latest,PER,expcat_input,energy_transportation,rural,D8,8.32063
+latest,PER,expcat_input,energy_transportation,urban,D9,8.7713
+latest,PER,expcat_input,energy_transportation,rural,D9,8.60261
+latest,PER,expcat_input,energy_transportation,urban,D10,9.72743
+latest,PER,expcat_input,energy_transportation,rural,D10,7.77224
+latest,PER,incomecat,other,urban,D1,
+latest,PER,incomecat,other,rural,D1,
+latest,PER,incomecat,other,urban,D2,
+latest,PER,incomecat,other,rural,D2,
+latest,PER,incomecat,other,urban,D3,
+latest,PER,incomecat,other,rural,D3,
+latest,PER,incomecat,other,urban,D4,
+latest,PER,incomecat,other,rural,D4,
+latest,PER,incomecat,other,urban,D5,
+latest,PER,incomecat,other,rural,D5,
+latest,PER,incomecat,other,urban,D6,
+latest,PER,incomecat,other,rural,D6,
+latest,PER,incomecat,other,urban,D7,
+latest,PER,incomecat,other,rural,D7,
+latest,PER,incomecat,other,urban,D8,
+latest,PER,incomecat,other,rural,D8,
+latest,PER,incomecat,other,urban,D9,
+latest,PER,incomecat,other,rural,D9,
+latest,PER,incomecat,other,urban,D10,
+latest,PER,incomecat,other,rural,D10,
+latest,PER,incomecat,labour,urban,D1,37.17986
+latest,PER,incomecat,labour,rural,D1,16.27441
+latest,PER,incomecat,labour,urban,D2,67.33655
+latest,PER,incomecat,labour,rural,D2,71.12126
+latest,PER,incomecat,labour,urban,D3,76.13378
+latest,PER,incomecat,labour,rural,D3,81.61707
+latest,PER,incomecat,labour,urban,D4,81.2866
+latest,PER,incomecat,labour,rural,D4,86.90214
+latest,PER,incomecat,labour,urban,D5,83.73213
+latest,PER,incomecat,labour,rural,D5,89.18155
+latest,PER,incomecat,labour,urban,D6,84.7587
+latest,PER,incomecat,labour,rural,D6,89.67564
+latest,PER,incomecat,labour,urban,D7,86.8182
+latest,PER,incomecat,labour,rural,D7,91.51316
+latest,PER,incomecat,labour,urban,D8,87.38902
+latest,PER,incomecat,labour,rural,D8,90.54481
+latest,PER,incomecat,labour,urban,D9,86.98761
+latest,PER,incomecat,labour,rural,D9,90.61133
+latest,PER,incomecat,labour,urban,D10,86.35398
+latest,PER,incomecat,labour,rural,D10,90.47633
+latest,PER,incomecat,capital,urban,D1,5.82994
+latest,PER,incomecat,capital,rural,D1,0.35644
+latest,PER,incomecat,capital,urban,D2,1.91761
+latest,PER,incomecat,capital,rural,D2,0.44697
+latest,PER,incomecat,capital,urban,D3,1.35954
+latest,PER,incomecat,capital,rural,D3,0.60251
+latest,PER,incomecat,capital,urban,D4,1.07649
+latest,PER,incomecat,capital,rural,D4,0.75968
+latest,PER,incomecat,capital,urban,D5,1.52176
+latest,PER,incomecat,capital,rural,D5,0.71796
+latest,PER,incomecat,capital,urban,D6,1.62712
+latest,PER,incomecat,capital,rural,D6,1.24931
+latest,PER,incomecat,capital,urban,D7,1.65312
+latest,PER,incomecat,capital,rural,D7,0.60769
+latest,PER,incomecat,capital,urban,D8,2.16573
+latest,PER,incomecat,capital,rural,D8,1.71073
+latest,PER,incomecat,capital,urban,D9,2.21824
+latest,PER,incomecat,capital,rural,D9,3.17198
+latest,PER,incomecat,capital,urban,D10,4.00478
+latest,PER,incomecat,capital,rural,D10,3.98476
+latest,PER,incomecat,transfers,urban,D1,56.99019
+latest,PER,incomecat,transfers,rural,D1,83.36915
+latest,PER,incomecat,transfers,urban,D2,30.74584
+latest,PER,incomecat,transfers,rural,D2,28.43176
+latest,PER,incomecat,transfers,urban,D3,22.50668
+latest,PER,incomecat,transfers,rural,D3,17.78042
+latest,PER,incomecat,transfers,urban,D4,17.63692
+latest,PER,incomecat,transfers,rural,D4,12.33818
+latest,PER,incomecat,transfers,urban,D5,14.74611
+latest,PER,incomecat,transfers,rural,D5,10.10049
+latest,PER,incomecat,transfers,urban,D6,13.61418
+latest,PER,incomecat,transfers,rural,D6,9.07505
+latest,PER,incomecat,transfers,urban,D7,11.52868
+latest,PER,incomecat,transfers,rural,D7,7.87915
+latest,PER,incomecat,transfers,urban,D8,10.44525
+latest,PER,incomecat,transfers,rural,D8,7.74446
+latest,PER,incomecat,transfers,urban,D9,10.79414
+latest,PER,incomecat,transfers,rural,D9,6.21668
+latest,PER,incomecat,transfers,urban,D10,9.64124
+latest,PER,incomecat,transfers,rural,D10,5.53891
+latest,PER,incomecat,other,urban,D1,1.00000000058387e-05
+latest,PER,incomecat,other,rural,D1,0
+latest,PER,incomecat,other,urban,D2,0
+latest,PER,incomecat,other,rural,D2,1.00000000058387e-05
+latest,PER,incomecat,other,urban,D3,0
+latest,PER,incomecat,other,rural,D3,0
+latest,PER,incomecat,other,urban,D4,-1.00000000058387e-05
+latest,PER,incomecat,other,rural,D4,0
+latest,PER,incomecat,other,urban,D5,0
+latest,PER,incomecat,other,rural,D5,0
+latest,PER,incomecat,other,urban,D6,0
+latest,PER,incomecat,other,rural,D6,0
+latest,PER,incomecat,other,urban,D7,0
+latest,PER,incomecat,other,rural,D7,0
+latest,PER,incomecat,other,urban,D8,0
+latest,PER,incomecat,other,rural,D8,0
+latest,PER,incomecat,other,urban,D9,9.99999999473644e-06
+latest,PER,incomecat,other,rural,D9,9.99999999473644e-06
+latest,PER,incomecat,other,urban,D10,0
+latest,PER,incomecat,other,rural,D10,0
+latest,PER,savings_rate,,urban,D1,-1826.417
+latest,PER,savings_rate,,rural,D1,-417.78
+latest,PER,savings_rate,,urban,D2,-94.36406
+latest,PER,savings_rate,,rural,D2,-59.76605
+latest,PER,savings_rate,,urban,D3,-41.66377
+latest,PER,savings_rate,,rural,D3,-17.52303
+latest,PER,savings_rate,,urban,D4,-20.83959
+latest,PER,savings_rate,,rural,D4,1.89086
+latest,PER,savings_rate,,urban,D5,-6.78721
+latest,PER,savings_rate,,rural,D5,14.28022
+latest,PER,savings_rate,,urban,D6,1.74231
+latest,PER,savings_rate,,rural,D6,22.23455
+latest,PER,savings_rate,,urban,D7,11.77204
+latest,PER,savings_rate,,rural,D7,27.29949
+latest,PER,savings_rate,,urban,D8,21.54473
+latest,PER,savings_rate,,rural,D8,36.90549
+latest,PER,savings_rate,,urban,D9,29.16514
+latest,PER,savings_rate,,rural,D9,41.97245
+latest,PER,savings_rate,,urban,D10,40.87847
+latest,PER,savings_rate,,rural,D10,58.33513
+latest,PER,educat,No education,urban,D1,27.69977
+latest,PER,educat,No education,rural,D1,37.6045
+latest,PER,educat,No education,urban,D2,21.24639
+latest,PER,educat,No education,rural,D2,29.29715
+latest,PER,educat,No education,urban,D3,14.75816
+latest,PER,educat,No education,rural,D3,24.29924
+latest,PER,educat,No education,urban,D4,10.68171
+latest,PER,educat,No education,rural,D4,21.30032
+latest,PER,educat,No education,urban,D5,9.49051
+latest,PER,educat,No education,rural,D5,19.63129
+latest,PER,educat,No education,urban,D6,7.90641
+latest,PER,educat,No education,rural,D6,16.91517
+latest,PER,educat,No education,urban,D7,7.7328
+latest,PER,educat,No education,rural,D7,14.19152
+latest,PER,educat,No education,urban,D8,5.34911
+latest,PER,educat,No education,rural,D8,12.25556
+latest,PER,educat,No education,urban,D9,3.62753
+latest,PER,educat,No education,rural,D9,10.26914
+latest,PER,educat,No education,urban,D10,2.66476
+latest,PER,educat,No education,rural,D10,12.00153
+latest,PER,educat,Primary Education,urban,D1,14.65139
+latest,PER,educat,Primary Education,rural,D1,18.17337
+latest,PER,educat,Primary Education,urban,D2,16.25111
+latest,PER,educat,Primary Education,rural,D2,18.87315
+latest,PER,educat,Primary Education,urban,D3,14.08434
+latest,PER,educat,Primary Education,rural,D3,19.78623
+latest,PER,educat,Primary Education,urban,D4,13.82744
+latest,PER,educat,Primary Education,rural,D4,19.67879
+latest,PER,educat,Primary Education,urban,D5,12.2931
+latest,PER,educat,Primary Education,rural,D5,19.20923
+latest,PER,educat,Primary Education,urban,D6,11.54866
+latest,PER,educat,Primary Education,rural,D6,20.66811
+latest,PER,educat,Primary Education,urban,D7,10.12764
+latest,PER,educat,Primary Education,rural,D7,17.28145
+latest,PER,educat,Primary Education,urban,D8,9.04027
+latest,PER,educat,Primary Education,rural,D8,18.13378
+latest,PER,educat,Primary Education,urban,D9,7.65352
+latest,PER,educat,Primary Education,rural,D9,12.8123
+latest,PER,educat,Primary Education,urban,D10,4.03757
+latest,PER,educat,Primary Education,rural,D10,14.91326
+latest,PER,educat,Secondary Education,urban,D1,28.4632
+latest,PER,educat,Secondary Education,rural,D1,14.46896
+latest,PER,educat,Secondary Education,urban,D2,30.96357
+latest,PER,educat,Secondary Education,rural,D2,18.75867
+latest,PER,educat,Secondary Education,urban,D3,36.15008
+latest,PER,educat,Secondary Education,rural,D3,22.64069
+latest,PER,educat,Secondary Education,urban,D4,37.4145
+latest,PER,educat,Secondary Education,rural,D4,25.27827
+latest,PER,educat,Secondary Education,urban,D5,40.78548
+latest,PER,educat,Secondary Education,rural,D5,28.33313
+latest,PER,educat,Secondary Education,urban,D6,43.81546
+latest,PER,educat,Secondary Education,rural,D6,30.28123
+latest,PER,educat,Secondary Education,urban,D7,43.35027
+latest,PER,educat,Secondary Education,rural,D7,34.07094
+latest,PER,educat,Secondary Education,urban,D8,45.73067
+latest,PER,educat,Secondary Education,rural,D8,35.22039
+latest,PER,educat,Secondary Education,urban,D9,43.38955
+latest,PER,educat,Secondary Education,rural,D9,34.78287
+latest,PER,educat,Secondary Education,urban,D10,33.08735
+latest,PER,educat,Secondary Education,rural,D10,33.65254
+latest,PER,educat,Tertiary Education,urban,D1,6.52275
+latest,PER,educat,Tertiary Education,rural,D1,0.60566
+latest,PER,educat,Tertiary Education,urban,D2,4.43579
+latest,PER,educat,Tertiary Education,rural,D2,0.71417
+latest,PER,educat,Tertiary Education,urban,D3,5.32974
+latest,PER,educat,Tertiary Education,rural,D3,1.38888
+latest,PER,educat,Tertiary Education,urban,D4,7.3245
+latest,PER,educat,Tertiary Education,rural,D4,2.00433
+latest,PER,educat,Tertiary Education,urban,D5,8.97068
+latest,PER,educat,Tertiary Education,rural,D5,3.71847
+latest,PER,educat,Tertiary Education,urban,D6,11.25964
+latest,PER,educat,Tertiary Education,rural,D6,4.89081
+latest,PER,educat,Tertiary Education,urban,D7,15.17314
+latest,PER,educat,Tertiary Education,rural,D7,7.70863
+latest,PER,educat,Tertiary Education,urban,D8,18.84793
+latest,PER,educat,Tertiary Education,rural,D8,10.71027
+latest,PER,educat,Tertiary Education,urban,D9,26.44984
+latest,PER,educat,Tertiary Education,rural,D9,18.36939
+latest,PER,educat,Tertiary Education,urban,D10,43.59844
+latest,PER,educat,Tertiary Education,rural,D10,20.3207
+latest,PER,inequality_index,gini,urban,0,0.42648
+latest,PER,inequality_index,gini,rural,0,0.49658
+latest,PER,inequality_index,absolute_poverty,urban,0,0.133294
+latest,PER,inequality_index,absolute_poverty,rural,0,0.640116
+latest,PER,household_size,,urban,D1,3.63493895530701
+latest,PER,household_size,,rural,D1,4.29961061477661
+latest,PER,household_size,,urban,D2,4.29444885253906
+latest,PER,household_size,,rural,D2,4.60159683227539
+latest,PER,household_size,,urban,D3,4.49207305908203
+latest,PER,household_size,,rural,D3,4.71084308624268
+latest,PER,household_size,,urban,D4,5.04206657409668
+latest,PER,household_size,,rural,D4,4.63728713989258
+latest,PER,household_size,,urban,D5,4.65195608139038
+latest,PER,household_size,,rural,D5,4.77538347244263
+latest,PER,household_size,,urban,D6,4.73376655578613
+latest,PER,household_size,,rural,D6,4.66425943374634
+latest,PER,household_size,,urban,D7,4.73170518875122
+latest,PER,household_size,,rural,D7,4.63062810897827
+latest,PER,household_size,,urban,D8,4.70513343811035
+latest,PER,household_size,,rural,D8,4.08715057373047
+latest,PER,household_size,,urban,D9,4.61103487014771
+latest,PER,household_size,,rural,D9,4.27239179611206
+latest,PER,household_size,,urban,D10,3.98258423805237
+latest,PER,household_size,,rural,D10,3.80468702316284
+latest,PER,expenditure_decile,,urban,D1,8.06538321580286
+latest,PER,expenditure_decile,,rural,D1,5.40056908430665
+latest,PER,expenditure_decile,,urban,D2,6.36983456306374
+latest,PER,expenditure_decile,,rural,D2,6.29412577111265
+latest,PER,expenditure_decile,,urban,D3,7.04413153830699
+latest,PER,expenditure_decile,,rural,D3,7.23799356269296
+latest,PER,expenditure_decile,,urban,D4,7.81893439440157
+latest,PER,expenditure_decile,,rural,D4,8.09484292736107
+latest,PER,expenditure_decile,,urban,D5,8.70095436591247
+latest,PER,expenditure_decile,,rural,D5,8.91562809743579
+latest,PER,expenditure_decile,,urban,D6,9.92925624814131
+latest,PER,expenditure_decile,,rural,D6,10.0192767489372
+latest,PER,expenditure_decile,,urban,D7,10.8592279072149
+latest,PER,expenditure_decile,,rural,D7,11.442666977984
+latest,PER,expenditure_decile,,urban,D8,12.1627267540308
+latest,PER,expenditure_decile,,rural,D8,12.9003210078484
+latest,PER,expenditure_decile,,urban,D9,14.4513953571323
+latest,PER,expenditure_decile,,rural,D9,15.089499918192
+latest,PER,expenditure_decile,,urban,D10,22.6635388717959
+latest,PER,expenditure_decile,,rural,D10,20.0056449884359
+latest,PER,income_decile,,urban,D1,0.793846200821775
+latest,PER,income_decile,,rural,D1,0.927866239275496
+latest,PER,income_decile,,urban,D2,2.70605819763196
+latest,PER,income_decile,,rural,D2,2.48910051353966
+latest,PER,income_decile,,urban,D3,4.02176494470179
+latest,PER,income_decile,,rural,D3,3.83013139401924
+latest,PER,income_decile,,urban,D4,5.23470032679075
+latest,PER,income_decile,,rural,D4,5.14391108584797
+latest,PER,income_decile,,urban,D5,6.59394349497296
+latest,PER,income_decile,,rural,D5,6.46630355484466
+latest,PER,income_decile,,urban,D6,8.19440466260462
+latest,PER,income_decile,,rural,D6,8.02303703138142
+latest,PER,income_decile,,urban,D7,9.98896561332863
+latest,PER,income_decile,,rural,D7,9.84162153953844
+latest,PER,income_decile,,urban,D8,12.5429532186706
+latest,PER,income_decile,,rural,D8,12.66129106547
+latest,PER,income_decile,,urban,D9,16.5667712126226
+latest,PER,income_decile,,rural,D9,16.3511879105092
+latest,PER,income_decile,,urban,D10,33.3565921278543
+latest,PER,income_decile,,rural,D10,34.2655496655739
+latest,PER,,,urban,,2.543506
+latest,PER,,,rural,,2.457278
+latest,VNM,expcat_input,food,urban,D1,55.09737
+latest,VNM,expcat_input,food,rural,D1,61.03633
+latest,VNM,expcat_input,food,urban,D2,51.86402
+latest,VNM,expcat_input,food,rural,D2,57.49289
+latest,VNM,expcat_input,food,urban,D3,48.12359
+latest,VNM,expcat_input,food,rural,D3,52.86878
+latest,VNM,expcat_input,food,urban,D4,45.53312
+latest,VNM,expcat_input,food,rural,D4,49.15262
+latest,VNM,expcat_input,food,urban,D5,43.0816
+latest,VNM,expcat_input,food,rural,D5,48.15502
+latest,VNM,expcat_input,food,urban,D6,40.07501
+latest,VNM,expcat_input,food,rural,D6,46.61428
+latest,VNM,expcat_input,food,urban,D7,40.99694
+latest,VNM,expcat_input,food,rural,D7,45.31247
+latest,VNM,expcat_input,food,urban,D8,37.70798
+latest,VNM,expcat_input,food,rural,D8,44.14158
+latest,VNM,expcat_input,food,urban,D9,36.0891
+latest,VNM,expcat_input,food,rural,D9,41.20561
+latest,VNM,expcat_input,food,urban,D10,31.93647
+latest,VNM,expcat_input,food,rural,D10,39.56057
+latest,VNM,expcat_input,energy_housing,urban,D1,9.19638
+latest,VNM,expcat_input,energy_housing,rural,D1,9.83512
+latest,VNM,expcat_input,energy_housing,urban,D2,10.52254
+latest,VNM,expcat_input,energy_housing,rural,D2,9.68771
+latest,VNM,expcat_input,energy_housing,urban,D3,11.0733
+latest,VNM,expcat_input,energy_housing,rural,D3,10.53532
+latest,VNM,expcat_input,energy_housing,urban,D4,11.49117
+latest,VNM,expcat_input,energy_housing,rural,D4,10.61601
+latest,VNM,expcat_input,energy_housing,urban,D5,11.8385
+latest,VNM,expcat_input,energy_housing,rural,D5,11.16649
+latest,VNM,expcat_input,energy_housing,urban,D6,11.3972
+latest,VNM,expcat_input,energy_housing,rural,D6,10.85988
+latest,VNM,expcat_input,energy_housing,urban,D7,11.63967
+latest,VNM,expcat_input,energy_housing,rural,D7,11.07683
+latest,VNM,expcat_input,energy_housing,urban,D8,12.12704
+latest,VNM,expcat_input,energy_housing,rural,D8,10.69919
+latest,VNM,expcat_input,energy_housing,urban,D9,11.86969
+latest,VNM,expcat_input,energy_housing,rural,D9,10.90216
+latest,VNM,expcat_input,energy_housing,urban,D10,11.59087
+latest,VNM,expcat_input,energy_housing,rural,D10,10.57401
+latest,VNM,expcat_input,energy_transportation,urban,D1,1.03302
+latest,VNM,expcat_input,energy_transportation,rural,D1,1.70965
+latest,VNM,expcat_input,energy_transportation,urban,D2,1.42655
+latest,VNM,expcat_input,energy_transportation,rural,D2,2.29664
+latest,VNM,expcat_input,energy_transportation,urban,D3,2.1635
+latest,VNM,expcat_input,energy_transportation,rural,D3,2.31262
+latest,VNM,expcat_input,energy_transportation,urban,D4,2.07938
+latest,VNM,expcat_input,energy_transportation,rural,D4,2.87836
+latest,VNM,expcat_input,energy_transportation,urban,D5,2.11915
+latest,VNM,expcat_input,energy_transportation,rural,D5,2.97731
+latest,VNM,expcat_input,energy_transportation,urban,D6,2.83108
+latest,VNM,expcat_input,energy_transportation,rural,D6,2.99879
+latest,VNM,expcat_input,energy_transportation,urban,D7,2.4903
+latest,VNM,expcat_input,energy_transportation,rural,D7,3.22356
+latest,VNM,expcat_input,energy_transportation,urban,D8,2.68867
+latest,VNM,expcat_input,energy_transportation,rural,D8,3.54357
+latest,VNM,expcat_input,energy_transportation,urban,D9,2.95664
+latest,VNM,expcat_input,energy_transportation,rural,D9,4.10623
+latest,VNM,expcat_input,energy_transportation,urban,D10,3.65503
+latest,VNM,expcat_input,energy_transportation,rural,D10,4.66013
+latest,VNM,incomecat,other,urban,D1,
+latest,VNM,incomecat,other,rural,D1,
+latest,VNM,incomecat,other,urban,D2,
+latest,VNM,incomecat,other,rural,D2,
+latest,VNM,incomecat,other,urban,D3,
+latest,VNM,incomecat,other,rural,D3,
+latest,VNM,incomecat,other,urban,D4,
+latest,VNM,incomecat,other,rural,D4,
+latest,VNM,incomecat,other,urban,D5,
+latest,VNM,incomecat,other,rural,D5,
+latest,VNM,incomecat,other,urban,D6,
+latest,VNM,incomecat,other,rural,D6,
+latest,VNM,incomecat,other,urban,D7,
+latest,VNM,incomecat,other,rural,D7,
+latest,VNM,incomecat,other,urban,D8,
+latest,VNM,incomecat,other,rural,D8,
+latest,VNM,incomecat,other,urban,D9,
+latest,VNM,incomecat,other,rural,D9,
+latest,VNM,incomecat,other,urban,D10,
+latest,VNM,incomecat,other,rural,D10,
+latest,VNM,incomecat,labour,urban,D1,76.22716
+latest,VNM,incomecat,labour,rural,D1,82.14495
+latest,VNM,incomecat,labour,urban,D2,83.58266
+latest,VNM,incomecat,labour,rural,D2,86.85182
+latest,VNM,incomecat,labour,urban,D3,81.92659
+latest,VNM,incomecat,labour,rural,D3,88.20155
+latest,VNM,incomecat,labour,urban,D4,86.46907
+latest,VNM,incomecat,labour,rural,D4,87.65399
+latest,VNM,incomecat,labour,urban,D5,81.18716
+latest,VNM,incomecat,labour,rural,D5,88.36317
+latest,VNM,incomecat,labour,urban,D6,82.37971
+latest,VNM,incomecat,labour,rural,D6,88.44844
+latest,VNM,incomecat,labour,urban,D7,85.40514
+latest,VNM,incomecat,labour,rural,D7,87.54392
+latest,VNM,incomecat,labour,urban,D8,84.38581
+latest,VNM,incomecat,labour,rural,D8,86.82682
+latest,VNM,incomecat,labour,urban,D9,82.77324
+latest,VNM,incomecat,labour,rural,D9,86.66081
+latest,VNM,incomecat,labour,urban,D10,81.73054
+latest,VNM,incomecat,labour,rural,D10,87.02136
+latest,VNM,incomecat,capital,urban,D1,2.59241
+latest,VNM,incomecat,capital,rural,D1,0.42366
+latest,VNM,incomecat,capital,urban,D2,1.63534
+latest,VNM,incomecat,capital,rural,D2,0.41757
+latest,VNM,incomecat,capital,urban,D3,1.13151
+latest,VNM,incomecat,capital,rural,D3,0.60556
+latest,VNM,incomecat,capital,urban,D4,2.0847
+latest,VNM,incomecat,capital,rural,D4,0.87797
+latest,VNM,incomecat,capital,urban,D5,1.27458
+latest,VNM,incomecat,capital,rural,D5,1.00881
+latest,VNM,incomecat,capital,urban,D6,2.58036
+latest,VNM,incomecat,capital,rural,D6,1.5295
+latest,VNM,incomecat,capital,urban,D7,2.15224
+latest,VNM,incomecat,capital,rural,D7,0.9504
+latest,VNM,incomecat,capital,urban,D8,1.62977
+latest,VNM,incomecat,capital,rural,D8,1.65722
+latest,VNM,incomecat,capital,urban,D9,3.87706
+latest,VNM,incomecat,capital,rural,D9,1.66057
+latest,VNM,incomecat,capital,urban,D10,7.01952
+latest,VNM,incomecat,capital,rural,D10,1.94226
+latest,VNM,incomecat,transfers,urban,D1,21.18042
+latest,VNM,incomecat,transfers,rural,D1,17.43139
+latest,VNM,incomecat,transfers,urban,D2,14.78201
+latest,VNM,incomecat,transfers,rural,D2,12.73061
+latest,VNM,incomecat,transfers,urban,D3,16.94189
+latest,VNM,incomecat,transfers,rural,D3,11.1929
+latest,VNM,incomecat,transfers,urban,D4,11.44623
+latest,VNM,incomecat,transfers,rural,D4,11.46803
+latest,VNM,incomecat,transfers,urban,D5,17.53826
+latest,VNM,incomecat,transfers,rural,D5,10.62802
+latest,VNM,incomecat,transfers,urban,D6,15.03993
+latest,VNM,incomecat,transfers,rural,D6,10.02206
+latest,VNM,incomecat,transfers,urban,D7,12.44263
+latest,VNM,incomecat,transfers,rural,D7,11.50568
+latest,VNM,incomecat,transfers,urban,D8,13.98441
+latest,VNM,incomecat,transfers,rural,D8,11.51596
+latest,VNM,incomecat,transfers,urban,D9,13.3497
+latest,VNM,incomecat,transfers,rural,D9,11.67862
+latest,VNM,incomecat,transfers,urban,D10,11.24994
+latest,VNM,incomecat,transfers,rural,D10,11.03638
+latest,VNM,incomecat,other,urban,D1,9.99999999473644e-06
+latest,VNM,incomecat,other,rural,D1,0
+latest,VNM,incomecat,other,urban,D2,-1.00000000058387e-05
+latest,VNM,incomecat,other,rural,D2,0
+latest,VNM,incomecat,other,urban,D3,1.00000000058387e-05
+latest,VNM,incomecat,other,rural,D3,-9.99999998363421e-06
+latest,VNM,incomecat,other,urban,D4,0
+latest,VNM,incomecat,other,rural,D4,9.99999999473644e-06
+latest,VNM,incomecat,other,urban,D5,0
+latest,VNM,incomecat,other,rural,D5,0
+latest,VNM,incomecat,other,urban,D6,0
+latest,VNM,incomecat,other,rural,D6,0
+latest,VNM,incomecat,other,urban,D7,-1.00000000058387e-05
+latest,VNM,incomecat,other,rural,D7,0
+latest,VNM,incomecat,other,urban,D8,9.99999999473644e-06
+latest,VNM,incomecat,other,rural,D8,0
+latest,VNM,incomecat,other,urban,D9,0
+latest,VNM,incomecat,other,rural,D9,0
+latest,VNM,incomecat,other,urban,D10,0
+latest,VNM,incomecat,other,rural,D10,0
+latest,VNM,savings_rate,,urban,D1,-43.02854
+latest,VNM,savings_rate,,rural,D1,-27.93128
+latest,VNM,savings_rate,,urban,D2,-33.05471
+latest,VNM,savings_rate,,rural,D2,-4.69693
+latest,VNM,savings_rate,,urban,D3,-20.03811
+latest,VNM,savings_rate,,rural,D3,0.65671
+latest,VNM,savings_rate,,urban,D4,-13.55506
+latest,VNM,savings_rate,,rural,D4,3.28769
+latest,VNM,savings_rate,,urban,D5,-3.28573
+latest,VNM,savings_rate,,rural,D5,11.56204
+latest,VNM,savings_rate,,urban,D6,-7.74783
+latest,VNM,savings_rate,,rural,D6,17.3733
+latest,VNM,savings_rate,,urban,D7,5.41603
+latest,VNM,savings_rate,,rural,D7,16.49194
+latest,VNM,savings_rate,,urban,D8,10.04421
+latest,VNM,savings_rate,,rural,D8,23.22608
+latest,VNM,savings_rate,,urban,D9,12.56767
+latest,VNM,savings_rate,,rural,D9,28.91512
+latest,VNM,savings_rate,,urban,D10,23.47191
+latest,VNM,savings_rate,,rural,D10,43.07077
+latest,VNM,educat,No education,urban,D1,35.26009
+latest,VNM,educat,No education,rural,D1,30.11432
+latest,VNM,educat,No education,urban,D2,20.90874
+latest,VNM,educat,No education,rural,D2,24.21064
+latest,VNM,educat,No education,urban,D3,18.5478
+latest,VNM,educat,No education,rural,D3,19.85858
+latest,VNM,educat,No education,urban,D4,15.56489
+latest,VNM,educat,No education,rural,D4,15.96816
+latest,VNM,educat,No education,urban,D5,13.91659
+latest,VNM,educat,No education,rural,D5,14.9315
+latest,VNM,educat,No education,urban,D6,8.50461
+latest,VNM,educat,No education,rural,D6,11.41808
+latest,VNM,educat,No education,urban,D7,7.95084
+latest,VNM,educat,No education,rural,D7,9.53645
+latest,VNM,educat,No education,urban,D8,5.70577
+latest,VNM,educat,No education,rural,D8,8.77603
+latest,VNM,educat,No education,urban,D9,4.2024
+latest,VNM,educat,No education,rural,D9,7.16189
+latest,VNM,educat,No education,urban,D10,2.3191
+latest,VNM,educat,No education,rural,D10,7.80121
+latest,VNM,educat,Primary Education,urban,D1,20.42154
+latest,VNM,educat,Primary Education,rural,D1,20.19018
+latest,VNM,educat,Primary Education,urban,D2,20.80001
+latest,VNM,educat,Primary Education,rural,D2,21.44148
+latest,VNM,educat,Primary Education,urban,D3,24.09866
+latest,VNM,educat,Primary Education,rural,D3,20.0171
+latest,VNM,educat,Primary Education,urban,D4,19.82443
+latest,VNM,educat,Primary Education,rural,D4,19.90474
+latest,VNM,educat,Primary Education,urban,D5,19.56835
+latest,VNM,educat,Primary Education,rural,D5,18.23118
+latest,VNM,educat,Primary Education,urban,D6,15.27885
+latest,VNM,educat,Primary Education,rural,D6,17.18143
+latest,VNM,educat,Primary Education,urban,D7,13.44539
+latest,VNM,educat,Primary Education,rural,D7,16.61837
+latest,VNM,educat,Primary Education,urban,D8,11.09509
+latest,VNM,educat,Primary Education,rural,D8,15.82135
+latest,VNM,educat,Primary Education,urban,D9,8.2013
+latest,VNM,educat,Primary Education,rural,D9,15.18304
+latest,VNM,educat,Primary Education,urban,D10,5.77036
+latest,VNM,educat,Primary Education,rural,D10,16.31143
+latest,VNM,educat,Secondary Education,urban,D1,19.50293
+latest,VNM,educat,Secondary Education,rural,D1,22.58096
+latest,VNM,educat,Secondary Education,urban,D2,30.81774
+latest,VNM,educat,Secondary Education,rural,D2,27.69797
+latest,VNM,educat,Secondary Education,urban,D3,34.78975
+latest,VNM,educat,Secondary Education,rural,D3,34.14679
+latest,VNM,educat,Secondary Education,urban,D4,40.38643
+latest,VNM,educat,Secondary Education,rural,D4,38.55975
+latest,VNM,educat,Secondary Education,urban,D5,41.80477
+latest,VNM,educat,Secondary Education,rural,D5,41.0934
+latest,VNM,educat,Secondary Education,urban,D6,46.09626
+latest,VNM,educat,Secondary Education,rural,D6,43.92316
+latest,VNM,educat,Secondary Education,urban,D7,47.66178
+latest,VNM,educat,Secondary Education,rural,D7,44.82326
+latest,VNM,educat,Secondary Education,urban,D8,47.5556
+latest,VNM,educat,Secondary Education,rural,D8,46.03005
+latest,VNM,educat,Secondary Education,urban,D9,45.37836
+latest,VNM,educat,Secondary Education,rural,D9,45.68242
+latest,VNM,educat,Secondary Education,urban,D10,36.28505
+latest,VNM,educat,Secondary Education,rural,D10,42.85461
+latest,VNM,educat,Tertiary Education,urban,D1,1.20374
+latest,VNM,educat,Tertiary Education,rural,D1,0.43622
+latest,VNM,educat,Tertiary Education,urban,D2,0.83142
+latest,VNM,educat,Tertiary Education,rural,D2,0.35784
+latest,VNM,educat,Tertiary Education,urban,D3,1.91679
+latest,VNM,educat,Tertiary Education,rural,D3,1.13415
+latest,VNM,educat,Tertiary Education,urban,D4,3.19813
+latest,VNM,educat,Tertiary Education,rural,D4,1.76022
+latest,VNM,educat,Tertiary Education,urban,D5,5.39744
+latest,VNM,educat,Tertiary Education,rural,D5,2.93177
+latest,VNM,educat,Tertiary Education,urban,D6,6.38771
+latest,VNM,educat,Tertiary Education,rural,D6,3.91961
+latest,VNM,educat,Tertiary Education,urban,D7,9.60811
+latest,VNM,educat,Tertiary Education,rural,D7,4.52908
+latest,VNM,educat,Tertiary Education,urban,D8,13.27824
+latest,VNM,educat,Tertiary Education,rural,D8,6.85385
+latest,VNM,educat,Tertiary Education,urban,D9,21.28553
+latest,VNM,educat,Tertiary Education,rural,D9,9.38381
+latest,VNM,educat,Tertiary Education,urban,D10,33.77366
+latest,VNM,educat,Tertiary Education,rural,D10,11.0171
+latest,VNM,inequality_index,gini,urban,0,0.32268
+latest,VNM,inequality_index,gini,rural,0,0.33676
+latest,VNM,inequality_index,absolute_poverty,urban,0,0.042583
+latest,VNM,inequality_index,absolute_poverty,rural,0,0.19703
+latest,VNM,household_size,,urban,D1,4.39139032363892
+latest,VNM,household_size,,rural,D1,4.39266204833984
+latest,VNM,household_size,,urban,D2,4.54907321929932
+latest,VNM,household_size,,rural,D2,4.54381084442139
+latest,VNM,household_size,,urban,D3,4.32302951812744
+latest,VNM,household_size,,rural,D3,4.50094938278198
+latest,VNM,household_size,,urban,D4,4.27373695373535
+latest,VNM,household_size,,rural,D4,4.40614938735962
+latest,VNM,household_size,,urban,D5,4.42009449005127
+latest,VNM,household_size,,rural,D5,4.51401233673096
+latest,VNM,household_size,,urban,D6,4.6029839515686
+latest,VNM,household_size,,rural,D6,4.6028847694397
+latest,VNM,household_size,,urban,D7,4.55273723602295
+latest,VNM,household_size,,rural,D7,4.36639738082886
+latest,VNM,household_size,,urban,D8,4.35804033279419
+latest,VNM,household_size,,rural,D8,4.37278366088867
+latest,VNM,household_size,,urban,D9,4.31874418258667
+latest,VNM,household_size,,rural,D9,4.2962327003479
+latest,VNM,household_size,,urban,D10,4.51088428497314
+latest,VNM,household_size,,rural,D10,4.22051906585693
+latest,VNM,expenditure_decile,,urban,D1,4.63709677419355
+latest,VNM,expenditure_decile,,rural,D1,4.86875529212532
+latest,VNM,expenditure_decile,,urban,D2,6.25
+latest,VNM,expenditure_decile,,rural,D2,6.13886536833192
+latest,VNM,expenditure_decile,,urban,D3,7.3252688172043
+latest,VNM,expenditure_decile,,rural,D3,7.36663844199831
+latest,VNM,expenditure_decile,,urban,D4,8.26612903225806
+latest,VNM,expenditure_decile,,rural,D4,8.63674851820491
+latest,VNM,expenditure_decile,,urban,D5,8.97177419354839
+latest,VNM,expenditure_decile,,rural,D5,9.35647756138865
+latest,VNM,expenditure_decile,,urban,D6,10.4502688172043
+latest,VNM,expenditure_decile,,rural,D6,9.99153259949196
+latest,VNM,expenditure_decile,,urban,D7,10.6182795698925
+latest,VNM,expenditure_decile,,rural,D7,11.8966977138019
+latest,VNM,expenditure_decile,,urban,D8,12.0295698924731
+latest,VNM,expenditure_decile,,rural,D8,12.8704487722269
+latest,VNM,expenditure_decile,,urban,D9,14.8521505376344
+latest,VNM,expenditure_decile,,rural,D9,14.7756138865368
+latest,VNM,expenditure_decile,,urban,D10,21.236559139785
+latest,VNM,expenditure_decile,,rural,D10,18.9669771380186
+latest,VNM,income_decile,,urban,D1,2.97532239808966
+latest,VNM,income_decile,,rural,D1,2.84172102795688
+latest,VNM,income_decile,,urban,D2,4.31761335614894
+latest,VNM,income_decile,,rural,D2,4.20176825388341
+latest,VNM,income_decile,,urban,D3,5.50343674269689
+latest,VNM,income_decile,,rural,D3,5.32832930746084
+latest,VNM,income_decile,,urban,D4,6.59804294566423
+latest,VNM,income_decile,,rural,D4,6.45489036103828
+latest,VNM,income_decile,,urban,D5,7.81427206007238
+latest,VNM,income_decile,,rural,D5,7.58145141461571
+latest,VNM,income_decile,,urban,D6,8.69603816801829
+latest,VNM,income_decile,,rural,D6,8.70801246819315
+latest,VNM,income_decile,,urban,D7,10.2467302888887
+latest,VNM,income_decile,,rural,D7,10.1999446742822
+latest,VNM,income_decile,,urban,D8,12.1622911440815
+latest,VNM,income_decile,,rural,D8,12.0876956289255
+latest,VNM,income_decile,,urban,D9,15.3244868415427
+latest,VNM,income_decile,,rural,D9,15.1020076371462
+latest,VNM,income_decile,,urban,D10,26.3617660547967
+latest,VNM,income_decile,,rural,D10,27.4941792264979
+latest,VNM,,,urban,,2.518698
+latest,VNM,,,rural,,2.499434
+latest,ZAF,expcat_input,food,urban,D1,43.92465
+latest,ZAF,expcat_input,food,rural,D1,48.21944
+latest,ZAF,expcat_input,food,urban,D2,38.83402
+latest,ZAF,expcat_input,food,rural,D2,50.18075
+latest,ZAF,expcat_input,food,urban,D3,36.2359
+latest,ZAF,expcat_input,food,rural,D3,48.99909
+latest,ZAF,expcat_input,food,urban,D4,33.47747
+latest,ZAF,expcat_input,food,rural,D4,44.8681
+latest,ZAF,expcat_input,food,urban,D5,31.38538
+latest,ZAF,expcat_input,food,rural,D5,44.20562
+latest,ZAF,expcat_input,food,urban,D6,27.72166
+latest,ZAF,expcat_input,food,rural,D6,41.00028
+latest,ZAF,expcat_input,food,urban,D7,23.86112
+latest,ZAF,expcat_input,food,rural,D7,39.49592
+latest,ZAF,expcat_input,food,urban,D8,19.26197
+latest,ZAF,expcat_input,food,rural,D8,35.77366
+latest,ZAF,expcat_input,food,urban,D9,14.80823
+latest,ZAF,expcat_input,food,rural,D9,29.20698
+latest,ZAF,expcat_input,food,urban,D10,11.29887
+latest,ZAF,expcat_input,food,rural,D10,19.41684
+latest,ZAF,expcat_input,energy_housing,urban,D1,8.190259
+latest,ZAF,expcat_input,energy_housing,rural,D1,8.143874
+latest,ZAF,expcat_input,energy_housing,urban,D2,7.26984
+latest,ZAF,expcat_input,energy_housing,rural,D2,7.491626
+latest,ZAF,expcat_input,energy_housing,urban,D3,7.177998
+latest,ZAF,expcat_input,energy_housing,rural,D3,6.650079
+latest,ZAF,expcat_input,energy_housing,urban,D4,6.205422
+latest,ZAF,expcat_input,energy_housing,rural,D4,7.012505
+latest,ZAF,expcat_input,energy_housing,urban,D5,5.715486
+latest,ZAF,expcat_input,energy_housing,rural,D5,6.201062
+latest,ZAF,expcat_input,energy_housing,urban,D6,5.521734
+latest,ZAF,expcat_input,energy_housing,rural,D6,5.925659
+latest,ZAF,expcat_input,energy_housing,urban,D7,4.91175
+latest,ZAF,expcat_input,energy_housing,rural,D7,5.800848
+latest,ZAF,expcat_input,energy_housing,urban,D8,4.633828
+latest,ZAF,expcat_input,energy_housing,rural,D8,5.277113
+latest,ZAF,expcat_input,energy_housing,urban,D9,4.301689
+latest,ZAF,expcat_input,energy_housing,rural,D9,4.799633
+latest,ZAF,expcat_input,energy_housing,urban,D10,3.412305
+latest,ZAF,expcat_input,energy_housing,rural,D10,3.794581
+latest,ZAF,expcat_input,energy_transportation,urban,D1,9.636494
+latest,ZAF,expcat_input,energy_transportation,rural,D1,7.236907
+latest,ZAF,expcat_input,energy_transportation,urban,D2,10.43475
+latest,ZAF,expcat_input,energy_transportation,rural,D2,6.376403
+latest,ZAF,expcat_input,energy_transportation,urban,D3,12.29978
+latest,ZAF,expcat_input,energy_transportation,rural,D3,8.743907
+latest,ZAF,expcat_input,energy_transportation,urban,D4,12.11217
+latest,ZAF,expcat_input,energy_transportation,rural,D4,8.561094
+latest,ZAF,expcat_input,energy_transportation,urban,D5,11.04008
+latest,ZAF,expcat_input,energy_transportation,rural,D5,9.517667
+latest,ZAF,expcat_input,energy_transportation,urban,D6,11.95441
+latest,ZAF,expcat_input,energy_transportation,rural,D6,10.65684
+latest,ZAF,expcat_input,energy_transportation,urban,D7,10.6454
+latest,ZAF,expcat_input,energy_transportation,rural,D7,10.0796
+latest,ZAF,expcat_input,energy_transportation,urban,D8,9.300765
+latest,ZAF,expcat_input,energy_transportation,rural,D8,12.0408
+latest,ZAF,expcat_input,energy_transportation,urban,D9,7.606293
+latest,ZAF,expcat_input,energy_transportation,rural,D9,13.62783
+latest,ZAF,expcat_input,energy_transportation,urban,D10,5.678163
+latest,ZAF,expcat_input,energy_transportation,rural,D10,11.42619
+latest,ZAF,incomecat,other,urban,D1,0.0027811
+latest,ZAF,incomecat,other,rural,D1,3.367136
+latest,ZAF,incomecat,other,urban,D2,0.0780848
+latest,ZAF,incomecat,other,rural,D2,0.8310548
+latest,ZAF,incomecat,other,urban,D3,0.0141353
+latest,ZAF,incomecat,other,rural,D3,1.474316
+latest,ZAF,incomecat,other,urban,D4,0.0109453
+latest,ZAF,incomecat,other,rural,D4,1.733583
+latest,ZAF,incomecat,other,urban,D5,0.0034631
+latest,ZAF,incomecat,other,rural,D5,1.094722
+latest,ZAF,incomecat,other,urban,D6,0.0218281
+latest,ZAF,incomecat,other,rural,D6,1.650032
+latest,ZAF,incomecat,other,urban,D7,0.0254693
+latest,ZAF,incomecat,other,rural,D7,1.292651
+latest,ZAF,incomecat,other,urban,D8,0.1429251
+latest,ZAF,incomecat,other,rural,D8,2.447633
+latest,ZAF,incomecat,other,urban,D9,0.0488718
+latest,ZAF,incomecat,other,rural,D9,2.565385
+latest,ZAF,incomecat,other,urban,D10,0.0032191
+latest,ZAF,incomecat,other,rural,D10,1.292058
+latest,ZAF,incomecat,labour,urban,D1,29.60655
+latest,ZAF,incomecat,labour,rural,D1,22.63724
+latest,ZAF,incomecat,labour,urban,D2,29.5482
+latest,ZAF,incomecat,labour,rural,D2,16.35595
+latest,ZAF,incomecat,labour,urban,D3,50.96548
+latest,ZAF,incomecat,labour,rural,D3,17.11383
+latest,ZAF,incomecat,labour,urban,D4,56.4943
+latest,ZAF,incomecat,labour,rural,D4,29.41672
+latest,ZAF,incomecat,labour,urban,D5,65.60854
+latest,ZAF,incomecat,labour,rural,D5,30.84373
+latest,ZAF,incomecat,labour,urban,D6,67.34151
+latest,ZAF,incomecat,labour,rural,D6,35.16618
+latest,ZAF,incomecat,labour,urban,D7,74.65145
+latest,ZAF,incomecat,labour,rural,D7,42.47844
+latest,ZAF,incomecat,labour,urban,D8,80.35359
+latest,ZAF,incomecat,labour,rural,D8,50.43387
+latest,ZAF,incomecat,labour,urban,D9,82.01989
+latest,ZAF,incomecat,labour,rural,D9,65.02317
+latest,ZAF,incomecat,labour,urban,D10,84.4187
+latest,ZAF,incomecat,labour,rural,D10,80.68288
+latest,ZAF,incomecat,capital,urban,D1,0.7905983
+latest,ZAF,incomecat,capital,rural,D1,0
+latest,ZAF,incomecat,capital,urban,D2,0.132006
+latest,ZAF,incomecat,capital,rural,D2,0.0366703
+latest,ZAF,incomecat,capital,urban,D3,0.2994812
+latest,ZAF,incomecat,capital,rural,D3,0.2280068
+latest,ZAF,incomecat,capital,urban,D4,0.7283415
+latest,ZAF,incomecat,capital,rural,D4,0.0721614
+latest,ZAF,incomecat,capital,urban,D5,0.6431568
+latest,ZAF,incomecat,capital,rural,D5,0.1698567
+latest,ZAF,incomecat,capital,urban,D6,0.5986288
+latest,ZAF,incomecat,capital,rural,D6,0.663418
+latest,ZAF,incomecat,capital,urban,D7,0.84504
+latest,ZAF,incomecat,capital,rural,D7,0.5944413
+latest,ZAF,incomecat,capital,urban,D8,1.084736
+latest,ZAF,incomecat,capital,rural,D8,0.3703115
+latest,ZAF,incomecat,capital,urban,D9,1.586203
+latest,ZAF,incomecat,capital,rural,D9,0.8566335
+latest,ZAF,incomecat,capital,urban,D10,4.528902
+latest,ZAF,incomecat,capital,rural,D10,2.553811
+latest,ZAF,incomecat,transfers,urban,D1,45.9396
+latest,ZAF,incomecat,transfers,rural,D1,53.32525
+latest,ZAF,incomecat,transfers,urban,D2,56.24036
+latest,ZAF,incomecat,transfers,rural,D2,71.14055
+latest,ZAF,incomecat,transfers,urban,D3,36.02607
+latest,ZAF,incomecat,transfers,rural,D3,65.81145
+latest,ZAF,incomecat,transfers,urban,D4,33.32149
+latest,ZAF,incomecat,transfers,rural,D4,52.94514
+latest,ZAF,incomecat,transfers,urban,D5,24.55586
+latest,ZAF,incomecat,transfers,rural,D5,56.30147
+latest,ZAF,incomecat,transfers,urban,D6,18.54457
+latest,ZAF,incomecat,transfers,rural,D6,49.49939
+latest,ZAF,incomecat,transfers,urban,D7,13.02233
+latest,ZAF,incomecat,transfers,rural,D7,41.45441
+latest,ZAF,incomecat,transfers,urban,D8,8.213653
+latest,ZAF,incomecat,transfers,rural,D8,35.21318
+latest,ZAF,incomecat,transfers,urban,D9,3.62026
+latest,ZAF,incomecat,transfers,rural,D9,21.37512
+latest,ZAF,incomecat,transfers,urban,D10,0.8813051
+latest,ZAF,incomecat,transfers,rural,D10,8.19116
+latest,ZAF,incomecat,other,urban,D1,20.2961157
+latest,ZAF,incomecat,other,rural,D1,20.670374
+latest,ZAF,incomecat,other,urban,D2,13.2483792
+latest,ZAF,incomecat,other,rural,D2,11.6357749
+latest,ZAF,incomecat,other,urban,D3,11.2346528
+latest,ZAF,incomecat,other,rural,D3,15.3723972
+latest,ZAF,incomecat,other,urban,D4,7.7222855
+latest,ZAF,incomecat,other,rural,D4,15.8323956
+latest,ZAF,incomecat,other,urban,D5,8.0977212
+latest,ZAF,incomecat,other,rural,D5,11.5902213
+latest,ZAF,incomecat,other,urban,D6,11.8652592
+latest,ZAF,incomecat,other,rural,D6,13.02098
+latest,ZAF,incomecat,other,urban,D7,10.188529
+latest,ZAF,incomecat,other,rural,D7,14.1800577
+latest,ZAF,incomecat,other,urban,D8,7.90038799999999
+latest,ZAF,incomecat,other,rural,D8,11.5350055
+latest,ZAF,incomecat,other,urban,D9,10.208262
+latest,ZAF,incomecat,other,rural,D9,10.1796915
+latest,ZAF,incomecat,other,urban,D10,8.87903489999999
+latest,ZAF,incomecat,other,rural,D10,7.28009100000001
+latest,ZAF,savings_rate,,urban,D1,-41.82319
+latest,ZAF,savings_rate,,rural,D1,-33.81422
+latest,ZAF,savings_rate,,urban,D2,-7.477472
+latest,ZAF,savings_rate,,rural,D2,3.2151
+latest,ZAF,savings_rate,,urban,D3,9.379428
+latest,ZAF,savings_rate,,rural,D3,15.51665
+latest,ZAF,savings_rate,,urban,D4,18.43845
+latest,ZAF,savings_rate,,rural,D4,19.19327
+latest,ZAF,savings_rate,,urban,D5,20.87987
+latest,ZAF,savings_rate,,rural,D5,27.2083
+latest,ZAF,savings_rate,,urban,D6,25.60044
+latest,ZAF,savings_rate,,rural,D6,29.73436
+latest,ZAF,savings_rate,,urban,D7,29.96038
+latest,ZAF,savings_rate,,rural,D7,35.89333
+latest,ZAF,savings_rate,,urban,D8,28.31321
+latest,ZAF,savings_rate,,rural,D8,42.67304
+latest,ZAF,savings_rate,,urban,D9,28.44818
+latest,ZAF,savings_rate,,rural,D9,45.90956
+latest,ZAF,savings_rate,,urban,D10,29.50611
+latest,ZAF,savings_rate,,rural,D10,49.50798
+latest,ZAF,educat,No education,urban,D1,3.98
+latest,ZAF,educat,No education,rural,D1,12.59
+latest,ZAF,educat,No education,urban,D2,8.51
+latest,ZAF,educat,No education,rural,D2,23.66
+latest,ZAF,educat,No education,urban,D3,6.99
+latest,ZAF,educat,No education,rural,D3,31.52
+latest,ZAF,educat,No education,urban,D4,10.24
+latest,ZAF,educat,No education,rural,D4,25.55
+latest,ZAF,educat,No education,urban,D5,5.72
+latest,ZAF,educat,No education,rural,D5,26.68
+latest,ZAF,educat,No education,urban,D6,4.82
+latest,ZAF,educat,No education,rural,D6,27.64
+latest,ZAF,educat,No education,urban,D7,5.84
+latest,ZAF,educat,No education,rural,D7,22.01
+latest,ZAF,educat,No education,urban,D8,2.37
+latest,ZAF,educat,No education,rural,D8,22.34
+latest,ZAF,educat,No education,urban,D9,2.6
+latest,ZAF,educat,No education,rural,D9,17.36
+latest,ZAF,educat,No education,urban,D10,1.91
+latest,ZAF,educat,No education,rural,D10,8.29
+latest,ZAF,educat,Primary Education,urban,D1,12.8
+latest,ZAF,educat,Primary Education,rural,D1,18.05
+latest,ZAF,educat,Primary Education,urban,D2,20.37
+latest,ZAF,educat,Primary Education,rural,D2,24.77
+latest,ZAF,educat,Primary Education,urban,D3,15.23
+latest,ZAF,educat,Primary Education,rural,D3,21.74
+latest,ZAF,educat,Primary Education,urban,D4,12.33
+latest,ZAF,educat,Primary Education,rural,D4,23.34
+latest,ZAF,educat,Primary Education,urban,D5,16.46
+latest,ZAF,educat,Primary Education,rural,D5,26.01
+latest,ZAF,educat,Primary Education,urban,D6,13.77
+latest,ZAF,educat,Primary Education,rural,D6,23.04
+latest,ZAF,educat,Primary Education,urban,D7,10.52
+latest,ZAF,educat,Primary Education,rural,D7,21.31
+latest,ZAF,educat,Primary Education,urban,D8,7.29
+latest,ZAF,educat,Primary Education,rural,D8,24.87
+latest,ZAF,educat,Primary Education,urban,D9,3.81
+latest,ZAF,educat,Primary Education,rural,D9,19.8
+latest,ZAF,educat,Primary Education,urban,D10,1.39
+latest,ZAF,educat,Primary Education,rural,D10,13.41
+latest,ZAF,educat,Secondary Education,urban,D1,82.01
+latest,ZAF,educat,Secondary Education,rural,D1,68.88
+latest,ZAF,educat,Secondary Education,urban,D2,70.45
+latest,ZAF,educat,Secondary Education,rural,D2,51.2
+latest,ZAF,educat,Secondary Education,urban,D3,76.7
+latest,ZAF,educat,Secondary Education,rural,D3,46.38
+latest,ZAF,educat,Secondary Education,urban,D4,76.91
+latest,ZAF,educat,Secondary Education,rural,D4,50.86
+latest,ZAF,educat,Secondary Education,urban,D5,76.78
+latest,ZAF,educat,Secondary Education,rural,D5,47.31
+latest,ZAF,educat,Secondary Education,urban,D6,80.03
+latest,ZAF,educat,Secondary Education,rural,D6,49.05
+latest,ZAF,educat,Secondary Education,urban,D7,81.14
+latest,ZAF,educat,Secondary Education,rural,D7,56.21
+latest,ZAF,educat,Secondary Education,urban,D8,83.79
+latest,ZAF,educat,Secondary Education,rural,D8,52.28
+latest,ZAF,educat,Secondary Education,urban,D9,76.95
+latest,ZAF,educat,Secondary Education,rural,D9,60.39
+latest,ZAF,educat,Secondary Education,urban,D10,61.7
+latest,ZAF,educat,Secondary Education,rural,D10,66.34
+latest,ZAF,educat,Tertiary Education,urban,D1,1.21
+latest,ZAF,educat,Tertiary Education,rural,D1,0.48
+latest,ZAF,educat,Tertiary Education,urban,D2,0.67
+latest,ZAF,educat,Tertiary Education,rural,D2,0.37
+latest,ZAF,educat,Tertiary Education,urban,D3,1.08
+latest,ZAF,educat,Tertiary Education,rural,D3,0.36
+latest,ZAF,educat,Tertiary Education,urban,D4,0.52
+latest,ZAF,educat,Tertiary Education,rural,D4,0.25
+latest,ZAF,educat,Tertiary Education,urban,D5,1.04
+latest,ZAF,educat,Tertiary Education,rural,D5,0
+latest,ZAF,educat,Tertiary Education,urban,D6,1.38
+latest,ZAF,educat,Tertiary Education,rural,D6,0.27
+latest,ZAF,educat,Tertiary Education,urban,D7,2.5
+latest,ZAF,educat,Tertiary Education,rural,D7,0.47
+latest,ZAF,educat,Tertiary Education,urban,D8,6.56
+latest,ZAF,educat,Tertiary Education,rural,D8,0.51
+latest,ZAF,educat,Tertiary Education,urban,D9,16.64
+latest,ZAF,educat,Tertiary Education,rural,D9,2.44
+latest,ZAF,educat,Tertiary Education,urban,D10,35.01
+latest,ZAF,educat,Tertiary Education,rural,D10,11.95
+latest,ZAF,inequality_index,gini,urban,0,0.60683
+latest,ZAF,inequality_index,gini,rural,0,0.53
+latest,ZAF,inequality_index,absolute_poverty,urban,0,40.6
+latest,ZAF,inequality_index,absolute_poverty,rural,0,70.9
+latest,ZAF,household_size,,urban,D1,2.769231
+latest,ZAF,household_size,,rural,D1,3.002353
+latest,ZAF,household_size,,urban,D2,2.53719
+latest,ZAF,household_size,,rural,D2,3.233456
+latest,ZAF,household_size,,urban,D3,3.222816
+latest,ZAF,household_size,,rural,D3,3.859206
+latest,ZAF,household_size,,urban,D4,3.001715
+latest,ZAF,household_size,,rural,D4,4.194647
+latest,ZAF,household_size,,urban,D5,3.581475
+latest,ZAF,household_size,,rural,D5,4.420582
+latest,ZAF,household_size,,urban,D6,3.820205
+latest,ZAF,household_size,,rural,D6,4.986807
+latest,ZAF,household_size,,urban,D7,3.898361
+latest,ZAF,household_size,,rural,D7,5.257009
+latest,ZAF,household_size,,urban,D8,4.082734
+latest,ZAF,household_size,,rural,D8,5.786967
+latest,ZAF,household_size,,urban,D9,3.781197
+latest,ZAF,household_size,,rural,D9,5.951574
+latest,ZAF,household_size,,urban,D10,3.442341
+latest,ZAF,household_size,,rural,D10,5.694915
+latest,ZAF,expenditure_decile,,urban,D1,0.465538154428615
+latest,ZAF,expenditure_decile,,rural,D1,3.367136
+latest,ZAF,expenditure_decile,,urban,D2,0.885368336360231
+latest,ZAF,expenditure_decile,,rural,D2,0.8310548
+latest,ZAF,expenditure_decile,,urban,D3,1.34038377730742
+latest,ZAF,expenditure_decile,,rural,D3,1.474316
+latest,ZAF,expenditure_decile,,urban,D4,2.01905463555928
+latest,ZAF,expenditure_decile,,rural,D4,1.733583
+latest,ZAF,expenditure_decile,,urban,D5,2.66298595582338
+latest,ZAF,expenditure_decile,,rural,D5,1.094722
+latest,ZAF,expenditure_decile,,urban,D6,4.02313345538695
+latest,ZAF,expenditure_decile,,rural,D6,1.650032
+latest,ZAF,expenditure_decile,,urban,D7,6.43555641112083
+latest,ZAF,expenditure_decile,,rural,D7,1.292651
+latest,ZAF,expenditure_decile,,urban,D8,10.7878579265662
+latest,ZAF,expenditure_decile,,rural,D8,2.447633
+latest,ZAF,expenditure_decile,,urban,D9,19.2902946341289
+latest,ZAF,expenditure_decile,,rural,D9,2.565385
+latest,ZAF,expenditure_decile,,urban,D10,52.0898267133183
+latest,ZAF,expenditure_decile,,rural,D10,1.292058
+latest,ZAF,income_decile,,urban,D1,0.67939894293056
+latest,ZAF,income_decile,,rural,D1,1.19931824912348
+latest,ZAF,income_decile,,urban,D2,1.57675485145204
+latest,ZAF,income_decile,,rural,D2,3.54897029800024
+latest,ZAF,income_decile,,urban,D3,2.17801962777155
+latest,ZAF,income_decile,,rural,D3,2.32700525487538
+latest,ZAF,income_decile,,urban,D4,2.99695375162234
+latest,ZAF,income_decile,,rural,D4,4.28300070710829
+latest,ZAF,income_decile,,urban,D5,3.89974797350923
+latest,ZAF,income_decile,,rural,D5,6.01769174358454
+latest,ZAF,income_decile,,urban,D6,5.10294604380038
+latest,ZAF,income_decile,,rural,D6,6.21918424140258
+latest,ZAF,income_decile,,urban,D7,7.29704585314381
+latest,ZAF,income_decile,,rural,D7,8.75388558651906
+latest,ZAF,income_decile,,urban,D8,9.41209733685421
+latest,ZAF,income_decile,,rural,D8,10.5080387834976
+latest,ZAF,income_decile,,urban,D9,15.6010860644495
+latest,ZAF,income_decile,,rural,D9,16.0448094500778
+latest,ZAF,income_decile,,urban,D10,51.2559495544664
+latest,ZAF,income_decile,,rural,D10,41.0980956858111
+latest,ZAF,,,urban,,2.933
+latest,ZAF,,,rural,,3.5679475

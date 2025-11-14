@@ -4,12 +4,10 @@
 
 # Session Data files
 .RData
+.claude
 
 # User-specific files
 .Ruserdata
-
-# Example code in package build process
-*-Ex.R
 
 # Output files from R CMD build
 /*.tar.gz
@@ -19,20 +17,14 @@
 
 # RStudio files
 .Rproj.user/
+*.Rproj
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
+onlydeciles/*.png
+onlydeciles/*.pdf
+settlement/*.png
+settlement/*.pdf
+settlement_gender/*.png
+settlement_gender/*.pdf
 
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
+OLD
 
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-
-*.png
