@@ -6,7 +6,7 @@ require(stringr)
 require(tidyverse)
 require(openxlsx)
 
-folder <- "onlydeciles"
+folder = "settlement_gender"
 
 survey_inequality_filelist <- list.files(path = folder, pattern = "Inequality Input Data Template.*.csv$")
 survey_inequality_filelist <- survey_inequality_filelist[!str_detect(survey_inequality_filelist, "GENDER") & !str_detect(survey_inequality_filelist, "EMPTY")]
@@ -51,3 +51,20 @@ ggsave(path = folder, "Energy Expenditure Shares.png", width = 10, height=8)
 ggplot(data_output_allcountries %>% filter(var=="income_decile" & ((iso3=="ZAF" & year=="2017") | iso3!="ZAF")) %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value)) + facet_wrap(. ~ iso3, scales = "free_x") + theme_minimal() + theme(legend.position = "bottom") + labs(x="", y="") 
 ggplot(data_output_allcountries %>% filter(var=="expenditure_decile" & ((iso3=="ZAF" & year=="2017") | iso3!="ZAF")) %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value)) + facet_wrap(. ~ iso3, scales = "free_x") + theme_minimal() + theme(legend.position = "bottom") + labs(x="", y="") 
 ggsave(path = folder, "Expenditure deciles.png", width = 10, height=8)
+
+
+
+
+
+#India first trial
+data_test <- openxlsx::read.xlsx(xlsxFile = file.path(folder, "Inequality Input Data Template CMCC Settlement_Gender IND.xlsx"), sheet = 1, cols = 1:12)
+data_test <- fill(data_test, c(MODEL, SCENARIO, ISO3, VARIABLE, UNIT, Definition, number.of.variables))
+data_test <- data_test %>% mutate(value=as.numeric(X12))
+unique(data_test$VARIABLE)
+ggplot(data_test %>% filter(VARIABLE=="Expenditure Share|Energy|Housing|Female|Urban|Dx")) + geom_line(aes(decile, value, color=gender, linetype=`intra-hh.allocation`)) + facet_wrap(. ~ settlement)
+ggsave(path = folder, "Gender_settlement_housing.png", width = 10, height=6)
+ggplot(data_test %>% filter(VARIABLE=="Expenditure Share|Energy|Transportation|Female|Urban|Dx")) + geom_line(aes(decile, value, color=gender, linetype=`intra-hh.allocation`)) + facet_wrap(. ~ settlement)
+ggsave(path = folder, "Gender_settlement_transportation.png", width = 10, height=6)
+
+ggplot(data_test %>% filter(VARIABLE=="Income per capita|Female|Urban|Dx")) + geom_bar(aes(decile, value*0.012, fill=gender), stat="identity") + facet_grid(settlement ~ gender) + labs(y="Income per capita [USD[2020]]") + scale_y_continuous(labels = scales::label_dollar())
+ggsave(path = folder, "Gender_settlement_income.png", width = 10, height=6)
