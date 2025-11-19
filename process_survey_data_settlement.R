@@ -25,8 +25,8 @@ print(unique(read.xlsx(file.path(folder, str_subset(list.files(path = folder), "
 csv_files <- list.files(path = folder, pattern = "Inequality Input Data Template.*Settlement.*\\.csv$")
 xlsx_files <- list.files(path = folder, pattern = "Inequality Input Data Template.*Settlement.*\\.xlsx$")
 survey_inequality_filelist <- c(csv_files, xlsx_files)
-# Filter out EMPTY templates
-survey_inequality_filelist <- survey_inequality_filelist[!str_detect(survey_inequality_filelist, "EMPTY") & !str_detect(survey_inequality_filelist, "template")]
+# Filter out EMPTY templates and temp files
+survey_inequality_filelist <- survey_inequality_filelist[!str_detect(survey_inequality_filelist, "EMPTY") & !str_detect(survey_inequality_filelist, "template") & !str_detect(survey_inequality_filelist, "^~\\$")]
 
 cat("Found", length(survey_inequality_filelist), "files to process:\n")
 print(survey_inequality_filelist)
@@ -49,7 +49,39 @@ for (.file in survey_inequality_filelist) {
 
   # Basic checks
   cat("  Dimensions:", nrow(data), "rows x", ncol(data), "columns\n")
-  required_cols <- c("MODEL", "SCENARIO", "REGION", "VARIABLE", "UNIT")
+
+  # Remove duplicate rows (some files have duplicate entries)
+  # For exact duplicates, keep unique rows
+  data_before <- nrow(data)
+  data <- unique(data)
+  if(nrow(data) < data_before) {
+    cat("  Removed", data_before - nrow(data), "exact duplicate rows\n")
+  }
+
+  # For duplicate REGION+VARIABLE combinations with different values, take the mean
+  # This handles cases where files have multiple data sources/versions
+  check_settlement_cols <- "Urban" %in% names(data) || "Rural" %in% names(data)
+  if(check_settlement_cols) {
+    # For settlement columns format (Urban/Rural as columns)
+    # Check for duplicates
+    dup_check <- data[, .N, by=c("REGION", "VARIABLE")]
+    if(any(dup_check$N > 1)) {
+      n_dup <- sum(dup_check$N > 1)
+      # Take mean of duplicate entries
+      data <- data[, lapply(.SD, function(x) if(is.numeric(x)) mean(x, na.rm=TRUE) else first(x)),
+                   by=c("REGION", "VARIABLE"),
+                   .SDcols = setdiff(names(data), c("REGION", "VARIABLE"))]
+      cat("  Averaged", n_dup, "duplicate REGION+VARIABLE combinations\n")
+    }
+  }
+
+  # Add UNIT column if missing (some files don't have it)
+  if(!"UNIT" %in% names(data)) {
+    data$UNIT <- NA
+    cat("  Added missing UNIT column\n")
+  }
+
+  required_cols <- c("MODEL", "SCENARIO", "REGION", "VARIABLE")
   missing_cols <- setdiff(required_cols, names(data))
   if(length(missing_cols) > 0) {
     warning("Missing required columns in ", .file, ": ", paste(missing_cols, collapse = ", "))
@@ -61,7 +93,7 @@ for (.file in survey_inequality_filelist) {
   cat("  Data format:", ifelse(has_settlement_cols, "Settlement as columns", "Settlement in VARIABLE"), "\n")
 
   #specific command for EU
-  if(.file=="Inequality Input Data Template CMCC_EU.csv") data <- data %>% filter(REGION!="FRA") #%>% filter(!str_detect(VARIABLE, "Emissions"))
+  #if(.file=="Inequality Input Data Template CMCC_EU.csv") data <- data %>% filter(REGION!="FRA") #%>% filter(!str_detect(VARIABLE, "Emissions"))
 
   # Convert all potential year/data columns to character to avoid type conflicts
   data_cols <- setdiff(names(data), c("MODEL", "SCENARIO", "REGION", "VARIABLE", "UNIT"))
@@ -69,9 +101,9 @@ for (.file in survey_inequality_filelist) {
   data <- data %>% select(-str_subset(names(data), "^[VX][0-9]+"))
 
   data_output <- data %>% select(-MODEL, -SCENARIO, -UNIT) %>% rename(iso3=REGION) %>% mutate(dist=ifelse(str_detect(VARIABLE, "Inequality Index"), "0", str_extract(VARIABLE, "D[0-9].*$")))
-  data_output <- data_output %>% mutate(var=case_when(str_detect(VARIABLE, "Expenditure Share") ~ "expcat_input", str_detect(VARIABLE, "Income Share") ~ "incomecat", str_detect(VARIABLE, "Savings Rate") ~ "savings_rate", str_detect(VARIABLE, "Wealth Share") ~ "wealth_share", str_detect(VARIABLE, "Education") ~ "educat", str_detect(VARIABLE, "Wage Premium") ~ "wage_premium", str_detect(VARIABLE, "Expenditure Decile") ~ "expenditure_decile",  str_detect(VARIABLE, "Income Decile") ~ "income_decile", str_detect(VARIABLE, "Inequality Index") ~ "inequality_index", str_detect(VARIABLE, "Household Size") ~ "household_size", str_detect(VARIABLE, "Emissions per capita") ~ "emissions_per_capita"))
+  data_output <- data_output %>% mutate(var=case_when(str_detect(VARIABLE, "Expenditure Share") ~ "expcat_input", str_detect(VARIABLE, "Income Share") ~ "incomecat", str_detect(VARIABLE, "Savings Rate") ~ "savings_rate", str_detect(VARIABLE, "Wealth Share") ~ "wealth_share", str_detect(VARIABLE, "Education") ~ "educat", str_detect(VARIABLE, "Wage Premium") ~ "wage_premium", str_detect(VARIABLE, "Expenditure Decile") ~ "expenditure_decile",  str_detect(VARIABLE, "Income Decile") ~ "income_decile", str_detect(VARIABLE, "Inequality Index") ~ "inequality_index", str_detect(VARIABLE, "Equivalence Household Size") ~ "equivalence_household_size", str_detect(VARIABLE, "Household Size") ~ "household_size", str_detect(VARIABLE, "Emissions per capita") ~ "emissions_per_capita"))
   data_output <- data_output %>% filter(!str_detect(VARIABLE, "Meat")) #for now don't separate out meat consumption
-  data_output <- data_output %>% mutate(element=case_when(str_detect(VARIABLE, "Housing") ~ "energy_housing", str_detect(VARIABLE, "Transportation") ~ "energy_transportation", str_detect(VARIABLE, "Food") ~ "food", str_detect(VARIABLE, "Expenditure Share|Other") ~ "other", str_detect(VARIABLE, "Labour") ~ "labour", str_detect(VARIABLE, "Capital") ~ "capital", str_detect(VARIABLE, "Transfers") ~ "transfers", str_detect(VARIABLE, "Income Share|Other") ~ "other", str_detect(VARIABLE, "Under 15") ~ "Under 15", str_detect(VARIABLE, "No Education") ~ "No education", str_detect(VARIABLE, "Primary Education") ~ "Primary Education", str_detect(VARIABLE, "Secondary Education") ~ "Secondary Education", str_detect(VARIABLE, "Tertiary Education") ~ "Tertiary Education", str_detect(VARIABLE, "Gini") ~ "gini", str_detect(VARIABLE, "Absolute Poverty") ~ "absolute_poverty"))
+  data_output <- data_output %>% mutate(element=case_when(str_detect(VARIABLE, "Housing") ~ "energy_housing", str_detect(VARIABLE, "Transportation") ~ "energy_transportation", str_detect(VARIABLE, "Food") ~ "food", str_detect(VARIABLE, "Other") ~ "other", str_detect(VARIABLE, "Labour") ~ "labour", str_detect(VARIABLE, "Capital") ~ "capital", str_detect(VARIABLE, "Transfers") ~ "transfers", str_detect(VARIABLE, "Under 15") ~ "Under 15", str_detect(VARIABLE, "No Education") ~ "No education", str_detect(VARIABLE, "Primary Education") ~ "Primary Education", str_detect(VARIABLE, "Secondary Education") ~ "Secondary Education", str_detect(VARIABLE, "Tertiary Education") ~ "Tertiary Education", str_detect(VARIABLE, "Gini") ~ "gini", str_detect(VARIABLE, "Absolute Poverty") ~ "absolute_poverty"))
   #create a settlement variable - check if it's in VARIABLE or as columns
   if(has_settlement_cols) {
     # Format 1: Settlement as columns (Urban, Rural)
@@ -99,6 +131,15 @@ for (.file in survey_inequality_filelist) {
 
   # Ensure consistent column order
   data_output <- data_output %>% select(year, iso3, var, element, settlement, dist, value)
+
+  # Convert country names to ISO3C codes
+  # First check if iso3 contains full country names (not already ISO codes)
+  if(any(nchar(data_output$iso3) > 3, na.rm = TRUE)) {
+    data_output <- data_output %>%
+      mutate(iso3 = countrycode(iso3, origin = "country.name", destination = "iso3c",
+                                 custom_match = c("Slovak Republic" = "SVK")))
+    cat("  Converted country names to ISO3C codes\n")
+  }
 
   # Standardize units: Convert fractions to percentages where appropriate
   # Check if values for shares/rates are in fraction format (0-1) instead of percentage (0-100)
@@ -177,13 +218,37 @@ cat("Year range:", min(data_output_allcountries$year, na.rm=T), "-", max(data_ou
 cat("Output file: settlement/deciles_data_settlement.csv\n")
 
 #Show list of countries and variables
-ggplot(data_input_format %>% filter(str_detect(VARIABLE, "D10")) %>% group_by(REGION, VARIABLE) %>% summarize(avail=length(UNIT)) %>% mutate(VARIABLE=gsub("\\|D10", "", VARIABLE)), aes(REGION,VARIABLE, fill = avail)) + geom_tile() + theme_minimal() + theme(axis.text.x = element_text(angle=90, vjust = 0.5)) + guides(fill="none") 
-ggsave(path = folder, "Countries and Variables.png", width = 10, height=8)
+# Get all template variables for the y-axis
+all_template_vars <- unique(read.xlsx(file.path(folder, str_subset(list.files(path = folder), "EMPTY")))$VARIABLE)
+# Clean template variable names (remove settlement and Dx)
+all_template_vars_clean <- unique(gsub("\\|Urban\\|Dx|\\|Rural\\|Dx", "", all_template_vars))
+
+# Create plot data with all template variables
+plot_data <- data_input_format %>%
+  filter(str_detect(VARIABLE, "D10")) %>%
+  mutate(VARIABLE_clean = gsub("\\|D10", "", VARIABLE)) %>%
+  # Convert country names to ISO3C codes
+  mutate(REGION = countrycode(REGION, origin = "country.name", destination = "iso3c",
+                               custom_match = c("Slovak Republic" = "SVK"), warn = FALSE)) %>%
+  group_by(REGION, VARIABLE_clean) %>%
+  summarize(avail=length(UNIT), .groups = "drop") %>% complete(REGION, VARIABLE_clean = all_template_vars_clean, fill = list(avail = 0))
+
+ggplot(plot_data, aes(REGION, VARIABLE_clean, fill = factor(avail > 0))) +
+  geom_tile() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=90, vjust = 0.5, hjust=1),
+        axis.text.y = element_text(size=7)) +
+  labs(x="Country", y="Variable") +
+  scale_fill_manual(values = c("FALSE"="white", "TRUE"="steelblue"), name="Available") +
+  guides(fill="none")
+ggsave(path = folder, "Countries and Variables.png", width = 8, height=8)
 #show expenditure shares - all curves per country, solid=urban, dashed=rural, colors=element
 ggplot(data_output_allcountries %>%
-         filter(element %in% c("energy_housing", "energy_transportation", "food", "other") &
-                var=="expcat_input" & !is.na(settlement)) %>%
-         mutate(decile=(as.numeric(gsub("D", "", dist))))) +
+         filter(element %in% c("energy_housing", "energy_transportation", "food") &
+                var=="expcat_input" & !is.na(settlement) & !is.na(value)) %>%
+         mutate(decile=as.numeric(gsub("D", "", dist))) %>%
+         filter(!is.na(decile)) %>%
+         arrange(iso3, settlement, element, decile)) +
   geom_line(aes(decile, value, color=element, linetype=settlement), linewidth=0.8) +
   facet_wrap(. ~ iso3, scales = "free_y", ncol=3) +
   theme_minimal() +
@@ -194,9 +259,30 @@ ggplot(data_output_allcountries %>%
   scale_linetype_manual(values=c("rural"="dashed", "urban"="solid"))
 ggsave(path = folder, "Energy Expenditure Shares.png", width = 12, height=10)
 #Show deciles - separate by settlement (urban/rural)
-ggplot(data_output_allcountries %>% filter(var=="income_decile" & !is.na(settlement)) %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value, color=settlement)) + facet_wrap(. ~ iso3, scales = "free_y") + theme_minimal() + theme(legend.position = "bottom") + labs(x="Decile", y="Income decile share [%]") + scale_x_continuous(breaks=seq(1,10))
+ggplot(data_output_allcountries %>%
+         filter(var=="income_decile" & !is.na(settlement) & !is.na(value)) %>%
+         mutate(decile=as.numeric(gsub("D", "", dist))) %>%
+         filter(!is.na(decile)) %>%
+         arrange(iso3, settlement, decile)) +
+  geom_line(aes(decile, value, color=settlement)) +
+  facet_wrap(. ~ iso3, scales = "free_y") +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  labs(x="Decile", y="Income decile share [%]") +
+  scale_x_continuous(breaks=seq(1,10))
 ggsave(path = folder, "Income deciles.png", width = 10, height=8)
-ggplot(data_output_allcountries %>% filter(var=="expenditure_decile" & !is.na(settlement)) %>% mutate(decile=(as.numeric(gsub("D", "", dist))))) + geom_line(aes(decile, value, color=settlement)) + facet_wrap(. ~ iso3, scales = "free_y") + theme_minimal() + theme(legend.position = "bottom") + labs(x="Decile", y="Expenditure decile share [%]") + scale_x_continuous(breaks=seq(1,10))
+
+ggplot(data_output_allcountries %>%
+         filter(var=="expenditure_decile" & !is.na(settlement) & !is.na(value)) %>%
+         mutate(decile=as.numeric(gsub("D", "", dist))) %>%
+         filter(!is.na(decile)) %>%
+         arrange(iso3, settlement, decile)) +
+  geom_line(aes(decile, value, color=settlement)) +
+  facet_wrap(. ~ iso3, scales = "free_y") +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  labs(x="Decile", y="Expenditure decile share [%]") +
+  scale_x_continuous(breaks=seq(1,10))
 ggsave(path = folder, "Expenditure deciles.png", width = 10, height=8)
 
 

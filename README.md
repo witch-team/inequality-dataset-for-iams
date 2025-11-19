@@ -1,14 +1,8 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
+# An inequality dataset at the income decile level for use in IAMs
 
-# The NAVIGATE inequality dataset at the income decile level for use in IAMs
+### Authors: Johannes Emmerling, Shouro Dasgupta, Simon Feindt, Daniele Malerba
 
-### Authors: Johannes Emmerling, Shouro Dasgupta, Simon Feindt, Daniele Malerba, Carolina Grottera
-
-Within NAVIGATE, a standardized input data template has been defined and
+Within the NAVIGATE and PRISMA projects, a standardized input data template has been defined and
 data has been collected using household surveys from a number of
 developed and OECE countries. Available countries (for the latest year,
 between 2008 and 2017, available), include India, Brazil, France, South
@@ -50,4 +44,6 @@ which show a strong regressive pattern for residential energy
 consumption while for transportation it appears in most countries to be
 progressive.
 
-Contact: johannes.emmerling\@eiee.org
+Within PRISMA, the dataset has been expanded by including more countries, the urban/rural divide, and gender differentiation where available.
+
+Contact: johannes.emmerling\@cmcc.it
