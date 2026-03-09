@@ -16,6 +16,9 @@ require(openxlsx)
 
 folder <- "settlement"
 
+# Open PDF for ALL comprehensive plots
+pdf(file=file.path(folder, "settlement_inequality_analysis.pdf"), width = 12, height = 10)
+
 #first get POTENTIAL list of variables
 print("All variables in the template")
 print(unique(read.xlsx(file.path(folder, str_subset(list.files(path = folder), "EMPTY")))$VARIABLE))
@@ -59,20 +62,19 @@ for (.file in survey_inequality_filelist) {
   }
 
   # For duplicate REGION+VARIABLE combinations with different values, take the mean
-  # This handles cases where files have multiple data sources/versions
-  check_settlement_cols <- "Urban" %in% names(data) || "Rural" %in% names(data)
-  if(check_settlement_cols) {
-    # For settlement columns format (Urban/Rural as columns)
-    # Check for duplicates
-    dup_check <- data[, .N, by=c("REGION", "VARIABLE")]
-    if(any(dup_check$N > 1)) {
-      n_dup <- sum(dup_check$N > 1)
-      # Take mean of duplicate entries
-      data <- data[, lapply(.SD, function(x) if(is.numeric(x)) mean(x, na.rm=TRUE) else first(x)),
-                   by=c("REGION", "VARIABLE"),
-                   .SDcols = setdiff(names(data), c("REGION", "VARIABLE"))]
-      cat("  Averaged", n_dup, "duplicate REGION+VARIABLE combinations\n")
-    }
+  dup_check <- data[, .N, by=c("REGION", "VARIABLE")]
+  if(any(dup_check$N > 1)) {
+    n_dup <- sum(dup_check$N > 1)
+    data <- data[, lapply(.SD, function(x) if(is.numeric(x)) mean(x, na.rm=TRUE) else first(x)),
+                 by=c("REGION", "VARIABLE"),
+                 .SDcols = setdiff(names(data), c("REGION", "VARIABLE"))]
+    cat("  Averaged", n_dup, "duplicate REGION+VARIABLE combinations\n")
+  }
+
+  # Normalise column names: ISO3 -> REGION (template used ISO3 historically)
+  if("ISO3" %in% names(data) & !"REGION" %in% names(data)) {
+    data <- data %>% rename(REGION = ISO3)
+    cat("  Renamed ISO3 -> REGION\n")
   }
 
   # Add UNIT column if missing (some files don't have it)
@@ -88,9 +90,9 @@ for (.file in survey_inequality_filelist) {
     next
   }
 
-  # Check if Urban/Rural are column names (alternative format)
-  has_settlement_cols <- "Urban" %in% names(data) || "Rural" %in% names(data)
-  cat("  Data format:", ifelse(has_settlement_cols, "Settlement as columns", "Settlement in VARIABLE"), "\n")
+  # Detect format: template xlsx (D1-D10 as columns) vs EU csv (year columns, decile in VARIABLE)
+  has_decile_cols <- any(str_detect(names(data), "^D[0-9]+$"))
+  cat("  Data format:", ifelse(has_decile_cols, "Template (D1-D10 columns)", "EU/CSV (year columns)"), "\n")
 
   #specific command for EU
   #if(.file=="Inequality Input Data Template CMCC_EU.csv") data <- data %>% filter(REGION!="FRA") #%>% filter(!str_detect(VARIABLE, "Emissions"))
@@ -104,37 +106,35 @@ for (.file in survey_inequality_filelist) {
   data_output <- data_output %>% mutate(var=case_when(str_detect(VARIABLE, "Expenditure Share") ~ "expcat_input", str_detect(VARIABLE, "Income Share") ~ "incomecat", str_detect(VARIABLE, "Savings Rate") ~ "savings_rate", str_detect(VARIABLE, "Wealth Share") ~ "wealth_share", str_detect(VARIABLE, "Education") ~ "educat", str_detect(VARIABLE, "Wage Premium") ~ "wage_premium", str_detect(VARIABLE, "Expenditure Decile") ~ "expenditure_decile",  str_detect(VARIABLE, "Income Decile") ~ "income_decile", str_detect(VARIABLE, "Inequality Index") ~ "inequality_index", str_detect(VARIABLE, "Equivalence Household Size") ~ "equivalence_household_size", str_detect(VARIABLE, "Household Size") ~ "household_size", str_detect(VARIABLE, "Emissions per capita") ~ "emissions_per_capita"))
   data_output <- data_output %>% filter(!str_detect(VARIABLE, "Meat")) #for now don't separate out meat consumption
   data_output <- data_output %>% mutate(element=case_when(str_detect(VARIABLE, "Housing") ~ "energy_housing", str_detect(VARIABLE, "Transportation") ~ "energy_transportation", str_detect(VARIABLE, "Food") ~ "food", str_detect(VARIABLE, "Other") ~ "other", str_detect(VARIABLE, "Labour") ~ "labour", str_detect(VARIABLE, "Capital") ~ "capital", str_detect(VARIABLE, "Transfers") ~ "transfers", str_detect(VARIABLE, "Under 15") ~ "Under 15", str_detect(VARIABLE, "No Education") ~ "No education", str_detect(VARIABLE, "Primary Education") ~ "Primary Education", str_detect(VARIABLE, "Secondary Education") ~ "Secondary Education", str_detect(VARIABLE, "Tertiary Education") ~ "Tertiary Education", str_detect(VARIABLE, "Gini") ~ "gini", str_detect(VARIABLE, "Absolute Poverty") ~ "absolute_poverty"))
-  #create a settlement variable - check if it's in VARIABLE or as columns
-  if(has_settlement_cols) {
-    # Format 1: Settlement as columns (Urban, Rural)
-    # These columns contain the actual values for urban and rural settlements
-    settlement_cols <- intersect(c("Urban", "Rural"), names(data_output))
+  # Settlement is always in VARIABLE name: Type|Category|Urban|Dx or Type|Category|Rural|Dx
+  data_output <- data_output %>%
+    mutate(settlement = case_when(str_detect(VARIABLE, "Urban") ~ "urban",
+                                  str_detect(VARIABLE, "Rural") ~ "rural")) %>%
+    select(-VARIABLE)
 
+  if(has_decile_cols) {
+    # Template xlsx format: D1-D10 are value columns, "value" column for non-decile rows
     data_output <- data_output %>%
-      select(-VARIABLE) %>%
-      pivot_longer(cols = all_of(settlement_cols),
-                   names_to = "settlement",
-                   values_to = "value") %>%
-      mutate(settlement = tolower(settlement)) %>%
+      pivot_longer(cols = c(matches("^D[0-9]+$"), any_of("value")), names_to = "year") %>%
+      filter(!is.na(value)) %>%
+      mutate(dist = case_when(var == "inequality_index" ~ "0",
+                              !is.na(dist) ~ dist,
+                              str_detect(year, "^D[0-9]+$") ~ year,
+                              TRUE ~ "0")) %>%
       as.data.frame()
-
-    # Try to extract year from filename or use "latest" as default
-    year_match <- str_extract(.file, "[0-9]{4}")
-    default_year <- ifelse(is.na(year_match), "latest", year_match)
-    data_output <- data_output %>% mutate(year = default_year)
-
   } else {
-    # Format 2: Settlement in VARIABLE field (original format)
-    data_output <- data_output %>% mutate(settlement=case_when(str_detect(VARIABLE, "Urban") ~ "urban", str_detect(VARIABLE, "Rural") ~ "rural"))
-    data_output <- data_output %>% select(-VARIABLE) %>% pivot_longer(cols = setdiff(names(data_output), c("iso3", "VARIABLE", "dist", "settlement", "var", "element")), names_to = "year") %>% as.data.frame()
+    # EU/CSV format: year columns contain actual years, decile already encoded in dist from VARIABLE
+    data_output <- data_output %>%
+      pivot_longer(cols = setdiff(names(data_output), c("iso3", "dist", "settlement", "var", "element")),
+                   names_to = "year") %>%
+      as.data.frame()
   }
 
   # Ensure consistent column order
   data_output <- data_output %>% select(year, iso3, var, element, settlement, dist, value)
 
-  # Convert country names to ISO3C codes
-  # First check if iso3 contains full country names (not already ISO codes)
-  if(any(nchar(data_output$iso3) > 3, na.rm = TRUE)) {
+  # Convert country names to ISO3C codes only if file ends with " EU"
+  if(str_detect(.file, " EU\\.[^.]+$")) {
     data_output <- data_output %>%
       mutate(iso3 = countrycode(iso3, origin = "country.name", destination = "iso3c",
                                  custom_match = c("Slovak Republic" = "SVK")))
@@ -195,13 +195,21 @@ for (.file in survey_inequality_filelist) {
       }
     }
   }
+  # For EU files, convert REGION in raw data before storing in data_input_format
+  if(str_detect(.file, " EU\\.[^.]+$")) {
+    data <- data %>%
+      mutate(REGION = countrycode(REGION, origin = "country.name", destination = "iso3c",
+                                   custom_match = c("Slovak Republic" = "SVK"), warn = FALSE))
+  }
   if(.file==survey_inequality_filelist[1]){
     data_output_allcountries <- data_output
-    data_input_format <- data[,1:6]
+    data_input_format <- data %>% select(any_of(c("REGION", "VARIABLE", "UNIT")))
   }else{
     data_output_allcountries <- rbind(data_output_allcountries, data_output)
-    data_input_format <- rbind(data_input_format, data[,1:6], fill=T)
-  } 
+    data_input_format <- rbind(data_input_format,
+                               data %>% select(any_of(c("REGION", "VARIABLE", "UNIT"))),
+                               fill = TRUE)
+  }
 }
 
 # STORE DATA combined CSV file
@@ -220,18 +228,17 @@ cat("Output file: settlement/deciles_data_settlement.csv\n")
 #Show list of countries and variables
 # Get all template variables for the y-axis
 all_template_vars <- unique(read.xlsx(file.path(folder, str_subset(list.files(path = folder), "EMPTY")))$VARIABLE)
-# Clean template variable names (remove settlement and Dx)
-all_template_vars_clean <- unique(gsub("\\|Urban\\|Dx|\\|Rural\\|Dx", "", all_template_vars))
+# Clean template variable names (remove settlement and Dx suffix)
+all_template_vars_clean <- unique(gsub("\\|Urban\\|Dx|\\|Rural\\|Dx", "",
+                                       all_template_vars[str_detect(all_template_vars, "\\|Dx")]))
 
-# Create plot data with all template variables
+# Create plot data: one row per REGION x base-variable, avail = whether data exists
 plot_data <- data_input_format %>%
-  filter(str_detect(VARIABLE, "D10")) %>%
-  mutate(VARIABLE_clean = gsub("\\|D10", "", VARIABLE)) %>%
-  # Convert country names to ISO3C codes
-  mutate(REGION = countrycode(REGION, origin = "country.name", destination = "iso3c",
-                               custom_match = c("Slovak Republic" = "SVK"), warn = FALSE)) %>%
+  filter(str_detect(VARIABLE, "\\|Dx$")) %>%
+  mutate(VARIABLE_clean = gsub("\\|Urban\\|Dx$|\\|Rural\\|Dx$", "", VARIABLE)) %>%
   group_by(REGION, VARIABLE_clean) %>%
-  summarize(avail=length(UNIT), .groups = "drop") %>% complete(REGION, VARIABLE_clean = all_template_vars_clean, fill = list(avail = 0))
+  summarize(avail = n(), .groups = "drop") %>%
+  complete(REGION, VARIABLE_clean = all_template_vars_clean, fill = list(avail = 0))
 
 ggplot(plot_data, aes(REGION, VARIABLE_clean, fill = factor(avail > 0))) +
   geom_tile() +
@@ -258,32 +265,24 @@ ggplot(data_output_allcountries %>%
   scale_x_continuous(breaks=seq(1,10)) +
   scale_linetype_manual(values=c("rural"="dashed", "urban"="solid"))
 ggsave(path = folder, "Energy Expenditure Shares.png", width = 12, height=10)
-#Show deciles - separate by settlement (urban/rural)
-ggplot(data_output_allcountries %>%
-         filter(var=="income_decile" & !is.na(settlement) & !is.na(value)) %>%
-         mutate(decile=as.numeric(gsub("D", "", dist))) %>%
-         filter(!is.na(decile)) %>%
-         arrange(iso3, settlement, decile)) +
-  geom_line(aes(decile, value, color=settlement)) +
-  facet_wrap(. ~ iso3, scales = "free_y") +
-  theme_minimal() +
-  theme(legend.position = "bottom") +
-  labs(x="Decile", y="Income decile share [%]") +
-  scale_x_continuous(breaks=seq(1,10))
-ggsave(path = folder, "Income deciles.png", width = 10, height=8)
-
+# Show expenditure deciles - separate by settlement (urban/rural)
+# Expenditure is more robust than income (not affected by data reversal issues)
 ggplot(data_output_allcountries %>%
          filter(var=="expenditure_decile" & !is.na(settlement) & !is.na(value)) %>%
          mutate(decile=as.numeric(gsub("D", "", dist))) %>%
          filter(!is.na(decile)) %>%
          arrange(iso3, settlement, decile)) +
-  geom_line(aes(decile, value, color=settlement)) +
+  geom_line(aes(decile, value, color=settlement), linewidth=0.8) +
+  geom_hline(yintercept=10, linetype="dashed", alpha=0.3, color="gray50") +
   facet_wrap(. ~ iso3, scales = "free_y") +
   theme_minimal() +
   theme(legend.position = "bottom") +
-  labs(x="Decile", y="Expenditure decile share [%]") +
+  labs(x="Decile (1=poorest, 10=richest)",
+       y="Expenditure decile share [%]",
+       title="Expenditure Distribution by Decile",
+       subtitle="Lines should go UP from D1 to D10. Dashed line = perfect equality (10%)") +
   scale_x_continuous(breaks=seq(1,10))
-ggsave(path = folder, "Expenditure deciles.png", width = 10, height=8)
+ggsave(path = folder, "Expenditure deciles.png", width = 12, height=10)
 
 
 # ============================================================================
@@ -347,30 +346,7 @@ for(country in unique(data_output_allcountries$iso3)) {
 
   country_data <- data_output_allcountries %>% filter(iso3 == country & !is.na(settlement))
 
-  # 1. Income distribution
-  income_data <- country_data %>%
-    filter(var == "income_decile") %>%
-    mutate(share = value / 100,  # convert percentage to proportion
-           pop_share = 0.1 * 0.5,  # 10% per decile, 50% per settlement
-           group = settlement) %>%
-    filter(!is.na(share) & share > 0)
-
-  if(nrow(income_data) > 0) {
-    income_theil <- tryCatch({
-      # Simple Theil calculation across all deciles
-      shares <- income_data$share
-      theil <- calculate_theil(shares)
-      theil
-    }, error = function(e) NA)
-
-    theil_results <- rbind(theil_results, data.frame(
-      iso3 = country,
-      variable = "income",
-      theil = income_theil
-    ))
-  }
-
-  # 2. Expenditure distribution
+  # 1. Expenditure distribution (more robust than income)
   exp_data <- country_data %>%
     filter(var == "expenditure_decile") %>%
     mutate(share = value / 100,
@@ -419,15 +395,27 @@ cat("\n--- Theil Index Results ---\n")
 print(theil_results %>% pivot_wider(names_from = variable, values_from = theil))
 
 
-# Plot Theil indices
-ggplot(theil_results, aes(x=iso3, y=theil, fill=variable)) +
-  geom_bar(stat="identity", position="dodge") +
+# Plot Theil indices - create faceted plot with 4 panels (one per variable)
+theil_results_labeled <- theil_results %>%
+  mutate(variable_label = case_when(
+    variable == "income" ~ "Income",
+    variable == "expenditure" ~ "Expenditure",
+    variable == "energy_housing" ~ "Energy: Housing",
+    variable == "energy_transportation" ~ "Energy: Transportation",
+    TRUE ~ variable
+  ))
+
+ggplot(theil_results_labeled, aes(x=iso3, y=theil, fill=variable_label)) +
+  geom_bar(stat="identity", show.legend=FALSE) +
+  facet_wrap(~ variable_label, scales="fixed", ncol=2) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle=45, hjust=1)) +
-  labs(x="Country", y="Theil T Index", fill="Variable",
-       title="Inequality Measures (Theil T Index)") +
+  theme(axis.text.x = element_text(angle=90, hjust=1, vjust=0.5, size=8),
+        strip.text = element_text(size=11, face="bold")) +
+  labs(x="Country", y="Theil T Index",
+       title="Inequality Measures (Theil T Index)",
+       subtitle="Fixed y-scale for comparability across variables") +
   scale_fill_brewer(palette="Set2")
-ggsave(path = folder, "Theil_decomposition.png", width = 10, height=6)
+ggsave(path = folder, "Theil_decomposition.png", width = 12, height=8)
 
 
 # ============================================================================
@@ -479,13 +467,13 @@ for(country in unique(data_output_allcountries$iso3)) {
     cat("  WARNING: No household size data, using 50-50 split\n")
   }
 
-  # For each variable type
-  for(var_type in c("income_decile", "expenditure_decile")) {
+  # For expenditure deciles (more robust than income)
+  for(var_type in c("expenditure_decile")) {
 
     var_data <- country_data %>%
       filter(var == var_type) %>%
       mutate(decile_num = as.numeric(gsub("D", "", dist)),
-             share = value / 100) %>%  # Share of total income/expenditure in this decile
+             share = value / 100) %>%  # Share of total expenditure in this decile
       filter(!is.na(share) & !is.na(decile_num)) %>%
       arrange(settlement, decile_num)
 
@@ -514,7 +502,7 @@ for(country in unique(data_output_allcountries$iso3)) {
     urban_total_income_share <- urban_total_income_share / total_income
     rural_total_income_share <- rural_total_income_share / total_income
 
-    # Mean income per capita in each group
+    # Mean expenditure per capita in each group
     urban_mean_income <- urban_total_income_share / urban_pop_share
     rural_mean_income <- rural_total_income_share / rural_pop_share
 
@@ -533,7 +521,7 @@ for(country in unique(data_output_allcountries$iso3)) {
 
     total_theil <- calculate_theil(income_shares, pop_weights)
 
-    # Between-group Theil: Compare urban vs rural mean incomes
+    # Between-group Theil: Compare urban vs rural mean expenditures
     # Treating all urban as having urban mean, all rural as having rural mean
     group_income_shares <- c(urban_total_income_share, rural_total_income_share)
     group_pop_weights <- c(urban_pop_share, rural_pop_share)
@@ -544,7 +532,7 @@ for(country in unique(data_output_allcountries$iso3)) {
     urban_theil <- calculate_theil(urban_data$share / sum(urban_data$share))
     rural_theil <- calculate_theil(rural_data$share / sum(rural_data$share))
 
-    # Weight by group's income share (not population share)
+    # Weight by group's expenditure share (not population share)
     within_theil <- urban_total_income_share * urban_theil + rural_total_income_share * rural_theil
 
     # Verification: total should equal between + within
@@ -651,7 +639,6 @@ decomp_long <- decomp_results %>%
 # Create better labels
 decomp_long <- decomp_long %>%
   mutate(variable_label = case_when(
-    variable == "income_decile" ~ "Income",
     variable == "expenditure_decile" ~ "Expenditure",
     variable == "energy_housing" ~ "Housing Energy",
     variable == "energy_transportation" ~ "Transport Energy",
@@ -673,3 +660,306 @@ ggplot(decomp_long, aes(x=iso3, y=theil, fill=component)) +
 ggsave(path = folder, "Theil_between_within_decomposition.png", width = 12, height=8)
 
 
+# ============================================================================
+# ADDITIONAL COMPREHENSIVE VISUALIZATIONS
+# ============================================================================
+
+cat("\n\n=== Creating Additional Visualizations ===\n\n")
+
+# Prepare comparison data for plotting
+comparison_data <- data.frame()
+for(country in unique(data_output_allcountries$iso3)) {
+  country_data <- data_output_allcountries %>% filter(iso3 == country & !is.na(settlement))
+
+  for(var_type in c("expenditure_decile")) {
+    for(settlement_type in c("urban", "rural")) {
+      var_data <- country_data %>%
+        filter(var == var_type, settlement == settlement_type) %>%
+        mutate(decile_num = as.numeric(gsub("D", "", dist)),
+               share = value / 100) %>%
+        filter(!is.na(share) & !is.na(decile_num))
+
+      if(nrow(var_data) >= 10) {
+        shares <- var_data$share / sum(var_data$share)
+        theil <- calculate_theil(shares)
+        comparison_data <- rbind(comparison_data, data.frame(
+          iso3 = country, variable = var_type, settlement = settlement_type, theil = theil
+        ))
+      }
+    }
+  }
+
+  for(energy_type in c("energy_housing", "energy_transportation")) {
+    for(settlement_type in c("urban", "rural")) {
+      energy_data <- country_data %>%
+        filter(var == "expcat_input", element == energy_type, settlement == settlement_type) %>%
+        mutate(decile_num = as.numeric(gsub("D", "", dist)),
+               share = value / 100) %>%
+        filter(!is.na(share) & !is.na(decile_num))
+
+      if(nrow(energy_data) >= 10) {
+        shares <- energy_data$share / sum(energy_data$share)
+        theil <- calculate_theil(shares)
+        comparison_data <- rbind(comparison_data, data.frame(
+          iso3 = country, variable = energy_type, settlement = settlement_type, theil = theil
+        ))
+      }
+    }
+  }
+}
+
+comparison_wide <- comparison_data %>%
+  pivot_wider(names_from = settlement, values_from = theil) %>%
+  mutate(urban_rural_ratio = urban / rural,
+         difference = urban - rural)
+
+# 1. Scatter Plot - All Variables
+cat("  Creating scatter plot - all variables...\n")
+scatter_all <- comparison_wide %>%
+  mutate(variable_label = case_when(
+    variable == "expenditure_decile" ~ "Expenditure",
+    variable == "energy_housing" ~ "Energy: Housing",
+    variable == "energy_transportation" ~ "Energy: Transport",
+    TRUE ~ variable
+  ))
+
+ggplot(scatter_all, aes(x = rural, y = urban, color = variable_label, shape = variable_label)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "gray40", linewidth = 1) +
+  geom_point(size = 4, alpha = 0.8) +
+  geom_text(data = scatter_all %>% filter(abs(urban - rural) > 0.15 | urban > 0.4),
+            aes(label = iso3), size = 3, hjust = -0.2, vjust = -0.2, show.legend = FALSE) +
+  scale_color_brewer(palette = "Set2", name = "Variable") +
+  scale_shape_manual(values = c(16, 17, 15), name = "Variable") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom") +
+  labs(x = "Rural Inequality (Theil Index)",
+       y = "Urban Inequality (Theil Index)",
+       title = "Urban vs Rural Inequality: All Variables") +
+  coord_fixed()
+
+# 2. Scatter Plot - Expenditure Only (Zoomed)
+cat("  Creating scatter plot - expenditure categories only...\n")
+scatter_exp <- comparison_wide %>%
+  mutate(variable_label = case_when(
+    variable == "expenditure_decile" ~ "Total Expenditure",
+    variable == "energy_housing" ~ "Housing Energy",
+    variable == "energy_transportation" ~ "Transport Energy",
+    TRUE ~ variable
+  ))
+
+ggplot(scatter_exp, aes(x = rural, y = urban, color = variable_label, shape = variable_label)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "gray40", linewidth = 1) +
+  geom_point(size = 4, alpha = 0.8) +
+  geom_text(data = scatter_exp %>%
+              filter(variable == "expenditure_decile" & (abs(urban - rural) > 0.05 | urban > 0.15)),
+            aes(label = iso3), size = 3, hjust = -0.2, vjust = -0.2, show.legend = FALSE) +
+  scale_color_manual(values = c("Total Expenditure" = "#E69F00",
+                                  "Housing Energy" = "#56B4E9",
+                                  "Transport Energy" = "#009E73"),
+                     name = "Category") +
+  scale_shape_manual(values = c(16, 17, 15), name = "Category") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom") +
+  labs(x = "Rural Inequality (Theil Index)",
+       y = "Urban Inequality (Theil Index)",
+       title = "Urban vs Rural Inequality: Expenditure Categories (Zoomed)",
+       subtitle = "Better scale for comparing expenditure patterns") +
+  coord_fixed(xlim = c(0, 0.35), ylim = c(0, 0.35))
+
+# 3. Scatter Plot - Energy Expenditures ONLY
+cat("  Creating scatter plot - energy expenditures only...\n")
+scatter_energy <- comparison_wide %>%
+  filter(variable %in% c("energy_housing", "energy_transportation")) %>%
+  mutate(variable_label = case_when(
+    variable == "energy_housing" ~ "Housing Energy",
+    variable == "energy_transportation" ~ "Transport Energy",
+    TRUE ~ variable
+  ))
+
+ggplot(scatter_energy, aes(x = rural, y = urban, color = variable_label, shape = variable_label)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "gray40", linewidth = 1) +
+  geom_point(size = 4, alpha = 0.8) +
+  geom_text(data = scatter_energy %>% filter(abs(urban - rural) > 0.02 | urban > 0.08),
+            aes(label = iso3), size = 3, hjust = -0.2, vjust = -0.2, show.legend = FALSE) +
+  scale_color_manual(values = c("Housing Energy" = "#56B4E9",
+                                  "Transport Energy" = "#009E73"),
+                     name = "Energy Type") +
+  scale_shape_manual(values = c(17, 15), name = "Energy Type") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom") +
+  labs(x = "Rural Inequality (Theil Index)",
+       y = "Urban Inequality (Theil Index)",
+       title = "Urban vs Rural Inequality: Energy Expenditures Only",
+       subtitle = "Housing vs Transportation energy inequality patterns") +
+  coord_fixed()
+
+# 4. Urban-Rural Gap Ranking
+cat("  Creating urban-rural gap ranking...\n")
+gap_data <- comparison_wide %>%
+  filter(variable == "expenditure_decile") %>%
+  arrange(desc(difference)) %>%
+  mutate(iso3 = factor(iso3, levels = iso3),
+         gap_direction = ifelse(difference > 0, "Urban Higher", "Rural Higher"))
+
+ggplot(gap_data, aes(x = iso3, y = difference, fill = gap_direction)) +
+  geom_col() +
+  geom_hline(yintercept = 0, color = "black", linewidth = 0.5) +
+  scale_fill_manual(values = c("Urban Higher" = "#56B4E9", "Rural Higher" = "#E69F00")) +
+  theme_minimal(base_size = 11) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 9)) +
+  labs(x = "Country", y = "Urban - Rural Gap (Theil)",
+       title = "Urban-Rural Inequality Gap: Expenditure",
+       fill = "Higher Inequality")
+
+# 5. Top/Bottom Decile Comparison
+cat("  Creating top/bottom decile comparison...\n")
+decile_extremes <- data_output_allcountries %>%
+  filter(var == "expenditure_decile", !is.na(settlement)) %>%
+  mutate(decile = as.numeric(gsub("D", "", dist))) %>%
+  filter(decile %in% c(1, 10)) %>%
+  select(iso3, settlement, decile, value) %>%
+  pivot_wider(names_from = decile, values_from = value, names_prefix = "D")
+
+ggplot(decile_extremes, aes(x = D1, y = D10, color = settlement, shape = settlement)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "gray40") +
+  geom_point(size = 4, alpha = 0.8) +
+  geom_text(data = decile_extremes %>% filter(D10 > 25 | D1 < 4),
+            aes(label = iso3), size = 3, hjust = -0.2, vjust = -0.2, show.legend = FALSE) +
+  scale_color_manual(values = c("urban" = "#56B4E9", "rural" = "#E69F00")) +
+  scale_shape_manual(values = c(16, 17)) +
+  theme_minimal(base_size = 12) +
+  labs(x = "Poorest Decile Share (%)", y = "Richest Decile Share (%)",
+       title = "Expenditure: Poorest vs Richest Decile",
+       subtitle = "Distance from diagonal = degree of inequality",
+       color = "Settlement", shape = "Settlement")
+
+# 6. Lorenz Curves for Selected Countries
+cat("  Creating Lorenz curves...\n")
+selected_countries <- c("ZAF", "USA", "CHN", "DNK", "IND", "DEU")
+lorenz_data <- data_output_allcountries %>%
+  filter(var == "expenditure_decile", iso3 %in% selected_countries, !is.na(settlement)) %>%
+  mutate(decile = as.numeric(gsub("D", "", dist))) %>%
+  filter(!is.na(decile)) %>%
+  arrange(iso3, settlement, decile) %>%
+  group_by(iso3, settlement) %>%
+  mutate(cum_pop = decile * 10,
+         cum_expenditure = cumsum(value)) %>%
+  ungroup() %>%
+  bind_rows(data.frame(
+    iso3 = rep(selected_countries, each = 2),
+    settlement = rep(c("urban", "rural"), length(selected_countries)),
+    decile = 0, cum_pop = 0, cum_expenditure = 0
+  )) %>%
+  arrange(iso3, settlement, decile)
+
+ggplot(lorenz_data, aes(x = cum_pop, y = cum_expenditure, color = settlement)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "gray40") +
+  geom_line(linewidth = 1) +
+  geom_point(data = lorenz_data %>% filter(decile > 0), size = 2) +
+  facet_wrap(~ iso3, ncol = 3) +
+  scale_color_manual(values = c("urban" = "#56B4E9", "rural" = "#E69F00")) +
+  theme_minimal(base_size = 11) +
+  labs(x = "Cumulative Population (%)", y = "Cumulative Expenditure (%)",
+       title = "Lorenz Curves: Expenditure Distribution",
+       color = "Settlement") +
+  coord_fixed()
+
+# 7. Concentration Ratios
+cat("  Creating concentration ratio plot...\n")
+concentration <- data_output_allcountries %>%
+  filter(var == "expenditure_decile", !is.na(settlement)) %>%
+  mutate(decile = as.numeric(gsub("D", "", dist))) %>%
+  filter(decile %in% c(1, 10)) %>%
+  select(iso3, settlement, decile, value) %>%
+  pivot_wider(names_from = decile, values_from = value, names_prefix = "D") %>%
+  mutate(concentration_ratio = D10 / D1) %>%
+  arrange(desc(concentration_ratio))
+
+ggplot(concentration, aes(x = reorder(paste(iso3, settlement), concentration_ratio),
+                          y = concentration_ratio, fill = settlement)) +
+  geom_col() +
+  geom_hline(yintercept = 1, linetype = "dashed", color = "red") +
+  scale_fill_manual(values = c("urban" = "#56B4E9", "rural" = "#E69F00")) +
+  theme_minimal(base_size = 10) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 7)) +
+  labs(x = "Country-Settlement", y = "Concentration Ratio (D10/D1)",
+       title = "Expenditure Concentration: Richest/Poorest Ratio",
+       fill = "Settlement")
+
+cat("\n✓ All visualizations added to PDF\n")
+
+
+# ============================================================================
+# 8. WORLD MAP: Gini Index of Total Expenditures
+# ============================================================================
+
+cat("  Creating world map with Gini index...\n")
+
+# Gini from decile shares: Gini = (2 * sum(i * s_i)) / (n * sum(s_i)) - (n+1)/n
+# where s_i are shares sorted ascending (D1=poorest to D10=richest)
+calculate_gini <- function(shares) {
+  shares <- shares[!is.na(shares) & shares > 0]
+  n <- length(shares)
+  if(n < 2) return(NA)
+  s <- sort(shares)          # ascending: poorest first
+  s <- s / sum(s)            # normalize to sum to 1
+  gini <- (2 * sum((1:n) * s)) / (n * sum(s)) - (n + 1) / n
+  return(gini)
+}
+
+# Calculate Gini per country-settlement, then average across settlements
+gini_data <- data_output_allcountries %>%
+  filter(var == "expenditure_decile", !is.na(value), !is.na(settlement)) %>%
+  mutate(decile = as.numeric(gsub("D", "", dist))) %>%
+  filter(!is.na(decile)) %>%
+  arrange(iso3, settlement, decile) %>%
+  group_by(iso3, settlement) %>%
+  summarize(
+    gini     = calculate_gini(value),
+    n_deciles = n(),
+    .groups  = "drop"
+  ) %>%
+  filter(!is.na(gini), n_deciles >= 10) %>%
+  group_by(iso3) %>%
+  summarize(gini = mean(gini, na.rm = TRUE), .groups = "drop")
+
+cat("Gini indices by country:\n")
+print(gini_data %>% arrange(desc(gini)))
+
+library(maps)
+world_map <- map_data("world")
+world_map$iso3 <- countrycode(world_map$region, origin = "country.name",
+                               destination = "iso3c", warn = FALSE)
+world_map <- world_map %>% left_join(gini_data, by = "iso3")
+
+map_plot <- ggplot(world_map, aes(x = long, y = lat, group = group, fill = gini)) +
+  geom_polygon(color = "white", linewidth = 0.15) +
+  scale_fill_viridis_c(
+    name      = "Gini\n(Expenditure)",
+    na.value  = "grey70",
+    option    = "plasma",
+    direction = -1,
+    labels    = scales::number_format(accuracy = 0.01)
+  ) +
+  coord_fixed(1.3, xlim = c(-180, 180), ylim = c(-60, 85)) +
+  theme_minimal(base_size = 12) +
+  theme(
+    panel.grid      = element_blank(),
+    axis.text       = element_blank(),
+    axis.ticks      = element_blank(),
+    axis.title      = element_blank(),
+    legend.position = "right",
+    plot.title      = element_text(face = "bold")
+  ) +
+  labs(
+    title    = "Gini Index of Total Expenditure Inequality",
+    subtitle = "Averaged across urban and rural settlements  |  Grey = data not available",
+    caption  = "Source: NAVIGATE Inequality Dataset"
+  )
+
+print(map_plot)
+ggsave(file.path(folder, "gini_world_map.png"), plot = map_plot, width = 14, height = 8, dpi = 150)
+cat("  Gini world map saved to settlement/gini_world_map.png\n")
+
+
+dev.off()
