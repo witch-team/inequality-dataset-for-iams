@@ -28,8 +28,13 @@ print(unique(read.xlsx(file.path(folder, str_subset(list.files(path = folder), "
 csv_files <- list.files(path = folder, pattern = "Inequality Input Data Template.*Settlement.*\\.csv$")
 xlsx_files <- list.files(path = folder, pattern = "Inequality Input Data Template.*Settlement.*\\.xlsx$")
 survey_inequality_filelist <- c(csv_files, xlsx_files)
-# Filter out EMPTY templates and temp files
-survey_inequality_filelist <- survey_inequality_filelist[!str_detect(survey_inequality_filelist, "EMPTY") & !str_detect(survey_inequality_filelist, "template") & !str_detect(survey_inequality_filelist, "^~\\$")]
+# Filter out EMPTY templates, temp files, and superseded EUv2 draft
+survey_inequality_filelist <- survey_inequality_filelist[
+  !str_detect(survey_inequality_filelist, "EMPTY") &
+  !str_detect(survey_inequality_filelist, "template") &
+  !str_detect(survey_inequality_filelist, "^~\\$") &
+  !str_detect(survey_inequality_filelist, "Settlement EUv2\\.csv$")
+]
 
 cat("Found", length(survey_inequality_filelist), "files to process:\n")
 print(survey_inequality_filelist)
@@ -48,6 +53,12 @@ for (.file in survey_inequality_filelist) {
   } else {
     warning("Unknown file format for ", .file)
     next
+  }
+
+  # Remove AVERAGE label column if present (string column, not numeric data)
+  if("AVERAGE" %in% names(data)) {
+    data <- data %>% select(-AVERAGE)
+    cat("  Removed AVERAGE label column\n")
   }
 
   # Basic checks
@@ -90,9 +101,15 @@ for (.file in survey_inequality_filelist) {
     next
   }
 
-  # Detect format: template xlsx (D1-D10 as columns) vs EU csv (year columns, decile in VARIABLE)
-  has_decile_cols <- any(str_detect(names(data), "^D[0-9]+$"))
-  cat("  Data format:", ifelse(has_decile_cols, "Template (D1-D10 columns)", "EU/CSV (year columns)"), "\n")
+  # Detect format:
+  #   1. Template xlsx:       D1-D10 as value columns, settlement in VARIABLE name
+  #   2. EU/CSV old (EU.csv): Urban/Rural as value columns, decile in VARIABLE (e.g. "Savings Rate|D1")
+  #   3. EU/CSV new (EUv2):   year columns (e.g. "2015"), settlement+decile in VARIABLE (e.g. "...Rural|D1")
+  has_decile_cols    <- any(str_detect(names(data), "^D[0-9]+$"))
+  has_settlement_cols <- all(c("Urban", "Rural") %in% names(data)) & !has_decile_cols
+  cat("  Data format:", ifelse(has_decile_cols, "Template (D1-D10 columns)",
+                        ifelse(has_settlement_cols, "EU/CSV old (Urban/Rural columns)",
+                               "EU/CSV new (year columns)")), "\n")
 
   #specific command for EU
   #if(.file=="Inequality Input Data Template CMCC_EU.csv") data <- data %>% filter(REGION!="FRA") #%>% filter(!str_detect(VARIABLE, "Emissions"))
@@ -106,11 +123,17 @@ for (.file in survey_inequality_filelist) {
   data_output <- data_output %>% mutate(var=case_when(str_detect(VARIABLE, "Expenditure Share") ~ "expcat_input", str_detect(VARIABLE, "Income Share") ~ "incomecat", str_detect(VARIABLE, "Savings Rate") ~ "savings_rate", str_detect(VARIABLE, "Wealth Share") ~ "wealth_share", str_detect(VARIABLE, "Education") ~ "educat", str_detect(VARIABLE, "Wage Premium") ~ "wage_premium", str_detect(VARIABLE, "Expenditure Decile") ~ "expenditure_decile",  str_detect(VARIABLE, "Income Decile") ~ "income_decile", str_detect(VARIABLE, "Inequality Index") ~ "inequality_index", str_detect(VARIABLE, "Equivalence Household Size") ~ "equivalence_household_size", str_detect(VARIABLE, "Household Size") ~ "household_size", str_detect(VARIABLE, "Emissions per capita") ~ "emissions_per_capita"))
   data_output <- data_output %>% filter(!str_detect(VARIABLE, "Meat")) #for now don't separate out meat consumption
   data_output <- data_output %>% mutate(element=case_when(str_detect(VARIABLE, "Housing") ~ "energy_housing", str_detect(VARIABLE, "Transportation") ~ "energy_transportation", str_detect(VARIABLE, "Food") ~ "food", str_detect(VARIABLE, "Other") ~ "other", str_detect(VARIABLE, "Labour") ~ "labour", str_detect(VARIABLE, "Capital") ~ "capital", str_detect(VARIABLE, "Transfers") ~ "transfers", str_detect(VARIABLE, "Under 15") ~ "Under 15", str_detect(VARIABLE, "No Education") ~ "No education", str_detect(VARIABLE, "Primary Education") ~ "Primary Education", str_detect(VARIABLE, "Secondary Education") ~ "Secondary Education", str_detect(VARIABLE, "Tertiary Education") ~ "Tertiary Education", str_detect(VARIABLE, "Gini") ~ "gini", str_detect(VARIABLE, "Absolute Poverty") ~ "absolute_poverty"))
-  # Settlement is always in VARIABLE name: Type|Category|Urban|Dx or Type|Category|Rural|Dx
-  data_output <- data_output %>%
-    mutate(settlement = case_when(str_detect(VARIABLE, "Urban") ~ "urban",
-                                  str_detect(VARIABLE, "Rural") ~ "rural")) %>%
-    select(-VARIABLE)
+  if(has_settlement_cols) {
+    # EU/CSV old format: Urban/Rural are value columns, no settlement in VARIABLE
+    # Drop VARIABLE (decile already extracted into dist above), pivot Urban/Rural → settlement
+    data_output <- data_output %>% select(-VARIABLE)
+  } else {
+    # Template and EU/CSV new: settlement is embedded in VARIABLE name
+    data_output <- data_output %>%
+      mutate(settlement = case_when(str_detect(VARIABLE, "Urban") ~ "urban",
+                                    str_detect(VARIABLE, "Rural") ~ "rural")) %>%
+      select(-VARIABLE)
+  }
 
   if(has_decile_cols) {
     # Template xlsx format: D1-D10 are value columns, "value" column for non-decile rows
@@ -122,8 +145,16 @@ for (.file in survey_inequality_filelist) {
                               str_detect(year, "^D[0-9]+$") ~ year,
                               TRUE ~ "0")) %>%
       as.data.frame()
+  } else if(has_settlement_cols) {
+    # EU/CSV old format: pivot Urban/Rural into settlement column, default year to 2015
+    data_output <- data_output %>%
+      pivot_longer(cols = c("Urban", "Rural"), names_to = "settlement", values_to = "value") %>%
+      mutate(settlement = tolower(settlement),
+             year = "2015") %>%
+      filter(!is.na(value)) %>%
+      as.data.frame()
   } else {
-    # EU/CSV format: year columns contain actual years, decile already encoded in dist from VARIABLE
+    # EU/CSV new format: year columns contain actual years, settlement already in VARIABLE
     data_output <- data_output %>%
       pivot_longer(cols = setdiff(names(data_output), c("iso3", "dist", "settlement", "var", "element")),
                    names_to = "year") %>%
@@ -134,7 +165,7 @@ for (.file in survey_inequality_filelist) {
   data_output <- data_output %>% select(year, iso3, var, element, settlement, dist, value)
 
   # Convert country names to ISO3C codes only if file ends with " EU"
-  if(str_detect(.file, " EU\\.[^.]+$")) {
+  if(str_detect(.file, " EU")) {
     data_output <- data_output %>%
       mutate(iso3 = countrycode(iso3, origin = "country.name", destination = "iso3c",
                                  custom_match = c("Slovak Republic" = "SVK")))
@@ -196,7 +227,7 @@ for (.file in survey_inequality_filelist) {
     }
   }
   # For EU files, convert REGION in raw data before storing in data_input_format
-  if(str_detect(.file, " EU\\.[^.]+$")) {
+  if(str_detect(.file, " EU")) {
     data <- data %>%
       mutate(REGION = countrycode(REGION, origin = "country.name", destination = "iso3c",
                                    custom_match = c("Slovak Republic" = "SVK"), warn = FALSE))
@@ -233,9 +264,10 @@ all_template_vars_clean <- unique(gsub("\\|Urban\\|Dx|\\|Rural\\|Dx", "",
                                        all_template_vars[str_detect(all_template_vars, "\\|Dx")]))
 
 # Create plot data: one row per REGION x base-variable, avail = whether data exists
+# Matches all three formats: |Urban|Dx, |Rural|Dx (template), |Urban|D1 (EUv2), |D1 (EU old)
 plot_data <- data_input_format %>%
-  filter(str_detect(VARIABLE, "\\|Dx$")) %>%
-  mutate(VARIABLE_clean = gsub("\\|Urban\\|Dx$|\\|Rural\\|Dx$", "", VARIABLE)) %>%
+  filter(str_detect(VARIABLE, "\\|Dx$|\\|D[0-9]+$")) %>%
+  mutate(VARIABLE_clean = gsub("\\|Urban\\|Dx$|\\|Rural\\|Dx$|\\|Urban\\|D[0-9]+$|\\|Rural\\|D[0-9]+$|\\|D[0-9]+$", "", VARIABLE)) %>%
   group_by(REGION, VARIABLE_clean) %>%
   summarize(avail = n(), .groups = "drop") %>%
   complete(REGION, VARIABLE_clean = all_template_vars_clean, fill = list(avail = 0))
